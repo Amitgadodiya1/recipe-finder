@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Explore popular world cuisines and discover amazing recipes from Indian, Chinese, and Mexican kitchens.">
+  <title>Taste Explorer – Discover Global Recipes</title>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+  <link rel="stylesheet" as="style" onload="this.rel='stylesheet'"
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+</head>
+
+<body class="bg-[#fcf8f8] text-[#1b0e0e]" style='font-family: "Plus Jakarta Sans", sans-serif;'>
+
+  <!-- 🌐 Header -->
+  <header class="flex items-center justify-between border-b border-pink-100 px-10 py-4 sticky top-0 bg-white/80 backdrop-blur-md z-50">
+    <div class="flex items-center gap-8">
+      <div class="flex items-center gap-3 text-[#1b0e0e]">
+        <svg class="size-6" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M24 4H42V17.3333V30.6667H24V44H6V30.6667V17.3333H24V4Z" fill="currentColor"></path>
+        </svg>
+        <h1 class="text-lg font-extrabold tracking-tight">Taste Explorer</h1>
+      </div>
+      <nav class="hidden sm:flex gap-8">
+        <a class="hover:text-[#e63946] font-medium" href="./home.html">Home</a>
+        <a class="hover:text-[#e63946] font-medium" href="./recipe.html">Recipes</a>
+        <a class="hover:text-[#e63946] font-medium" href="./feedback.html">Feedback</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 🌎 Main Content -->
+  <main class="px-6 sm:px-10 lg:px-40 py-8 flex flex-col gap-10">
+
+    <!-- 🔍 Search -->
+    <div class="flex justify-center">
+      <input id="searchInput" type="text" placeholder="Search for a recipe..."
+        class="w-full max-w-md rounded-full border border-gray-300 px-5 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-pink-400 focus:border-transparent shadow-sm">
+    </div>
+
+    <!-- 🍽️ Featured Cuisines -->
+    <section>
+      <h2 class="text-[22px] font-bold tracking-tight mb-4">Featured Cuisines</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div class="cuisine-card" onclick="goToCategory('Indian')"
+          style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAIgpLFPWppqM0L1zrO5VaLKQryqUBBkO9dsu3xNL6ecBdryM6sqt7g_67l4J0b8VusHil-lprKyWZY99Hh7eFoDTFUeqfMWgoEQ3GIwzRWG4HgjSDF7P5VIwVDM2v3tkGlLXFGX7XNs4g8DQRVsGr309U_UE8hT5SO-NYISwaahllVTQMsNOKaSdwNLIYR88XFYt_oO4Oh6YaiP4PTCEGdoMsJKz94NMDewvhNT-KHozbZjR4eFh5jxUsOuIQgHdM_dIWZIhPg3lcq');">
+          <span>Indian</span>
+        </div>
+        <div class="cuisine-card" onclick="goToCategory('Chinese')"
+          style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAP0fXeb5goA4212_VP3XzHQtsLsAtjFIFw000wg7_nJgID9ODmuVg7hwl2_ifLPhTIBvy3K-brtKRc1CaWC_cqGYhBmIjrFJfU1OTpf4PrmzYHcQ1aObEy8Odomm2z5MJP-f35wjp5qVsTUOEgZGoNCAzF9uRcmSAhrRnw84V-wmaEBUJcEii75mwydjnGEw0B__DcRb846v2dFZRiLF86gWsbTrh52dltkv_5WCZvlALywhGM0Z0MNM-w9vlrW2NZAJADfRhZcyGA');">
+          <span>Chinese</span>
+        </div>
+        <div class="cuisine-card" onclick="goToCategory('Mexican')"
+          style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuADJPZiQw4kO3IvJwjNj9zeBKN0AkpaajYgjdmeLZ1rSJR7i2vsKICxet0z8sJMc7dkFO7E9yfUsxjMmn84xH1zpZO_vZz3Pt4Z2YJrcZnEpNtWQNczBybbjydWPRiG-KjFxcMKhmvSyInlz7_Zet3myGL25S4okUBvH5GsAi99ZVCANUuygvtMJ-O3Y1NhvKUdMv_cRZjvXUaGI2kYibeKio3v-2v45ZqubtsVPWDzPISbHicahdXkM8Pd9e95ipPQs6wLzLq1TU9B');">
+          <span>Mexican</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ⭐ Popular Recipes -->
+    <section>
+      <h2 class="text-[22px] font-bold tracking-tight mb-4">Popular Recipes</h2>
+      <div id="popular-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <!-- Loading skeleton -->
+        <div class="animate-pulse text-center text-gray-400 col-span-full py-8">Loading recipes...</div>
+      </div>
+      <div class="text-center mt-6">
+        <button onclick="window.location.href='./recipe.html'"
+          class="bg-[#e63946] hover:bg-[#d62839] text-white px-6 py-2 rounded-full font-medium transition-all">
+          View All Recipes →
+        </button>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 🦶 Footer -->
+  <footer class="bg-[#1b0e0e] text-white mt-12 py-6 px-10 text-sm text-center">
+    <p>© 2025 Taste Explorer | Crafted with ❤️ by Janhavi Vyas</p>
+  </footer>
+
+  <style>
+    .cuisine-card {
+      @apply relative w-full aspect-video bg-center bg-cover rounded-xl cursor-pointer overflow-hidden shadow-md hover:shadow-xl transition-all;
+    }
+
+    .cuisine-card span {
+      @apply absolute bottom-0 left-0 right-0 bg-black/50 text-white text-lg font-semibold py-3 text-center;
+    }
+
+    .cuisine-card:hover span {
+      @apply bg-[#e63946]/70;
+    }
+  </style>
+
+  <script>
+    async function loadPopularRecipes(searchTerm = "") {
+      try {
+        const res = await fetch("http://localhost:3000/api/recipes/popular");
+        let recipes = await res.json();
+
+        if (searchTerm) {
+          recipes = recipes.filter(r =>
+            r.name.toLowerCase().includes(searchTerm.toLowerCase())
+          );
+        }
+
+        const container = document.getElementById("popular-container");
+        if (!recipes.length) {
+          container.innerHTML = `<p class='col-span-full text-center text-gray-500 py-6'>No recipes found 😔</p>`;
+          return;
+        }
+
+        container.innerHTML = recipes.map(recipe => `
+          <div class="flex flex-col gap-3 rounded-xl p-4 bg-white shadow-md hover:shadow-lg 
+                      hover:scale-[1.02] transition-all duration-300 cursor-pointer"
+               onclick='goToRecipe("${recipe._id}")'>
+
+            <div class="w-full aspect-video rounded-lg overflow-hidden bg-gray-100">
+              <img src="${recipe.image || 'https://via.placeholder.com/400x250?text=No+Image'}"
+                   alt="${recipe.name}" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105"/>
+            </div>
+
+            <div class="flex flex-col">
+              <p class="text-base font-bold truncate">${recipe.name}</p>
+              <p class="text-sm text-[#994d51] line-clamp-2">${recipe.description}</p>
+            </div>
+
+            <div class="flex justify-between items-center mt-2 text-sm text-gray-600">
+              <span>❤️ ${recipe.likes || 0}</span>
+              <span>⭐ ${recipe.averageRating || 4.5}</span>
+            </div>
+          </div>
+        `).join("");
+
+      } catch (err) {
+        console.error("Error fetching recipes:", err);
+      }
+    }
+
+    function goToCategory(cuisine) {
+      window.location.href = `./recipe.html?cuisine=${encodeURIComponent(cuisine)}`;
+    }
+
+    function goToRecipe(id) {
+      window.location.href = `./recipe-details.html?id=${id}`;
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      loadPopularRecipes();
+
+      // Search filter
+      const searchInput = document.getElementById("searchInput");
+      searchInput.addEventListener("input", (e) => loadPopularRecipes(e.target.value));
+    });
+  </script>
+
+</body>
+</html>

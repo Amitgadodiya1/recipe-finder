@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Taste Explorer – Recipes</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap"
+    />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+    <style>
+      body {
+        font-family: "Plus Jakarta Sans", sans-serif;
+      }
+
+      /* ✅ Responsive layout fixes */
+      @media (max-width: 768px) {
+        header {
+          flex-direction: column;
+          gap: 1rem;
+          text-align: center;
+        }
+      }
+
+      /* 🍳 Animation for likes */
+      .like-anim {
+        animation: pulse 0.3s ease;
+      }
+
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+        }
+
+        50% {
+          transform: scale(1.3);
+        }
+
+        100% {
+          transform: scale(1);
+        }
+      }
+    </style>
+  </head>
+
+  <body class="bg-[#fcf8f8] text-[#1b0e0e] min-h-screen flex flex-col">
+    <!-- 🌐 Header -->
+    <header
+      class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-pink-100 flex justify-between items-center px-8 py-4"
+    >
+      <div class="flex items-center gap-3">
+        <svg
+          class="w-6 h-6 text-pink-600"
+          viewBox="0 0 48 48"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M24 4H42V17.3333V30.6667H24V44H6V30.6667V17.3333H24V4Z"
+            fill="currentColor"
+          ></path>
+        </svg>
+        <h1 class="text-lg font-extrabold tracking-tight">Taste Explorer</h1>
+      </div>
+
+      <nav class="hidden sm:flex gap-8 text-sm font-medium">
+        <a href="./home.html" class="hover:text-[#e63946]">Home</a>
+        <a href="./recipe.html" class="text-[#e63946] font-semibold">Recipes</a>
+        <a href="./feedback.html" class="hover:text-[#e63946]">Feedback</a>
+      </nav>
+
+      <button id="menu-btn" class="sm:hidden text-2xl">☰</button>
+    </header>
+
+    <!-- 📱 Mobile menu -->
+    <nav
+      id="mobile-menu"
+      class="hidden flex flex-col sm:hidden gap-4 px-6 py-4 bg-[#fff6f6] border-b border-[#f3e7e8]"
+    >
+      <a href="./home.html">Home</a>
+      <a href="./recipe.html">Recipes</a>
+      <a href="./feedback.html">Feedback</a>
+    </nav>
+
+    <!-- 🔍 Search -->
+    <div class="flex justify-center py-4">
+      <input
+        id="searchInput"
+        placeholder="Search recipes by name or cuisine..."
+        class="max-w-lg w-full px-5 py-2 border rounded-full shadow-sm focus:outline-none focus:ring-2 focus:ring-pink-400"
+      />
+    </div>
+
+    <!-- 🍱 Recipes Section -->
+    <main class="flex-1 px-6 sm:px-10 lg:px-20">
+      <h2 class="text-[22px] font-bold mb-4">All Recipes</h2>
+
+      <div
+        id="recipes-container"
+        class="grid grid-cols-[repeat(auto-fit,minmax(220px,1fr))] gap-5 min-h-[300px] animate-fade-in"
+      >
+        <div class="col-span-full text-center text-gray-400 py-10">
+          Loading recipes...
+        </div>
+      </div>
+    </main>
+
+    <!-- 🍰 Modal -->
+    <div
+      id="recipe-modal"
+      class="fixed inset-0 hidden bg-black/50 flex justify-center items-center backdrop-blur-sm z-50"
+    >
+      <div
+        class="bg-white rounded-xl max-w-lg w-full p-6 relative overflow-y-auto max-h-[90vh] shadow-lg"
+      >
+        <button
+          onclick="closeModal()"
+          class="absolute top-3 right-3 text-lg text-gray-500 hover:text-black"
+        >
+          ✖
+        </button>
+        <img
+          id="modal-image"
+          class="w-full h-56 object-cover rounded-lg mb-4"
+        />
+        <h2 id="modal-name" class="text-2xl font-bold mb-2"></h2>
+        <p id="modal-category" class="text-sm text-gray-500 mb-3"></p>
+        <h3 class="font-semibold text-pink-600 mb-2">Procedure:</h3>
+        <ul
+          id="modal-procedure"
+          class="list-disc pl-5 text-sm text-gray-700 space-y-1"
+        ></ul>
+      </div>
+    </div>
+
+    <!-- 🦶 Footer -->
+    <footer class="bg-[#1b0e0e] text-white text-sm text-center py-4 mt-6">
+      © 2025 Taste Explorer | Crafted with ❤️ by Janhavi Vyas
+    </footer>
+
+    <script>
+      const mobileMenu = document.getElementById("mobile-menu");
+      document.getElementById("menu-btn").addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+
+      let allRecipes = [];
+
+      async function fetchRecipes() {
+        const res = await fetch("http://localhost:3000/api/recipes");
+        const data = await res.json(); // plain array ✅
+        const recipesArray = Array.isArray(data) ? data : data.data || [];
+        renderRecipes(groupByCuisine(recipesArray));
+      }
+
+      function groupByCuisine(recipes) {
+        return recipes.reduce((acc, r) => {
+          (acc[r.cuisine] = acc[r.cuisine] || []).push(r);
+          return acc;
+        }, {});
+      }
+
+      function renderRecipes(grouped) {
+        const container = document.getElementById("recipes-container");
+        container.innerHTML = "";
+
+        const cuisines = Object.keys(grouped).sort((a, b) =>
+          a === "Indian" ? -1 : a.localeCompare(b)
+        );
+
+        if (!cuisines.length) {
+          container.innerHTML = `<p class="col-span-full text-center text-gray-500 py-8">No recipes found 😔</p>`;
+          return;
+        }
+
+        cuisines.forEach((cuisine) => {
+          const section = document.createElement("section");
+          section.className = "mb-10";
+          section.innerHTML = `
+          <h3 class="text-xl font-bold mb-3 border-l-4 border-pink-400 pl-2">${cuisine}</h3>
+          <div class="grid grid-cols-[repeat(auto-fit,minmax(220px,1fr))] gap-6">
+            ${grouped[cuisine].map((recipe) => recipeCard(recipe)).join("")}
+          </div>
+        `;
+          container.appendChild(section);
+        });
+      }
+
+      function recipeCard(recipe) {
+        return `
+        <div class="bg-white rounded-xl shadow-md hover:shadow-xl transition-transform transform hover:scale-[1.02] cursor-pointer group"
+             onclick='openModal(${JSON.stringify(recipe).replace(
+               /"/g,
+               "&quot;"
+             )})'>
+          <div class="w-full aspect-video overflow-hidden rounded-t-xl">
+            <img src="${recipe.image}" alt="${recipe.name}"
+                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+          </div>
+          <div class="p-4 flex flex-col justify-between h-[160px]">
+            <div>
+              <h4 class="font-semibold text-[#1b0e0e] truncate">${
+                recipe.name
+              }</h4>
+              <p class="text-sm text-gray-600 mt-1 line-clamp-2">${
+                recipe.description
+              }</p>
+            </div>
+            <div class="flex justify-between items-center mt-3">
+              <span class="text-xs text-gray-400">${recipe.category}</span>
+              <button onclick="event.stopPropagation(); likeRecipe('${
+                recipe._id
+              }', this)"
+                      class="text-sm px-3 py-1 rounded-full bg-pink-100 text-pink-600 hover:bg-pink-200 flex items-center gap-1 transition">
+                ❤️ <span>${recipe.likes || 0}</span>
+              </button>
+            </div>
+          </div>
+        </div>`;
+      }
+
+      async function likeRecipe(id, btn) {
+        btn.classList.add("like-anim");
+        const res = await fetch(
+          `http://localhost:3000/api/recipes/${id}/like`,
+          { method: "POST" }
+        );
+        const updated = await res.json();
+        allRecipes = allRecipes.map((r) =>
+          r._id === updated._id ? updated : r
+        );
+        btn.querySelector("span").textContent = updated.likes;
+        setTimeout(() => btn.classList.remove("like-anim"), 300);
+      }
+
+      function openModal(recipe) {
+        document.getElementById("modal-image").src = recipe.image;
+        document.getElementById("modal-name").textContent = recipe.name;
+        document.getElementById("modal-category").textContent =
+          recipe.category || recipe.cuisine;
+
+        const list = document.getElementById("modal-procedure");
+        list.innerHTML = recipe.procedure
+          .map((step) => `<li>${step}</li>`)
+          .join("");
+
+        document.getElementById("recipe-modal").classList.remove("hidden");
+        document.body.style.overflow = "hidden";
+      }
+
+      function closeModal() {
+        document.getElementById("recipe-modal").classList.add("hidden");
+        document.body.style.overflow = "";
+      }
+
+      document.getElementById("recipe-modal").addEventListener("click", (e) => {
+        if (e.target.id === "recipe-modal") closeModal();
+      });
+
+      // 🔎 Debounced search
+      let searchTimeout;
+      document.getElementById("searchInput").addEventListener("input", (e) => {
+        clearTimeout(searchTimeout);
+        searchTimeout = setTimeout(() => {
+          const term = e.target.value.toLowerCase();
+          const filtered = allRecipes.filter(
+            (r) =>
+              r.name.toLowerCase().includes(term) ||
+              r.cuisine.toLowerCase().includes(term) ||
+              r.description.toLowerCase().includes(term)
+          );
+          renderRecipes(groupByCuisine(filtered));
+        }, 300);
+      });
+
+      // 🌐 Load on start
+      document.addEventListener("DOMContentLoaded", async () => {
+        const cuisine = new URLSearchParams(window.location.search).get(
+          "cuisine"
+        );
+        await fetchRecipes();
+
+        if (cuisine) {
+          const filtered = allRecipes.filter((r) => r.cuisine === cuisine);
+          renderRecipes(groupByCuisine(filtered));
+        }
+      });
+    </script>
+  </body>
+</html>
