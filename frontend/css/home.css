@@ -1,0 +1,21 @@
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+/* Cuisine card reusable style */
+.cuisine-card {
+  @apply relative w-full aspect-video bg-center bg-cover rounded-xl cursor-pointer overflow-hidden shadow-md hover:shadow-xl transition-all;
+}
+
+.cuisine-card span {
+  @apply absolute bottom-0 left-0 right-0 bg-black/50 text-white text-lg font-semibold py-3 text-center;
+}
+
+.cuisine-card:hover span {
+  @apply bg-[#e63946]/70;
+}
+
+/* Modal backdrop */
+#quick-modal {
+  backdrop-filter: blur(6px);
+}
