@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Explore popular world cuisines and discover amazing recipes from Indian, Chinese, and Mexican kitchens.">
+  <title>Taste Explorer – Discover Global Recipes</title>
+
+  <!-- Fonts & Tailwind -->
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+  <link rel="stylesheet" as="style" onload="this.rel='stylesheet'"
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../css/home.css">
+</head>
+
+<body class="bg-[#fcf8f8] text-[#1b0e0e]">
+
+  <!-- 🌐 Header -->
+  <header
+    class="flex items-center justify-between border-b border-pink-100 px-10 py-4 sticky top-0 bg-white/80 backdrop-blur-md z-50">
+    <div class="flex items-center gap-8">
+      <div class="flex items-center gap-3 text-[#1b0e0e]">
+        <svg class="size-6" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M24 4H42V17.3333V30.6667H24V44H6V30.6667V17.3333H24V4Z" fill="currentColor"></path>
+        </svg>
+        <h1 class="text-lg font-extrabold tracking-tight">Taste Explorer</h1>
+      </div>
+      <nav class="hidden sm:flex gap-8">
+        <a class="hover:text-[#e63946] font-medium" href="./home.html">Home</a>
+        <a class="hover:text-[#e63946] font-medium" href="./all-recipes.html">Recipes</a>
+        <a class="hover:text-[#e63946] font-medium" href="./feedback.html">Feedback</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 🌍 Main Content -->
+  <main class="px-6 sm:px-10 lg:px-40 py-8 flex flex-col gap-12">
+
+    <!-- 🧑‍🍳 Recipe of the Day -->
+    <section id="recipe-of-day" class="relative bg-gray-100 rounded-xl overflow-hidden shadow-md h-[350px]">
+      <div class="flex items-center justify-center h-full text-gray-400">Loading Recipe of the Day...</div>
+    </section>
+
+    <!-- 🔍 Search + Filters -->
+    <section class="flex flex-col sm:flex-row justify-between items-center gap-3">
+      <input id="searchInput" type="text" placeholder="Search recipes..."
+        class="w-full sm:w-[300px] rounded-full border border-gray-300 px-5 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-pink-400 focus:border-transparent shadow-sm" />
+
+      <div class="flex gap-4">
+        <select id="filter-cuisine"
+          class="rounded-full border border-gray-300 px-8 py-2 text-sm focus:ring-2 focus:ring-pink-400">
+          <option value="">All Cuisines</option>
+          <option value="Indian">Indian</option>
+          <option value="Chinese">Chinese</option>
+          <option value="Mexican">Mexican</option>
+        </select>
+      </div>
+    </section>
+
+    <!-- ⭐ Popular Recipes -->
+    <section>
+      <h2 class="text-[22px] font-bold tracking-tight mb-4">Popular Recipes</h2>
+      <div id="popular-container"
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 text-sm">
+        <div class="animate-pulse text-center text-gray-400 col-span-full py-8">Loading recipes...</div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 🧁 Quick View Modal -->
+  <div id="quick-modal"
+    class="hidden fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4 overflow-auto">
+    <div class="bg-white rounded-xl max-w-md w-full p-6 relative shadow-lg">
+      <button onclick="closeModal()" class="absolute top-3 right-3 text-gray-500 hover:text-black">✖</button>
+      <img id="modal-img" class="w-full h-48 object-cover rounded-lg mb-3" />
+      <h2 id="modal-name" class="text-xl font-bold mb-2"></h2>
+      <p id="modal-desc" class="text-sm text-gray-600 mb-2"></p>
+      <p id="modal-time" class="text-sm text-gray-500 mb-3"></p>
+      <button id="view-btn"
+        class="bg-[#e63946] text-white rounded-full px-4 py-2 text-sm font-medium hover:bg-[#d62839] transition">View
+        Full Recipe</button>
+    </div>
+  </div>
+
+  <!-- 🦶 Footer -->
+  <footer class="bg-[#1b0e0e] text-white mt-12 py-6 px-10 text-sm text-center">
+    <p>© 2025 Taste Explorer | Crafted with ❤️ by Janhavi Vyas</p>
+  </footer>
+
+  <!-- JS -->
+  <script src="../js/home.js"></script>
+</body>
+
+</html>

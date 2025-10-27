@@ -1,0 +1,45 @@
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+/* ✨ Feedback card */
+.feedback-item {
+  background: #fff;
+  border: 1px solid #f1e9ea;
+  border-radius: 12px;
+  padding: 16px 20px;
+  margin-bottom: 12px;
+  transition: all 0.2s ease;
+}
+
+.feedback-item:hover {
+  background: #fff8f8;
+  transform: translateY(-2px);
+}
+
+/* 🪄 Toast animation */
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  10% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  90% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+}
+
+#toast {
+  animation: fadeInOut 3s ease forwards;
+}
