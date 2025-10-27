@@ -61,3 +61,15 @@ tmp/
 
 # --- GitHub specific ---
 .gitconfig
+
+
+# Node
+node_modules/
+npm-debug.log
+.env
+dist/
+.vercel/
+.DS_Store
+
+# Docker
+mongo_data/
