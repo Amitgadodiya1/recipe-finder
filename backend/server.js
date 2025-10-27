@@ -55,6 +55,10 @@ mongoose
   .then(() => console.log("✅ MongoDB connected"))
   .catch((err) => console.error("❌ DB connection failed:", err));
 
-// Start Server
-const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => console.log(`🚀 Server running on port ${PORT}`));
+export default app;
+
+// Local development only
+if (process.env.NODE_ENV !== "production") {
+  const PORT = process.env.PORT || 3000;
+  app.listen(PORT, () => console.log(`🚀 Server running on port ${PORT}`));
+}
