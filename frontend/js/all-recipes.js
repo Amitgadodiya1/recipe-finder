@@ -7,9 +7,14 @@ document.getElementById("menu-btn").addEventListener("click", () => {
 let allRecipes = [];
 let page = 1;
 
+const BASE_URL =
+  window.location.hostname === "localhost"
+    ? "http://localhost:3000"
+    : "";
+
 // 🍳 Fetch recipes with pagination
 async function fetchRecipes(loadMore = false) {
-  const res = await fetch(`/api/recipes?page=${page}&limit=8`);
+  const res = await fetch(`${BASE_URL}/api/recipes?page=${page}&limit=8`);
   const data = await res.json();
   const recipesArray = Array.isArray(data) ? data : data.data || [];
 
@@ -83,7 +88,7 @@ async function likeRecipe(id, btn) {
   if (liked.includes(id)) return alert("Already liked ❤️");
 
   btn.classList.add("like-anim");
-  const res = await fetch(`/api/recipes/${id}/like`, { method: "POST" });
+  const res = await fetch(`${BASE_URL}/api/recipes/${id}/like`, { method: "POST" });
   const updated = await res.json();
 
   liked.push(id);
@@ -103,7 +108,7 @@ function openModal(recipe) {
   list.innerHTML = recipe.procedure.map(step => `<li>${step}</li>`).join("");
 
   document.getElementById("view-recipe-btn").onclick = () => {
-    window.location.href = `./recipe-details.html?id=${recipe._id}`;
+    window.location.href = `./recipe-details?id=${recipe._id}`;
   };
 
   document.getElementById("recipe-modal").classList.remove("hidden");

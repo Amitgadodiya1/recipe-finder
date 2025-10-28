@@ -5,15 +5,17 @@ function showToast(message) {
   toast.classList.remove("hidden");
   setTimeout(() => toast.classList.add("hidden"), 3000);
 }
-
-// 🧠 Load feedback list
+const BASE_URL =
+  window.location.hostname === "localhost"
+    ? "http://localhost:3000"
+    : "";// 🧠 Load feedback list
 async function loadFeedback() {
   const container = document.getElementById("feedback-list");
   container.innerHTML =
     '<p class="text-sm text-gray-400 italic">Loading feedback...</p>';
 
   try {
-    const res = await fetch("/api/feedback");
+    const res = await fetch(`${BASE_URL}/api/feedback`);
     const feedbacks = await res.json();
 
     if (!feedbacks.length) {
@@ -51,7 +53,7 @@ async function submitFeedback() {
   }
 
   try {
-    const res = await fetch("/api/feedback", {
+    const res = await fetch(`${BASE_URL}/api/feedback`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ message }),

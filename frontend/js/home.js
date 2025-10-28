@@ -1,6 +1,12 @@
 // 🌟 1. Load Recipe of the Day
+
+
+const BASE_URL =
+  window.location.hostname === "localhost"
+    ? "http://localhost:3000"
+    : "";
 async function loadRecipeOfTheDay() {
-  const res = await fetch("/api/recipes/random");
+  const res = await fetch(`${BASE_URL}/api/recipes/random`);
   const recipe = await res.json();
 
   const section = document.getElementById("recipe-of-day");
@@ -20,7 +26,7 @@ async function loadRecipeOfTheDay() {
 
 // ⭐ 2. Load Popular Recipes
 async function loadPopularRecipes(searchTerm = "", cuisine = "", maxTime = "") {
-  const res = await fetch("/api/recipes/popular");
+  const res = await fetch(`${BASE_URL}/api/recipes/popular`);
   let recipes = await res.json();
 
   recipes = recipes.filter(r =>

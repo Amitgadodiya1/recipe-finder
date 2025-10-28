@@ -10,53 +10,10 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap"
     />
-
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 
-    <style>
-      body {
-        font-family: "Plus Jakarta Sans", sans-serif;
-      }
-
-      /* ✨ Feedback card */
-      .feedback-item {
-        background: #fff;
-        border: 1px solid #f1e9ea;
-        border-radius: 12px;
-        padding: 16px 20px;
-        margin-bottom: 12px;
-        transition: all 0.2s ease;
-      }
-
-      .feedback-item:hover {
-        background: #fff8f8;
-        transform: translateY(-2px);
-      }
-
-      /* 🪄 Toast animation */
-      @keyframes fadeInOut {
-        0% {
-          opacity: 0;
-          transform: translateY(10px);
-        }
-        10% {
-          opacity: 1;
-          transform: translateY(0);
-        }
-        90% {
-          opacity: 1;
-          transform: translateY(0);
-        }
-        100% {
-          opacity: 0;
-          transform: translateY(10px);
-        }
-      }
-
-      #toast {
-        animation: fadeInOut 3s ease forwards;
-      }
-    </style>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/feedback.css" />
   </head>
 
   <body class="bg-[#fbf9f9] text-[#191010]">
@@ -83,7 +40,7 @@
 
       <nav class="flex gap-6 text-sm font-medium">
         <a href="./home.html" class="hover:text-[#e63946]">Home</a>
-        <a href="./recipe.html" class="hover:text-[#e63946]">Recipes</a>
+        <a href="./all-recipes.html" class="hover:text-[#e63946]">Recipes</a>
         <a href="./feedback.html" class="text-[#e63946] font-semibold"
           >Feedback</a
         >
@@ -109,7 +66,6 @@
           <button
             id="submit-btn"
             class="self-end bg-[#e8b5b7] hover:bg-[#e49ba0] text-[#191010] font-bold py-2 px-5 rounded-xl transition active:scale-95"
-            onclick="submitFeedback()"
           >
             Submit Feedback
           </button>
@@ -151,78 +107,7 @@
       © 2025 Taste Explorer | Built with ❤️ by Janhavi Vyas
     </footer>
 
-    <script>
-      // 🌟 Show toast
-      function showToast(message) {
-        const toast = document.getElementById("toast");
-        toast.textContent = message;
-        toast.classList.remove("hidden");
-        setTimeout(() => toast.classList.add("hidden"), 3000);
-      }
-
-      // 🧠 Load feedback
-      async function loadFeedback() {
-        const container = document.getElementById("feedback-list");
-        container.innerHTML =
-          '<p class="text-sm text-gray-400 italic">Loading feedback...</p>';
-
-        try {
-          const res = await fetch("http://localhost:3000/api/feedback");
-          const feedbacks = await res.json();
-
-          if (!feedbacks.length) {
-            container.innerHTML =
-              '<p class="text-gray-400 italic text-sm">No feedback yet. Be the first to share!</p>';
-            return;
-          }
-
-          container.innerHTML = feedbacks
-            .map(
-              (f) => `
-          <div class="feedback-item">
-            <p class="message text-sm">${f.message}</p>
-            <small class="date text-xs text-[#8b5b5c]">${
-              new Date(f.createdAt).toLocaleString()
-            }</small>
-          </div>`
-            )
-            .join("");
-        } catch (err) {
-          console.error("Error loading feedback:", err);
-          container.innerHTML =
-            '<p class="text-red-500 text-sm">Failed to load feedback.</p>';
-        }
-      }
-
-      // ✍️ Submit feedback
-      async function submitFeedback() {
-        const textarea = document.getElementById("feedback-input");
-        const message = textarea.value.trim();
-
-        if (!message) {
-          showToast("Please enter your feedback!");
-          return;
-        }
-
-        try {
-          const res = await fetch("http://localhost:3000/api/feedback", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ message }),
-          });
-
-          if (!res.ok) throw new Error("Failed to submit feedback");
-
-          textarea.value = "";
-          await loadFeedback();
-          showToast("🎉 Feedback submitted successfully!");
-        } catch (err) {
-          console.error("Error submitting feedback:", err);
-          showToast("❌ Something went wrong!");
-        }
-      }
-
-      document.addEventListener("DOMContentLoaded", loadFeedback);
-    </script>
+    <!-- Custom JS -->
+    <script src="../js/feedback.js"></script>
   </body>
 </html>

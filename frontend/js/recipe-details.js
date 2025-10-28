@@ -1,9 +1,13 @@
+const BASE_URL =
+  window.location.hostname === "localhost"
+    ? "http://localhost:3000"
+    : "";
 const recipeId = new URLSearchParams(window.location.search).get("id");
 
 // 🍲 Fetch recipe details
 async function fetchRecipeDetails() {
   try {
-    const res = await fetch(`/api/recipes/${recipeId}`);
+    const res = await fetch(`${BASE_URL}/api/recipes/${recipeId}`);
     const recipe = await res.json();
 
     const container = document.getElementById("recipe-details");
@@ -59,7 +63,7 @@ async function fetchRecipeDetails() {
 // ⭐ Fetch related recipes
 async function fetchRelatedRecipes() {
   try {
-    const res = await fetch(`/api/recipes/${recipeId}/related`);
+    const res = await fetch(`${BASE_URL}/api/recipes/${recipeId}/related`);
     const related = await res.json();
 
     const container = document.getElementById("related-container");
@@ -88,7 +92,7 @@ async function likeRecipe(id) {
   let liked = JSON.parse(localStorage.getItem("liked") || "[]");
   if (liked.includes(id)) return alert("Already liked ❤️");
 
-  const res = await fetch(`/api/recipes/${id}/like`, { method: "POST" });
+  const res = await fetch(`${BASE_URL}/api/recipes/${id}/like`, { method: "POST" });
   const updated = await res.json();
 
   liked.push(id);
