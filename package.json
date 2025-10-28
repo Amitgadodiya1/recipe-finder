@@ -1,0 +1,19 @@
+{
+  "name": "recipe-finder",
+  "version": "1.0.0",
+  "description": "A full-stack recipe finder application",
+  "scripts": {
+    "build": "echo 'Build completed'",
+    "start": "node backend/server.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "mongoose": "^8.17.2",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
+    "body-parser": "^2.2.0"
+  },
+  "engines": {
+    "node": ">=18.x"
+  }
+}
