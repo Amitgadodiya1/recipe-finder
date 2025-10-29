@@ -1,63 +1,215 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="transition-colors duration-500">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Taste Explorer – Recipe Details</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Taste Explorer – Recipe Details</title>
+    <!-- Fonts & Tailwind -->
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap"
+    />
 
-  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
-  <link rel="stylesheet" as="style" onload="this.rel='stylesheet'"
-    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap" />
-  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <!-- 🌓 Apply saved theme early -->
+    <script>
+      if (
+        localStorage.getItem("theme") === "dark" ||
+        (!localStorage.getItem("theme") &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches)
+      ) {
+        document.documentElement.classList.add("dark");
+      }
+    </script>
 
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="../css/recipe-details.css" />
-</head>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+      };
+    </script>
 
-<body class="bg-[#fcf8f8] text-[#1b0e0e] min-h-screen flex flex-col">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/recipe-details.css" />
+  </head>
 
-  <!-- 🌐 Header -->
-  <header
-    class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-pink-100 flex justify-between items-center px-8 py-4">
-    <div class="flex items-center gap-3">
-      <svg class="w-6 h-6 text-pink-600" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path fill-rule="evenodd" clip-rule="evenodd"
-          d="M24 4H42V17.3333V30.6667H24V44H6V30.6667V17.3333H24V4Z" fill="currentColor"></path>
-      </svg>
-      <h1 class="text-lg font-extrabold tracking-tight">Taste Explorer</h1>
-    </div>
-
-    <nav class="hidden sm:flex gap-8 text-sm font-medium">
-      <a href="./home.html" class="hover:text-[#e63946]">Home</a>
-      <a href="./all-recipes.html" class="hover:text-[#e63946]">Recipes</a>
-      <a href="./feedback.html" class="hover:text-[#e63946]">Feedback</a>
-    </nav>
-  </header>
-
-  <!-- 🥘 Recipe Details -->
-  <main class="flex-1 px-6 sm:px-10 lg:px-40 py-8">
-    <div id="recipe-details" class="text-center text-gray-500 py-10">
-      Loading recipe...
-    </div>
-
-    <!-- ⭐ Related Recipes -->
-    <section class="mt-10">
-      <h2 class="text-[22px] font-bold mb-4">You may also like</h2>
-      <div id="related-container"
-        class="grid grid-cols-[repeat(auto-fit,minmax(220px,1fr))] gap-5 min-h-[200px]">
-        <div class="col-span-full text-center text-gray-400 py-6">Loading...</div>
+  <body
+    class="bg-gradient-to-br from-[#fff5f5] via-[#fff] to-[#ffeaea] dark:from-[#0f0f0f] dark:via-[#1a1a1a] dark:to-[#1e1e1e] text-[#1b0e0e] dark:text-[#f5f5f5] font-[Plus Jakarta Sans] min-h-screen flex flex-col transition-colors duration-500"
+  >
+    <!-- 🌐 Header -->
+    <header
+      class="sticky top-0 z-50 bg-white/90 dark:bg-[#1e1e1e]/80 backdrop-blur-xl border-b border-pink-100 dark:border-gray-700 flex justify-between items-center px-8 sm:px-16 py-4 shadow-sm"
+    >
+      <div class="flex items-center gap-3">
+        <div
+          class="w-8 h-8 flex items-center justify-center rounded-lg bg-gradient-to-br from-pink-500 to-red-400 text-white shadow-md"
+        >
+          🍴
+        </div>
+        <h1 class="text-lg font-extrabold tracking-tight">Taste Explorer</h1>
       </div>
-    </section>
-  </main>
 
-  <!-- 🦶 Footer -->
-  <footer class="bg-[#1b0e0e] text-white text-sm text-center py-4 mt-6">
-    © 2025 Taste Explorer | Crafted with ❤️ by Janhavi Vyas
-  </footer>
+      <nav class="hidden sm:flex gap-8 text-[15px] font-medium items-center">
+        <a
+          href="./home.html"
+          class="hover:text-[#e63946] dark:hover:text-[#ff6b6b] transition"
+          >Home</a
+        >
+        <a
+          href="./all-recipes.html"
+          class="hover:text-[#e63946] dark:hover:text-[#ff6b6b] transition"
+          >Recipes</a
+        >
+        <a
+          href="./feedback.html"
+          class="hover:text-[#e63946] dark:hover:text-[#ff6b6b] transition"
+          >Feedback</a
+        >
 
-  <!-- Custom JS -->
-  <script src="../js/recipe-details.js"></script>
-</body>
+        <!-- 🌙 Dark Mode Toggle -->
+        <button
+          id="theme-toggle"
+          class="ml-4 w-9 h-9 rounded-full flex items-center justify-center text-[#e63946] dark:text-yellow-300 hover:bg-gray-100 dark:hover:bg-gray-800 transition"
+          title="Toggle dark mode"
+        >
+          ☀️
+        </button>
+      </nav>
+    </header>
 
+    <!-- 🥘 Recipe Details -->
+    <main class="flex-1 px-6 sm:px-10 lg:px-40 py-10">
+      <div
+        id="recipe-details"
+        class="bg-white/60 dark:bg-[#2a2a2a]/70 backdrop-blur-md rounded-2xl shadow-lg p-8 sm:p-12 animate-fadeIn text-center flex flex-col gap-6 transition-colors duration-500"
+      >
+        <div class="flex flex-col items-center">
+          <div class="w-full max-w-3xl rounded-2xl overflow-hidden shadow-lg">
+            <img
+              id="recipe-image"
+              src=""
+              alt="Recipe Image"
+              class="w-full h-80 object-cover hover:scale-105 transition-transform duration-500"
+            />
+          </div>
+          <h1
+            id="recipe-name"
+            class="text-3xl font-extrabold mt-6 text-[#1b0e0e] dark:text-white"
+          >
+            Loading recipe...
+          </h1>
+          <p
+            id="recipe-meta"
+            class="text-gray-500 dark:text-gray-400 text-sm mt-1"
+          >
+            Fetching details...
+          </p>
+        </div>
+
+        <div class="text-left mt-8">
+          <h2
+            class="text-xl font-semibold text-pink-600 dark:text-[#ff6b6b] mb-3"
+          >
+            🧂 Ingredients
+          </h2>
+          <ul
+            id="ingredients-list"
+            class="grid sm:grid-cols-2 gap-x-8 gap-y-2 text-sm text-gray-700 dark:text-gray-300 list-disc pl-5"
+          >
+            <li class="text-gray-400 dark:text-gray-500">
+              Loading ingredients...
+            </li>
+          </ul>
+        </div>
+
+        <div class="text-left mt-8">
+          <h2
+            class="text-xl font-semibold text-pink-600 dark:text-[#ff6b6b] mb-3"
+          >
+            👩‍🍳 Procedure
+          </h2>
+          <ol
+            id="procedure-list"
+            class="list-decimal pl-6 space-y-2 text-sm text-gray-700 dark:text-gray-300 leading-relaxed"
+          >
+            <li class="text-gray-400 dark:text-gray-500">
+              Loading procedure...
+            </li>
+          </ol>
+        </div>
+
+        <div class="mt-8 flex justify-center">
+          <a
+            id="back-btn"
+            href="./all-recipes.html"
+            class="bg-gradient-to-r from-[#e63946] to-[#ff6b6b] dark:from-[#ff6b6b] dark:to-[#e63946] hover:from-[#d62839] hover:to-[#ff3b3b] text-white px-6 py-2 rounded-full font-semibold shadow-md hover:shadow-lg transition-all duration-300"
+          >
+            ← Back to Recipes
+          </a>
+        </div>
+      </div>
+
+      <!-- ⭐ Related Recipes -->
+      <section class="mt-16">
+        <h2
+          class="text-[26px] font-extrabold mb-6 flex items-center gap-2 text-[#1b0e0e] dark:text-white"
+        >
+          💡 You May Also Like
+        </h2>
+        <div
+          id="related-container"
+          class="grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-8 min-h-[200px] transition-all duration-300"
+        >
+          <div
+            class="col-span-full text-center text-gray-400 dark:text-gray-500 py-10 animate-pulse"
+          >
+            Loading related recipes...
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- 🦶 Footer -->
+    <footer
+      class="bg-[#1b0e0e] dark:bg-[#0f0f0f] text-white text-sm text-center py-8 mt-16 rounded-t-[2rem] shadow-inner border-t border-gray-800 dark:border-gray-700"
+    >
+      <p>
+        © 2025 <span class="font-semibold text-pink-400">Taste Explorer</span> |
+        Crafted with ❤️ by
+        <span class="font-semibold text-pink-300">Janhavi Vyas</span>
+      </p>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="../js/recipe-details.js"></script>
+
+    <!-- 🌙 Dark Mode Script -->
+    <script>
+      const toggleBtn = document.getElementById("theme-toggle");
+      const root = document.documentElement;
+
+      function setTheme(theme) {
+        if (theme === "dark") {
+          root.classList.add("dark");
+          toggleBtn.textContent = "🌙";
+        } else {
+          root.classList.remove("dark");
+          toggleBtn.textContent = "☀️";
+        }
+        localStorage.setItem("theme", theme);
+      }
+
+      toggleBtn.addEventListener("click", () => {
+        const isDark = root.classList.contains("dark");
+        setTheme(isDark ? "light" : "dark");
+      });
+
+      // Initialize icon state
+      if (root.classList.contains("dark")) toggleBtn.textContent = "🌙";
+      else toggleBtn.textContent = "☀️";
+    </script>
+  </body>
 </html>

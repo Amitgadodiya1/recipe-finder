@@ -1,101 +1,253 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="transition-colors duration-500">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <meta
+      name="description"
+      content="Explore popular world cuisines and discover amazing recipes from Indian, Chinese, and Mexican kitchens."
+    />
+    <title>Taste Explorer – Discover Global Recipes</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description"
-    content="Explore popular world cuisines and discover amazing recipes from Indian, Chinese, and Mexican kitchens.">
-  <title>Taste Explorer – Discover Global Recipes</title>
+    <!-- Fonts & Tailwind -->
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap"
+    />
 
-  <!-- Fonts & Tailwind -->
-  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
-  <link rel="stylesheet" as="style" onload="this.rel='stylesheet'"
-    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap" />
-  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+      // 🌓 Apply saved theme before render to avoid flicker
+      if (
+        localStorage.getItem("theme") === "dark" ||
+        (!localStorage.getItem("theme") &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches)
+      ) {
+        document.documentElement.classList.add("dark");
+      }
+    </script>
 
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="../css/home.css">
-</head>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+      };
+    </script>
 
-<body class="bg-[#fcf8f8] text-[#1b0e0e]">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/home.css" />
+  </head>
 
-  <!-- 🌐 Header -->
-  <header
-    class="flex items-center justify-between border-b border-pink-100 px-10 py-4 sticky top-0 bg-white/80 backdrop-blur-md z-50">
-    <div class="flex items-center gap-8">
-      <div class="flex items-center gap-3 text-[#1b0e0e]">
-        <svg class="size-6" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd" clip-rule="evenodd"
-            d="M24 4H42V17.3333V30.6667H24V44H6V30.6667V17.3333H24V4Z" fill="currentColor"></path>
-        </svg>
-        <h1 class="text-lg font-extrabold tracking-tight">Taste Explorer</h1>
+  <body
+    class="bg-gradient-to-br from-[#fff5f5] via-[#fff] to-[#ffeaea] dark:from-[#0f0f0f] dark:via-[#1a1a1a] dark:to-[#1e1e1e] text-[#1b0e0e] dark:text-[#f5f5f5] font-[Plus Jakarta Sans] min-h-screen transition-colors duration-500"
+  >
+    <!-- 🌐 Header -->
+    <header
+      class="flex items-center justify-between border-b border-pink-100 dark:border-gray-700 px-8 sm:px-16 py-4 sticky top-0 bg-white/90 dark:bg-[#1e1e1e]/80 backdrop-blur-xl shadow-sm z-50 transition-all duration-300"
+    >
+      <div class="flex items-center gap-10">
+        <div class="flex items-center gap-3 text-[#1b0e0e] dark:text-[#f5f5f5]">
+          <div
+            class="size-8 flex items-center justify-center rounded-lg bg-gradient-to-br from-pink-500 to-red-400 text-white shadow-md"
+          >
+            🍴
+          </div>
+          <h1 class="text-lg font-extrabold tracking-tight">
+            Taste Explorer
+          </h1>
+        </div>
+        <nav
+          class="hidden sm:flex gap-8 text-[15px] font-medium items-center"
+        >
+          <a
+            class="hover:text-[#e63946] dark:hover:text-[#ff6b6b] transition"
+            href="./home.html"
+            >Home</a
+          >
+          <a
+            class="hover:text-[#e63946] dark:hover:text-[#ff6b6b] transition"
+            href="./all-recipes.html"
+            >Recipes</a
+          >
+          <a
+            class="hover:text-[#e63946] dark:hover:text-[#ff6b6b] transition"
+            href="./feedback.html"
+            >Feedback</a
+          >
+
+          <!-- 🌙 Dark Mode Toggle -->
+          <button
+            id="theme-toggle"
+            class="ml-4 w-9 h-9 rounded-full flex items-center justify-center text-[#e63946] dark:text-yellow-300 hover:bg-gray-100 dark:hover:bg-gray-800 transition"
+            title="Toggle dark mode"
+          >
+            ☀️
+          </button>
+        </nav>
       </div>
-      <nav class="hidden sm:flex gap-8">
-        <a class="hover:text-[#e63946] font-medium" href="./home.html">Home</a>
-        <a class="hover:text-[#e63946] font-medium" href="./all-recipes.html">Recipes</a>
-        <a class="hover:text-[#e63946] font-medium" href="./feedback.html">Feedback</a>
-      </nav>
-    </div>
-  </header>
 
-  <!-- 🌍 Main Content -->
-  <main class="px-6 sm:px-10 lg:px-40 py-8 flex flex-col gap-12">
+      <a
+        href="./all-recipes.html"
+        class="hidden sm:inline-block bg-[#e63946] dark:bg-[#ff6b6b] text-white px-5 py-2 rounded-full text-sm font-semibold shadow-md hover:bg-[#d62839] dark:hover:bg-[#ff3b3b] transition"
+      >
+        Explore Recipes
+      </a>
+    </header>
 
-    <!-- 🧑‍🍳 Recipe of the Day -->
-    <section id="recipe-of-day" class="relative bg-gray-100 rounded-xl overflow-hidden shadow-md h-[350px]">
-      <div class="flex items-center justify-center h-full text-gray-400">Loading Recipe of the Day...</div>
-    </section>
+    <!-- 🌍 Main Content -->
+    <main
+      class="px-6 sm:px-10 lg:px-32 py-12 flex flex-col gap-16 transition-colors duration-500"
+    >
+      <!-- 🧑‍🍳 Recipe of the Day -->
+      <section
+        id="recipe-of-day"
+        class="relative bg-gray-100 dark:bg-[#2a2a2a] rounded-2xl overflow-hidden shadow-lg h-[380px] group hover:shadow-xl transition duration-300"
+      >
+        <div
+          class="absolute inset-0 bg-gradient-to-t from-black/40 via-black/10 to-transparent opacity-60 group-hover:opacity-80 transition"
+        ></div>
+        <div
+          class="flex flex-col items-center justify-center h-full text-white text-center z-10 relative"
+        >
+          <div class="animate-pulse text-gray-200 text-lg">
+            Loading Recipe of the Day...
+          </div>
+        </div>
+      </section>
 
-    <!-- 🔍 Search + Filters -->
-    <section class="flex flex-col sm:flex-row justify-between items-center gap-3">
-      <input id="searchInput" type="text" placeholder="Search recipes..."
-        class="w-full sm:w-[300px] rounded-full border border-gray-300 px-5 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-pink-400 focus:border-transparent shadow-sm" />
+      <!-- 🔍 Search + Filters -->
+      <section
+        class="flex flex-col sm:flex-row justify-between items-center gap-4 transition-colors"
+      >
+        <div
+          class="flex items-center w-full sm:w-[320px] bg-white dark:bg-[#1e1e1e] rounded-full shadow-sm border border-gray-200 dark:border-gray-700"
+        >
+          <input
+            id="searchInput"
+            type="text"
+            placeholder="Search recipes..."
+            class="w-full rounded-full px-5 py-2 text-sm bg-transparent focus:outline-none focus:ring-2 focus:ring-pink-400 dark:focus:ring-[#ff6b6b]"
+          />
+          <button
+            class="px-4 py-2 text-[#e63946] dark:text-[#ff6b6b] hover:text-white hover:bg-[#e63946] dark:hover:bg-[#ff6b6b] rounded-full transition font-semibold"
+          >
+            🔍
+          </button>
+        </div>
 
-      <div class="flex gap-4">
-        <select id="filter-cuisine"
-          class="rounded-full border border-gray-300 px-8 py-2 text-sm focus:ring-2 focus:ring-pink-400">
+        <select
+          id="filter-cuisine"
+          class="rounded-full border border-gray-300 dark:border-gray-700 px-8 py-2 text-sm focus:ring-2 focus:ring-pink-400 dark:focus:ring-[#ff6b6b] bg-white dark:bg-[#1e1e1e] dark:text-white shadow-sm"
+        >
           <option value="">All Cuisines</option>
           <option value="Indian">Indian</option>
           <option value="Chinese">Chinese</option>
           <option value="Mexican">Mexican</option>
         </select>
+      </section>
+
+      <!-- ⭐ Popular Recipes -->
+      <section>
+        <h2
+          class="text-[24px] font-extrabold tracking-tight mb-6 flex items-center gap-2"
+        >
+          ⭐ Popular Recipes
+        </h2>
+        <div
+          id="popular-container"
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 text-sm"
+        >
+          <div
+            class="animate-pulse text-center text-gray-400 py-10 col-span-full"
+          >
+            Loading recipes...
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- 🧁 Quick View Modal -->
+    <div
+      id="quick-modal"
+      class="hidden fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4 overflow-auto"
+    >
+      <div
+        class="bg-white dark:bg-[#2a2a2a] rounded-2xl max-w-md w-full p-6 relative shadow-2xl transform transition-all scale-100 hover:scale-[1.02] duration-300"
+      >
+        <button
+          onclick="closeModal()"
+          class="absolute top-3 right-3 text-gray-500 dark:text-gray-300 hover:text-black dark:hover:text-white text-lg transition"
+        >
+          ✖
+        </button>
+        <img
+          id="modal-img"
+          class="w-full h-52 object-cover rounded-xl mb-4"
+        />
+        <h2
+          id="modal-name"
+          class="text-2xl font-bold mb-2 text-[#1b0e0e] dark:text-white"
+        ></h2>
+        <p
+          id="modal-desc"
+          class="text-sm text-gray-600 dark:text-gray-300 mb-2 leading-relaxed"
+        ></p>
+        <p
+          id="modal-time"
+          class="text-sm text-gray-500 dark:text-gray-400 mb-4"
+        ></p>
+        <button
+          id="view-btn"
+          class="bg-gradient-to-r from-[#e63946] to-[#ff6b6b] dark:from-[#ff6b6b] dark:to-[#e63946] text-white rounded-full px-6 py-2 text-sm font-semibold shadow hover:from-[#d62839] hover:to-[#ff3b3b] transition"
+        >
+          View Full Recipe →
+        </button>
       </div>
-    </section>
-
-    <!-- ⭐ Popular Recipes -->
-    <section>
-      <h2 class="text-[22px] font-bold tracking-tight mb-4">Popular Recipes</h2>
-      <div id="popular-container"
-        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 text-sm">
-        <div class="animate-pulse text-center text-gray-400 col-span-full py-8">Loading recipes...</div>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- 🧁 Quick View Modal -->
-  <div id="quick-modal"
-    class="hidden fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4 overflow-auto">
-    <div class="bg-white rounded-xl max-w-md w-full p-6 relative shadow-lg">
-      <button onclick="closeModal()" class="absolute top-3 right-3 text-gray-500 hover:text-black">✖</button>
-      <img id="modal-img" class="w-full h-48 object-cover rounded-lg mb-3" />
-      <h2 id="modal-name" class="text-xl font-bold mb-2"></h2>
-      <p id="modal-desc" class="text-sm text-gray-600 mb-2"></p>
-      <p id="modal-time" class="text-sm text-gray-500 mb-3"></p>
-      <button id="view-btn"
-        class="bg-[#e63946] text-white rounded-full px-4 py-2 text-sm font-medium hover:bg-[#d62839] transition">View
-        Full Recipe</button>
     </div>
-  </div>
 
-  <!-- 🦶 Footer -->
-  <footer class="bg-[#1b0e0e] text-white mt-12 py-6 px-10 text-sm text-center">
-    <p>© 2025 Taste Explorer | Crafted with ❤️ by Janhavi Vyas</p>
-  </footer>
+    <!-- 🦶 Footer -->
+    <footer
+      class="bg-[#1b0e0e] dark:bg-[#0f0f0f] text-white mt-16 py-8 px-10 text-sm text-center rounded-t-[2rem] shadow-inner border-t border-gray-800 dark:border-gray-700"
+    >
+      <p>
+        © 2025 <span class="font-semibold text-pink-400">Taste Explorer</span> |
+        Crafted with ❤️ by
+        <span class="font-semibold text-pink-300">Janhavi Vyas</span>
+      </p>
+    </footer>
 
-  <!-- JS -->
-  <script src="../js/home.js"></script>
-</body>
+    <!-- JS -->
+    <script src="../js/home.js"></script>
 
+    <!-- 🌙 Dark Mode Script -->
+    <script>
+      const toggleBtn = document.getElementById("theme-toggle");
+      const root = document.documentElement;
+
+      function setTheme(theme) {
+        if (theme === "dark") {
+          root.classList.add("dark");
+          toggleBtn.textContent = "🌙";
+        } else {
+          root.classList.remove("dark");
+          toggleBtn.textContent = "☀️";
+        }
+        localStorage.setItem("theme", theme);
+      }
+
+      toggleBtn.addEventListener("click", () => {
+        const isDark = root.classList.contains("dark");
+        setTheme(isDark ? "light" : "dark");
+      });
+
+      // Initialize icon correctly
+      if (root.classList.contains("dark")) toggleBtn.textContent = "🌙";
+      else toggleBtn.textContent = "☀️";
+    </script>
+  </body>
 </html>

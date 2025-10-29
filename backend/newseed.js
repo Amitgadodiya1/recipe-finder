@@ -22,7 +22,7 @@ const connectDB = async () => {
 };
 
 // 📁 Load JSON data (put your JSON in /data/recipes.json)
-const rawData = fs.readFileSync("./data/recipes_transformed.json", "utf-8");
+const rawData = fs.readFileSync("./data/recipes_with_detailed_procedure_and_cloudinary.json", "utf-8");
 const recipeData = JSON.parse(rawData);
 
 // Flatten data since JSON is grouped by cuisine

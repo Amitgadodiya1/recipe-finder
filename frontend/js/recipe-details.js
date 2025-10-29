@@ -1,6 +1,6 @@
 const BASE_URL =
   window.location.hostname === "localhost"
-    ? "http://localhost:3000"
+    ? "http://localhost:3001"
     : "";
 const recipeId = new URLSearchParams(window.location.search).get("id");
 
@@ -12,38 +12,38 @@ async function fetchRecipeDetails() {
 
     const container = document.getElementById("recipe-details");
     container.innerHTML = `
-      <div class="bg-white shadow-md rounded-xl overflow-hidden">
+      <div class="bg-white dark:bg-[#2a2a2a] shadow-md rounded-xl overflow-hidden transition-colors duration-300">
         <img src="${recipe.image}" alt="${recipe.name}" class="w-full h-80 object-cover" />
 
         <div class="p-6 text-left">
           <div class="flex justify-between items-center mb-4">
-            <h2 class="text-3xl font-bold">${recipe.name}</h2>
+            <h2 class="text-3xl font-bold text-[#1b0e0e] dark:text-white">${recipe.name}</h2>
             <button id="like-btn"
-              class="px-4 py-2 rounded-full bg-pink-100 text-pink-600 hover:bg-pink-200 transition">
+              class="px-4 py-2 rounded-full bg-pink-100 dark:bg-[#3b3b3b] text-pink-600 dark:text-pink-400 hover:bg-pink-200 dark:hover:bg-[#4b4b4b] transition">
               ❤️ ${recipe.likes || 0}
             </button>
           </div>
 
-          <p class="text-gray-600 mb-3">${recipe.description}</p>
+          <p class="text-gray-600 dark:text-gray-300 mb-3">${recipe.description}</p>
 
-          <div class="flex flex-wrap gap-6 text-sm text-gray-500 mb-6">
+          <div class="flex flex-wrap gap-6 text-sm text-gray-500 dark:text-gray-400 mb-6">
             <span>🍽️ Cuisine: ${recipe.cuisine}</span>
             <span>📂 Category: ${recipe.category}</span>
             <span>⏱️ ${recipe.time?.total_minutes || 0} mins</span>
           </div>
 
-          <h3 class="font-semibold text-pink-600 mb-2 text-lg">Procedure:</h3>
-          <ul class="list-disc pl-6 text-gray-700 space-y-2">
+          <h3 class="font-semibold text-pink-600 dark:text-[#ff6b6b] mb-2 text-lg">Procedure:</h3>
+          <ul class="list-disc pl-6 text-gray-700 dark:text-gray-300 space-y-2">
             ${recipe.procedure.map(step => `<li>${step}</li>`).join("")}
           </ul>
 
           <div class="mt-6 flex flex-wrap gap-3">
             <button onclick="shareRecipe('${recipe.name}')"
-              class="bg-[#e63946] text-white px-5 py-2 rounded-full hover:bg-[#d62839] transition">
+              class="bg-[#e63946] dark:bg-[#ff6b6b] text-white px-5 py-2 rounded-full hover:bg-[#d62839] dark:hover:bg-[#ff3b3b] transition">
               🔗 Share
             </button>
-            <a href="./recipe.html"
-              class="border border-pink-500 text-pink-600 px-5 py-2 rounded-full hover:bg-pink-50 transition">
+            <a href="./all-recipes.html"
+              class="border border-pink-500 dark:border-[#ff6b6b] text-pink-600 dark:text-[#ff6b6b] px-5 py-2 rounded-full hover:bg-pink-50 dark:hover:bg-[#2f2f2f] transition">
               ← Back to Recipes
             </a>
           </div>
@@ -73,12 +73,12 @@ async function fetchRelatedRecipes() {
     }
 
     container.innerHTML = related.map(r => `
-      <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-transform transform hover:scale-[1.02] cursor-pointer"
-        onclick="window.location.href='./recipe-details.html?id=${r._id}'">
-        <img src="${r.image}" alt="${r.name}" class="w-full aspect-video object-contain rounded-t-xl" />
+      <div class="bg-white dark:bg-[#2a2a2a] rounded-xl shadow-md hover:shadow-lg transition-transform transform hover:scale-[1.02] cursor-pointer"
+        onclick="window.location.href='./recipe-details?id=${r._id}'">
+        <img src="${r.image}" alt="${r.name}" class="w-50 aspect-video object-contain rounded-t-xl" />
         <div class="p-4">
-          <h4 class="font-semibold truncate">${r.name}</h4>
-          <p class="text-sm text-gray-600 line-clamp-2">${r.description}</p>
+          <h4 class="font-semibold truncate text-[#1b0e0e] dark:text-white">${r.name}</h4>
+          <p class="text-sm text-gray-600 dark:text-gray-300 line-clamp-2">${r.description}</p>
         </div>
       </div>
     `).join("");

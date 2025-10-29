@@ -3,7 +3,7 @@
 
 const BASE_URL =
   window.location.hostname === "localhost"
-    ? "http://localhost:3000"
+    ? "http://localhost:3001"
     : "";
 async function loadRecipeOfTheDay() {
   const res = await fetch(`${BASE_URL}/api/recipes/random`);
@@ -56,7 +56,7 @@ function openQuickView(recipe) {
   document.getElementById("modal-desc").textContent = recipe.description;
   document.getElementById("modal-time").textContent = `⏱️ Total Time: ${recipe.time?.total_minutes || 0} mins`;
   document.getElementById("view-btn").onclick = () => {
-    window.location.href = `./recipe-details.html?id=${recipe._id}`;
+    window.location.href = `./recipe-details?id=${recipe._id}`;
   };
   document.getElementById("quick-modal").classList.remove("hidden");
 }

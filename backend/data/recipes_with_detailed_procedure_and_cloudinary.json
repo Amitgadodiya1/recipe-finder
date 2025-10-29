@@ -9,13 +9,13 @@
         "inactive_minutes": 600,
         "total_minutes": 670
       },
-      "image": "https://tse2.mm.bing.net/th/id/OIP.yVipGGjzyKT5OBLrndGjLgHaE7?pid=Api&P=0&h=180",
+      "image": "https://res.cloudinary.com/dm5lrxevq/image/upload/v1761773341/food_recipes/Masala_Dosa.jpg",
       "category": "South Indian",
       "procedure": [
-        "Soak rice, urad dal, and fenugreek for 6 hours.",
-        "Grind and ferment overnight.",
-        "Prepare potato masala with onions, curry leaves, turmeric, and boiled potatoes.",
-        "Spread dosa batter on hot tawa, add masala, fold, and serve with chutney/sambar."
+        "Soak rice, urad dal, and fenugreek for 6 hours. \u2014 Continue as per your taste preference or adjust seasoning to suit.",
+        "Grind and ferment overnight. \u2014 Continue as per your taste preference or adjust seasoning to suit.",
+        "Prepare potato masala with onions, curry leaves, turmeric, and boiled potatoes. \u2014 Boil until ingredients are tender but not mushy. Drain any excess water.",
+        "Spread dosa batter on hot tawa, add masala, fold, and serve with chutney/sambar. \u2014 Stir well so all ingredients combine evenly and absorb flavors."
       ],
       "cuisine": "Indian",
       "dietType": "Vegetarian",
@@ -38,13 +38,13 @@
         "inactive_minutes": 0,
         "total_minutes": 35
       },
-      "image": "https://tse3.mm.bing.net/th/id/OIP.4YZgXy7Xho5Bwho2gmgFCQHaDt?pid=Api&P=0&h=180",
+      "image": "https://res.cloudinary.com/dm5lrxevq/image/upload/v1761773357/food_recipes/Palak_Paneer.jpg",
       "category": "North Indian",
       "procedure": [
-        "Blanch spinach, blend to puree.",
-        "Saut\u00e9 onions, garlic, and ginger.",
-        "Add spices and spinach puree, simmer.",
-        "Add paneer cubes and finish with cream."
+        "Blanch spinach, blend to puree. \u2014 Continue as per your taste preference or adjust seasoning to suit.",
+        "Saut\u00e9 onions, garlic, and ginger. \u2014 Saut\u00e9 until the onions turn golden and the raw aroma disappears.",
+        "Add spices and spinach puree, simmer. \u2014 Stir well so all ingredients combine evenly and absorb flavors.",
+        "Add paneer cubes and finish with cream. \u2014 Stir well so all ingredients combine evenly and absorb flavors."
       ],
       "cuisine": "Indian",
       "dietType": "Vegetarian",
@@ -70,10 +70,10 @@
       "image": "https://tse1.mm.bing.net/th/id/OIP.m2WHkHK1cFCeatiAv1nbtAHaE7?pid=Api&P=0&h=180",
       "category": "North Indian",
       "procedure": [
-        "Soak chickpeas overnight, pressure cook.",
-        "Cook onions, ginger-garlic, and tomatoes with spices.",
-        "Add chickpeas, simmer until thick.",
-        "Garnish with coriander and serve."
+        "Soak chickpeas overnight, pressure cook. \u2014 Continue as per your taste preference or adjust seasoning to suit.",
+        "Cook onions, ginger-garlic, and tomatoes with spices. \u2014 Continue as per your taste preference or adjust seasoning to suit.",
+        "Add chickpeas, simmer until thick. \u2014 Stir well so all ingredients combine evenly and absorb flavors.",
+        "Garnish with coriander and serve. \u2014 Serve hot with your choice of sides or condiments for the best experience."
       ],
       "cuisine": "Indian",
       "dietType": "Vegetarian",
@@ -94,13 +94,13 @@
         "inactive_minutes": 30,
         "total_minutes": 100
       },
-      "image": "https://tse1.mm.bing.net/th/id/OIP.HhILrcZY257BZgA0d17O3AHaEJ?pid=Api&P=0&h=180",
+      "image": "https://res.cloudinary.com/dm5lrxevq/image/upload/v1761773370/food_recipes/Vegetable_Biryani.jpg",
       "category": "Hyderabadi / Mughlai",
       "procedure": [
-        "Parboil rice with whole spices.",
-        "Cook vegetables with biryani masala.",
-        "Layer rice and vegetables, add saffron milk.",
-        "Dum cook for 20 minutes."
+        "Parboil rice with whole spices. \u2014 Boil until ingredients are tender but not mushy. Drain any excess water.",
+        "Cook vegetables with biryani masala. \u2014 Continue as per your taste preference or adjust seasoning to suit.",
+        "Layer rice and vegetables, add saffron milk. \u2014 Stir well so all ingredients combine evenly and absorb flavors.",
+        "Dum cook for 20 minutes. \u2014 Continue as per your taste preference or adjust seasoning to suit."
       ],
       "cuisine": "Indian",
       "dietType": "Vegetarian",
@@ -121,13 +121,13 @@
         "inactive_minutes": 10,
         "total_minutes": 55
       },
-      "image": "https://www.kuchpakrahahai.in/wp-content/uploads/2016/05/Baingan-ka-bharta.jpg",
+      "image": "https://res.cloudinary.com/dm5lrxevq/image/upload/v1761773269/food_recipes/Baingan_Bharta.jpg",
       "category": "North Indian (Punjabi)",
       "procedure": [
-        "Roast brinjal on flame, peel and mash.",
-        "Saut\u00e9 onions, ginger, garlic, and tomatoes.",
-        "Add mashed brinjal, spices, and cook.",
-        "Garnish with coriander."
+        "Roast brinjal on flame, peel and mash. \u2014 Continue as per your taste preference or adjust seasoning to suit.",
+        "Saut\u00e9 onions, ginger, garlic, and tomatoes. \u2014 Saut\u00e9 until the onions turn golden and the raw aroma disappears.",
+        "Add mashed brinjal, spices, and cook. \u2014 Stir well so all ingredients combine evenly and absorb flavors.",
+        "Garnish with coriander. \u2014 Continue as per your taste preference or adjust seasoning to suit."
       ],
       "cuisine": "Indian",
       "dietType": "Vegetarian",
@@ -148,13 +148,13 @@
         "inactive_minutes": 0,
         "total_minutes": 50
       },
-      "image": "https://tse3.mm.bing.net/th/id/OIP.3kJTA9xaPchl8bjqvr11PQHaHa?pid=Api&P=0&h=180",
+      "image": "https://res.cloudinary.com/dm5lrxevq/image/upload/v1761773358/food_recipes/Pav_Bhaji.jpg",
       "category": "Mumbai Street Food",
       "procedure": [
-        "Boil potatoes, peas, cauliflower.",
-        "Cook onion, capsicum, and tomato with pav bhaji masala.",
-        "Mash in vegetables, simmer with butter.",
-        "Serve with toasted pav."
+        "Boil potatoes, peas, cauliflower. \u2014 Boil until ingredients are tender but not mushy. Drain any excess water.",
+        "Cook onion, capsicum, and tomato with pav bhaji masala. \u2014 Continue as per your taste preference or adjust seasoning to suit.",
+        "Mash in vegetables, simmer with butter. \u2014 Continue as per your taste preference or adjust seasoning to suit.",
+        "Serve with toasted pav. \u2014 Serve hot with your choice of sides or condiments for the best experience."
       ],
       "cuisine": "Indian",
       "dietType": "Vegetarian",
@@ -180,10 +180,10 @@
       "image": "https://foodiewish.com/wp-content/uploads/2020/04/Idli-Sambar-Recipe-728x518.jpg",
       "category": "South Indian",
       "procedure": [
-        "Ferment rice\u2013dal batter overnight.",
-        "Steam batter in idli plates.",
-        "Prepare sambar with toor dal, tamarind, and vegetables.",
-        "Serve hot with chutney."
+        "Ferment rice\u2013dal batter overnight. \u2014 Continue as per your taste preference or adjust seasoning to suit.",
+        "Steam batter in idli plates. \u2014 Continue as per your taste preference or adjust seasoning to suit.",
+        "Prepare sambar with toor dal, tamarind, and vegetables. \u2014 Continue as per your taste preference or adjust seasoning to suit.",
+        "Serve hot with chutney. \u2014 Serve hot with your choice of sides or condiments for the best experience."
       ],
       "cuisine": "Indian",
       "dietType": "Vegetarian",
@@ -209,10 +209,10 @@
       "image": "https://res.cloudinary.com/dm5lrxevq/image/upload/v1761773267/food_recipes/Aloo_Paratha.jpg",
       "category": "North Indian (Punjabi)",
       "procedure": [
-        "Prepare dough with wheat flour.",
-        "Boil and mash potatoes, add spices.",
-        "Stuff into dough balls, roll, and cook on tawa with ghee.",
-        "Serve with curd or pickle."
+        "Prepare dough with wheat flour. \u2014 Continue as per your taste preference or adjust seasoning to suit.",
+        "Boil and mash potatoes, add spices. \u2014 Boil until ingredients are tender but not mushy. Drain any excess water.",
+        "Stuff into dough balls, roll, and cook on tawa with ghee. \u2014 Continue as per your taste preference or adjust seasoning to suit.",
+        "Serve with curd or pickle. \u2014 Serve hot with your choice of sides or condiments for the best experience."
       ],
       "cuisine": "Indian",
       "dietType": "Vegetarian",
@@ -236,13 +236,13 @@
         "inactive_minutes": 0,
         "total_minutes": 35
       },
-      "image": "https://tse3.mm.bing.net/th/id/OIP.0rUaUWEqxiaWgX2FPotp5AHaEK?pid=Api&P=0&h=180",
+      "image": "https://res.cloudinary.com/dm5lrxevq/image/upload/v1761773373/food_recipes/Vegetable_Pulao.jpg",
       "category": "North Indian",
       "procedure": [
-        "Heat oil, saut\u00e9 spices, onions, and ginger-garlic.",
-        "Add vegetables and soaked rice.",
-        "Cook with water until rice is done.",
-        "Fluff and serve with raita."
+        "Heat oil, saut\u00e9 spices, onions, and ginger-garlic. \u2014 Saut\u00e9 until the onions turn golden and the raw aroma disappears.",
+        "Add vegetables and soaked rice. \u2014 Stir well so all ingredients combine evenly and absorb flavors.",
+        "Cook with water until rice is done. \u2014 Continue as per your taste preference or adjust seasoning to suit.",
+        "Fluff and serve with raita. \u2014 Serve hot with your choice of sides or condiments for the best experience."
       ],
       "cuisine": "Indian",
       "dietType": "Vegetarian",
@@ -264,13 +264,13 @@
         "inactive_minutes": 20,
         "total_minutes": 65
       },
-      "image": "https://indianathunter.com/wp-content/uploads/2024/03/Gulab-Jamun-2-pcs.jpg",
+      "image": "https://res.cloudinary.com/dm5lrxevq/image/upload/v1761773301/food_recipes/Gulab_Jamun.jpg",
       "category": "Indian Dessert",
       "procedure": [
-        "Prepare dough with khoya and flour.",
-        "Shape into balls, fry until golden.",
-        "Soak in warm sugar syrup with cardamom and rose water.",
-        "Serve warm."
+        "Prepare dough with khoya and flour. \u2014 Continue as per your taste preference or adjust seasoning to suit.",
+        "Shape into balls, fry until golden. \u2014 Fry on medium flame until golden brown, stirring occasionally for even cooking.",
+        "Soak in warm sugar syrup with cardamom and rose water. \u2014 Continue as per your taste preference or adjust seasoning to suit.",
+        "Serve warm. \u2014 Serve hot with your choice of sides or condiments for the best experience."
       ],
       "cuisine": "Indian",
       "dietType": "Vegetarian",
@@ -295,13 +295,13 @@
         "inactive_minutes": 0,
         "total_minutes": 30
       },
-      "image": "https://www.everydayeasyeats.com/wp-content/uploads/2016/06/Chinese-Fried-Rice-1.jpg",
+      "image": "https://res.cloudinary.com/dm5lrxevq/image/upload/v1761773372/food_recipes/Vegetable_Fried_Rice.jpg",
       "category": "Chinese Main",
       "procedure": [
-        "Cook rice and cool.",
-        "Heat oil, add garlic and vegetables.",
-        "Add soy sauce, salt, and pepper.",
-        "Mix in rice, stir-fry on high flame."
+        "Cook rice and cool. \u2014 Continue as per your taste preference or adjust seasoning to suit.",
+        "Heat oil, add garlic and vegetables. \u2014 Stir well so all ingredients combine evenly and absorb flavors.",
+        "Add soy sauce, salt, and pepper. \u2014 Stir well so all ingredients combine evenly and absorb flavors.",
+        "Mix in rice, stir-fry on high flame. \u2014 Fry on medium flame until golden brown, stirring occasionally for even cooking."
       ],
       "cuisine": "Chinese",
       "dietType": "Vegan",
@@ -324,13 +324,13 @@
         "inactive_minutes": 10,
         "total_minutes": 60
       },
-      "image": "https://i.ytimg.com/vi/xkMbJCtaaqA/maxresdefault.jpg",
+      "image": "https://res.cloudinary.com/dm5lrxevq/image/upload/v1761773365/food_recipes/Veg_Manchurian.jpg",
       "category": "Chinese Indo-Chinese",
       "procedure": [
-        "Make balls from grated cabbage, carrot, and flour.",
-        "Deep fry until golden.",
-        "Prepare sauce with garlic, soy, chili sauce.",
-        "Simmer balls in sauce and serve."
+        "Make balls from grated cabbage, carrot, and flour. \u2014 Continue as per your taste preference or adjust seasoning to suit.",
+        "Deep fry until golden. \u2014 Fry on medium flame until golden brown, stirring occasionally for even cooking.",
+        "Prepare sauce with garlic, soy, chili sauce. \u2014 Continue as per your taste preference or adjust seasoning to suit.",
+        "Simmer balls in sauce and serve. \u2014 Serve hot with your choice of sides or condiments for the best experience."
       ],
       "cuisine": "Chinese",
       "dietType": "Vegetarian",
@@ -351,13 +351,13 @@
         "inactive_minutes": 0,
         "total_minutes": 30
       },
-      "image": "https://www.mygingergarlickitchen.com/wp-content/rich-markup-images/16x9/16x9-vegetable-hakka-noodles.jpg",
+      "image": "https://res.cloudinary.com/dm5lrxevq/image/upload/v1761773304/food_recipes/Hakka_Noodles.jpg",
       "category": "Chinese Main",
       "procedure": [
-        "Boil noodles and drain.",
-        "Heat oil, saut\u00e9 garlic and vegetables.",
-        "Add soy, vinegar, chili sauce.",
-        "Toss in noodles and stir-fry."
+        "Boil noodles and drain. \u2014 Boil until ingredients are tender but not mushy. Drain any excess water.",
+        "Heat oil, saut\u00e9 garlic and vegetables. \u2014 Saut\u00e9 until the onions turn golden and the raw aroma disappears.",
+        "Add soy, vinegar, chili sauce. \u2014 Stir well so all ingredients combine evenly and absorb flavors.",
+        "Toss in noodles and stir-fry. \u2014 Fry on medium flame until golden brown, stirring occasionally for even cooking."
       ],
       "cuisine": "Chinese",
       "dietType": "Vegetarian",
@@ -379,13 +379,13 @@
         "inactive_minutes": 0,
         "total_minutes": 35
       },
-      "image": "https://norecipes.com/wp-content/uploads/2020/01/vegan-mapo-tofu-012.jpg",
+      "image": "https://res.cloudinary.com/dm5lrxevq/image/upload/v1761773316/food_recipes/Mapo_Tofu.jpg",
       "category": "Chinese Sichuan",
       "procedure": [
-        "Cube tofu, blanch lightly.",
-        "Prepare sauce with garlic, ginger, soy, chili paste, Sichuan pepper.",
-        "Simmer tofu in sauce.",
-        "Garnish with scallions."
+        "Cube tofu, blanch lightly. \u2014 Continue as per your taste preference or adjust seasoning to suit.",
+        "Prepare sauce with garlic, ginger, soy, chili paste, Sichuan pepper. \u2014 Continue as per your taste preference or adjust seasoning to suit.",
+        "Simmer tofu in sauce. \u2014 Continue as per your taste preference or adjust seasoning to suit.",
+        "Garnish with scallions. \u2014 Continue as per your taste preference or adjust seasoning to suit."
       ],
       "cuisine": "Chinese",
       "dietType": "Vegan",
@@ -408,13 +408,13 @@
         "inactive_minutes": 15,
         "total_minutes": 60
       },
-      "image": "https://tse4.mm.bing.net/th/id/OIP.idupfWFzwDFW6nTIqwWXTAHaF8?pid=Api&P=0&h=180",
+      "image": "https://res.cloudinary.com/dm5lrxevq/image/upload/v1761773362/food_recipes/Spring_Rolls.jpg",
       "category": "Chinese Snack",
       "procedure": [
-        "Prepare filling with cabbage, carrot, noodles, and sauces.",
-        "Fill spring roll sheets and roll tightly.",
-        "Deep fry until golden.",
-        "Serve with sweet chili sauce."
+        "Prepare filling with cabbage, carrot, noodles, and sauces. \u2014 Continue as per your taste preference or adjust seasoning to suit.",
+        "Fill spring roll sheets and roll tightly. \u2014 Continue as per your taste preference or adjust seasoning to suit.",
+        "Deep fry until golden. \u2014 Fry on medium flame until golden brown, stirring occasionally for even cooking.",
+        "Serve with sweet chili sauce. \u2014 Serve hot with your choice of sides or condiments for the best experience."
       ],
       "cuisine": "Chinese",
       "dietType": "Vegan",
@@ -436,13 +436,13 @@
         "inactive_minutes": 0,
         "total_minutes": 35
       },
-      "image": "https://www.marionskitchen.com/wp-content/uploads/2019/02/10-minute-Hot-Sour-Soup-3-e1552634823281.jpg",
+      "image": "https://res.cloudinary.com/dm5lrxevq/image/upload/v1761773306/food_recipes/Hot_and_Sour_Soup.jpg",
       "category": "Chinese Soup",
       "procedure": [
-        "Boil vegetable stock.",
-        "Add mushrooms, cabbage, carrots.",
-        "Season with soy, vinegar, chili paste.",
-        "Thicken with cornstarch slurry."
+        "Boil vegetable stock. \u2014 Boil until ingredients are tender but not mushy. Drain any excess water.",
+        "Add mushrooms, cabbage, carrots. \u2014 Stir well so all ingredients combine evenly and absorb flavors.",
+        "Season with soy, vinegar, chili paste. \u2014 Continue as per your taste preference or adjust seasoning to suit.",
+        "Thicken with cornstarch slurry. \u2014 Continue as per your taste preference or adjust seasoning to suit."
       ],
       "cuisine": "Chinese",
       "dietType": "Vegetarian",
@@ -463,13 +463,13 @@
         "inactive_minutes": 0,
         "total_minutes": 35
       },
-      "image": "https://plantbasedonabudget.com/wp-content/uploads/2024/05/Veg-Kung-Pao-PBOAB-Plant-Based-on-a-Budget-13-600x600.jpg",
+      "image": "https://res.cloudinary.com/dm5lrxevq/image/upload/v1761773311/food_recipes/Kung_Pao_Vegetables.jpg",
       "category": "Chinese Sichuan",
       "procedure": [
-        "Roast peanuts.",
-        "Stir-fry garlic, ginger, and vegetables.",
-        "Add soy, vinegar, chili paste.",
-        "Mix in peanuts and toss well."
+        "Roast peanuts. \u2014 Continue as per your taste preference or adjust seasoning to suit.",
+        "Stir-fry garlic, ginger, and vegetables. \u2014 Fry on medium flame until golden brown, stirring occasionally for even cooking.",
+        "Add soy, vinegar, chili paste. \u2014 Stir well so all ingredients combine evenly and absorb flavors.",
+        "Mix in peanuts and toss well. \u2014 Stir well so all ingredients combine evenly and absorb flavors."
       ],
       "cuisine": "Chinese",
       "dietType": "Vegetarian",
@@ -491,13 +491,13 @@
         "inactive_minutes": 0,
         "total_minutes": 25
       },
-      "image": "https://www.cookerru.com/wp-content/uploads/2020/11/garlic-chili-oil-noodles-1-ver2-new-1170x1755.jpg",
+      "image": "https://res.cloudinary.com/dm5lrxevq/image/upload/v1761773299/food_recipes/Chili_Garlic_Noodles.jpg",
       "category": "Chinese Main",
       "procedure": [
-        "Boil noodles.",
-        "Heat oil, saut\u00e9 garlic and chilies.",
-        "Add sauces and toss noodles.",
-        "Serve hot."
+        "Boil noodles. \u2014 Boil until ingredients are tender but not mushy. Drain any excess water.",
+        "Heat oil, saut\u00e9 garlic and chilies. \u2014 Saut\u00e9 until the onions turn golden and the raw aroma disappears.",
+        "Add sauces and toss noodles. \u2014 Stir well so all ingredients combine evenly and absorb flavors.",
+        "Serve hot. \u2014 Serve hot with your choice of sides or condiments for the best experience."
       ],
       "cuisine": "Chinese",
       "dietType": "Vegan",
@@ -521,13 +521,13 @@
         "inactive_minutes": 0,
         "total_minutes": 20
       },
-      "image": "https://tse3.mm.bing.net/th/id/OIP.mYI4jNvOKpMnzyXUiPeKtQHaE8?pid=Api&P=0&h=180",
+      "image": "https://res.cloudinary.com/dm5lrxevq/image/upload/v1761773272/food_recipes/Broccoli_with_Garlic_Sauce.jpg",
       "category": "Chinese Healthy",
       "procedure": [
-        "Blanch broccoli.",
-        "Stir-fry garlic, soy, and cornstarch slurry.",
-        "Add broccoli and coat well.",
-        "Serve hot."
+        "Blanch broccoli. \u2014 Continue as per your taste preference or adjust seasoning to suit.",
+        "Stir-fry garlic, soy, and cornstarch slurry. \u2014 Fry on medium flame until golden brown, stirring occasionally for even cooking.",
+        "Add broccoli and coat well. \u2014 Stir well so all ingredients combine evenly and absorb flavors.",
+        "Serve hot. \u2014 Serve hot with your choice of sides or condiments for the best experience."
       ],
       "cuisine": "Chinese",
       "dietType": "Non-Vegetarian",
@@ -553,10 +553,10 @@
       "image": "https://imagesvc.meredithcorp.io/v3/mm/image?q=60&c=sc&rect=0%2C395%2C1667%2C1228&poi=[783%2C816]&w=1667&h=834&url=https:%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F44%2F2021%2F07%2F21%2Fsteamed-vegetable-dumplings-recipe.jpg",
       "category": "Chinese Dim Sum",
       "procedure": [
-        "Prepare dough and veg filling.",
-        "Stuff and fold dumplings.",
-        "Steam for 10\u201312 mins.",
-        "Serve with dipping sauce."
+        "Prepare dough and veg filling. \u2014 Continue as per your taste preference or adjust seasoning to suit.",
+        "Stuff and fold dumplings. \u2014 Continue as per your taste preference or adjust seasoning to suit.",
+        "Steam for 10\u201312 mins. \u2014 Continue as per your taste preference or adjust seasoning to suit.",
+        "Serve with dipping sauce. \u2014 Serve hot with your choice of sides or condiments for the best experience."
       ],
       "cuisine": "Chinese",
       "dietType": "Non-Vegetarian",
@@ -584,10 +584,10 @@
       "image": "https://www.twopeasandtheirpod.com/wp-content/uploads/2021/06/Veggie-Tacos4572-650x975.jpg",
       "category": "Mexican Street Food",
       "procedure": [
-        "Warm tortillas.",
-        "Prepare filling with beans, peppers, onions.",
-        "Top with salsa and avocado.",
-        "Fold and serve."
+        "Warm tortillas. \u2014 Continue as per your taste preference or adjust seasoning to suit.",
+        "Prepare filling with beans, peppers, onions. \u2014 Continue as per your taste preference or adjust seasoning to suit.",
+        "Top with salsa and avocado. \u2014 Continue as per your taste preference or adjust seasoning to suit.",
+        "Fold and serve. \u2014 Serve hot with your choice of sides or condiments for the best experience."
       ],
       "cuisine": "Mexican",
       "dietType": "Non-Vegetarian",
@@ -611,10 +611,10 @@
       "image": "https://tse1.mm.bing.net/th/id/OIP.MpHkNs8uAMEnPKKhb5iiggHaFi?pid=Api&P=0&h=180",
       "category": "Mexican Main",
       "procedure": [
-        "Stuff tortillas with beans and vegetables.",
-        "Roll and place in baking dish.",
-        "Top with enchilada sauce and cheese.",
-        "Bake until golden."
+        "Stuff tortillas with beans and vegetables. \u2014 Continue as per your taste preference or adjust seasoning to suit.",
+        "Roll and place in baking dish. \u2014 Continue as per your taste preference or adjust seasoning to suit.",
+        "Top with enchilada sauce and cheese. \u2014 Continue as per your taste preference or adjust seasoning to suit.",
+        "Bake until golden. \u2014 Bake in a preheated oven at 180\u00b0C (350\u00b0F) until golden and crisp."
       ],
       "cuisine": "Mexican",
       "dietType": "Vegetarian",
@@ -638,10 +638,10 @@
       "image": "https://tse3.mm.bing.net/th/id/OIP.JQeUHYJUz0ieNB_7VLzP2wHaE8?pid=Api&P=0&h=180",
       "category": "Mexican Snack",
       "procedure": [
-        "Heat tortilla.",
-        "Fill with cheese and vegetables.",
-        "Fold and grill until crispy.",
-        "Serve with salsa."
+        "Heat tortilla. \u2014 Continue as per your taste preference or adjust seasoning to suit.",
+        "Fill with cheese and vegetables. \u2014 Continue as per your taste preference or adjust seasoning to suit.",
+        "Fold and grill until crispy. \u2014 Continue as per your taste preference or adjust seasoning to suit.",
+        "Serve with salsa. \u2014 Serve hot with your choice of sides or condiments for the best experience."
       ],
       "cuisine": "Mexican",
       "dietType": "Vegan",
@@ -662,13 +662,13 @@
         "inactive_minutes": 0,
         "total_minutes": 30
       },
-      "image": "https://www.thespruceeats.com/thmb/Hn65vI6v55aIBCwMQaf0SWcVLYI=/2048x1360/filters:fill(auto,1)/vegetarian-bean-and-rice-burrito-recipe-3378550-9_preview-5b2417e1ff1b780037a58cda.jpeg",
+      "image": "https://res.cloudinary.com/dm5lrxevq/image/upload/v1761773374/food_recipes/Vegetarian_Burrito.jpg",
       "category": "Mexican Main",
       "procedure": [
-        "Warm tortilla.",
-        "Fill with rice, beans, and vegetables.",
-        "Roll tightly.",
-        "Serve with salsa."
+        "Warm tortilla. \u2014 Continue as per your taste preference or adjust seasoning to suit.",
+        "Fill with rice, beans, and vegetables. \u2014 Continue as per your taste preference or adjust seasoning to suit.",
+        "Roll tightly. \u2014 Continue as per your taste preference or adjust seasoning to suit.",
+        "Serve with salsa. \u2014 Serve hot with your choice of sides or condiments for the best experience."
       ],
       "cuisine": "Mexican",
       "dietType": "Non-Vegetarian",
@@ -695,10 +695,10 @@
       "image": "https://www.frugalandthriving.com.au/wp-content/uploads/2013/12/Vegetarian-Nachos-s.jpg?x63963",
       "category": "Mexican Appetizer",
       "procedure": [
-        "Arrange nachos on plate.",
-        "Top with beans, cheese, salsa, and jalape\u00f1os.",
-        "Bake or microwave until cheese melts.",
-        "Serve with guacamole."
+        "Arrange nachos on plate. \u2014 Continue as per your taste preference or adjust seasoning to suit.",
+        "Top with beans, cheese, salsa, and jalape\u00f1os. \u2014 Continue as per your taste preference or adjust seasoning to suit.",
+        "Bake or microwave until cheese melts. \u2014 Bake in a preheated oven at 180\u00b0C (350\u00b0F) until golden and crisp.",
+        "Serve with guacamole. \u2014 Serve hot with your choice of sides or condiments for the best experience."
       ],
       "cuisine": "Mexican",
       "dietType": "Vegetarian",
@@ -722,9 +722,9 @@
       "image": "https://amindfullmom.com/wp-content/uploads/2019/12/Easy-Fajitas.jpg",
       "category": "Mexican Main",
       "procedure": [
-        "Grill peppers, onions, and mushrooms.",
-        "Serve with warm tortillas.",
-        "Add salsa or guacamole."
+        "Grill peppers, onions, and mushrooms. \u2014 Continue as per your taste preference or adjust seasoning to suit.",
+        "Serve with warm tortillas. \u2014 Serve hot with your choice of sides or condiments for the best experience.",
+        "Add salsa or guacamole. \u2014 Stir well so all ingredients combine evenly and absorb flavors."
       ],
       "cuisine": "Mexican",
       "dietType": "Vegetarian",
@@ -748,10 +748,10 @@
       "image": "https://i.cdn.newsbytesapp.com/images/28710311715898462.jpeg",
       "category": "Mexican Traditional",
       "procedure": [
-        "Prepare masa dough.",
-        "Fill with beans and vegetables.",
-        "Wrap in corn husks.",
-        "Steam until cooked."
+        "Prepare masa dough. \u2014 Continue as per your taste preference or adjust seasoning to suit.",
+        "Fill with beans and vegetables. \u2014 Continue as per your taste preference or adjust seasoning to suit.",
+        "Wrap in corn husks. \u2014 Continue as per your taste preference or adjust seasoning to suit.",
+        "Steam until cooked. \u2014 Continue as per your taste preference or adjust seasoning to suit."
       ],
       "cuisine": "Mexican",
       "dietType": "Non-Vegetarian",
@@ -775,10 +775,10 @@
       "image": "https://images.squarespace-cdn.com/content/v1/56c3a1e3356fb07aeced9ee1/1628834820037-6QXJXU7W3ZQYD09BPM5O/chile_rellenos_chowhound.jpg",
       "category": "Mexican Traditional",
       "procedure": [
-        "Roast poblano peppers, peel skin.",
-        "Stuff with cheese or beans.",
-        "Dip in batter and fry.",
-        "Serve with tomato salsa."
+        "Roast poblano peppers, peel skin. \u2014 Continue as per your taste preference or adjust seasoning to suit.",
+        "Stuff with cheese or beans. \u2014 Continue as per your taste preference or adjust seasoning to suit.",
+        "Dip in batter and fry. \u2014 Fry on medium flame until golden brown, stirring occasionally for even cooking.",
+        "Serve with tomato salsa. \u2014 Serve hot with your choice of sides or condiments for the best experience."
       ],
       "cuisine": "Mexican",
       "dietType": "Vegan",
@@ -800,13 +800,13 @@
         "inactive_minutes": 0,
         "total_minutes": 50
       },
-      "image": "https://tse4.mm.bing.net/th/id/OIP.2gUlJunsSS2pBYRYgg_8GwHaE6?pid=Api&P=0&h=180",
+      "image": "https://res.cloudinary.com/dm5lrxevq/image/upload/v1761773377/food_recipes/Vegetarian_Tortilla_Soup.jpg",
       "category": "Mexican Soup",
       "procedure": [
-        "Cook onions, garlic, and tomatoes.",
-        "Add beans, corn, and broth.",
-        "Simmer and season.",
-        "Serve with tortilla strips and avocado."
+        "Cook onions, garlic, and tomatoes. \u2014 Continue as per your taste preference or adjust seasoning to suit.",
+        "Add beans, corn, and broth. \u2014 Stir well so all ingredients combine evenly and absorb flavors.",
+        "Simmer and season. \u2014 Continue as per your taste preference or adjust seasoning to suit.",
+        "Serve with tortilla strips and avocado. \u2014 Serve hot with your choice of sides or condiments for the best experience."
       ],
       "cuisine": "Mexican",
       "dietType": "Vegan",
@@ -827,13 +827,13 @@
         "inactive_minutes": 0,
         "total_minutes": 35
       },
-      "image": "https://www.jessicagavin.com/wp-content/uploads/2020/04/mexican-rice-14-1200.jpg",
+      "image": "https://res.cloudinary.com/dm5lrxevq/image/upload/v1761773343/food_recipes/Mexican_Rice.jpg",
       "category": "Mexican Side Dish",
       "procedure": [
-        "Saut\u00e9 onion, garlic, and tomato paste.",
-        "Add rice and fry lightly.",
-        "Pour in broth and simmer.",
-        "Fluff and serve."
+        "Saut\u00e9 onion, garlic, and tomato paste. \u2014 Saut\u00e9 until the onions turn golden and the raw aroma disappears.",
+        "Add rice and fry lightly. \u2014 Fry on medium flame until golden brown, stirring occasionally for even cooking.",
+        "Pour in broth and simmer. \u2014 Continue as per your taste preference or adjust seasoning to suit.",
+        "Fluff and serve. \u2014 Serve hot with your choice of sides or condiments for the best experience."
       ],
       "cuisine": "Mexican",
       "dietType": "Vegetarian",

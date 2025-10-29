@@ -9,7 +9,7 @@ let page = 1;
 
 const BASE_URL =
   window.location.hostname === "localhost"
-    ? "http://localhost:3000"
+    ? "http://localhost:3001"
     : "";
 
 // 🍳 Fetch recipes with pagination

@@ -1,0 +1,122 @@
+[
+  {
+    "name": "Aloo Paratha",
+    "cloudinary_url": "https://res.cloudinary.com/dm5lrxevq/image/upload/v1761773267/food_recipes/Aloo_Paratha.jpg"
+  },
+  {
+    "name": "Baingan Bharta",
+    "cloudinary_url": "https://res.cloudinary.com/dm5lrxevq/image/upload/v1761773269/food_recipes/Baingan_Bharta.jpg"
+  },
+  {
+    "name": "Broccoli with Garlic Sauce",
+    "cloudinary_url": "https://res.cloudinary.com/dm5lrxevq/image/upload/v1761773272/food_recipes/Broccoli_with_Garlic_Sauce.jpg"
+  },
+  {
+    "name": "Chickpea Stew",
+    "cloudinary_url": "https://res.cloudinary.com/dm5lrxevq/image/upload/v1761773290/food_recipes/Chickpea_Stew.jpg"
+  },
+  {
+    "name": "Chile Rellenos",
+    "cloudinary_url": "https://res.cloudinary.com/dm5lrxevq/image/upload/v1761773297/food_recipes/Chile_Rellenos.jpg"
+  },
+  {
+    "name": "Chili Garlic Noodles",
+    "cloudinary_url": "https://res.cloudinary.com/dm5lrxevq/image/upload/v1761773299/food_recipes/Chili_Garlic_Noodles.jpg"
+  },
+  {
+    "name": "Gulab Jamun",
+    "cloudinary_url": "https://res.cloudinary.com/dm5lrxevq/image/upload/v1761773301/food_recipes/Gulab_Jamun.jpg"
+  },
+  {
+    "name": "Hakka Noodles",
+    "cloudinary_url": "https://res.cloudinary.com/dm5lrxevq/image/upload/v1761773304/food_recipes/Hakka_Noodles.jpg"
+  },
+  {
+    "name": "Hot and Sour Soup",
+    "cloudinary_url": "https://res.cloudinary.com/dm5lrxevq/image/upload/v1761773306/food_recipes/Hot_and_Sour_Soup.jpg"
+  },
+  {
+    "name": "Idli with Sambar and Chutney",
+    "cloudinary_url": "https://res.cloudinary.com/dm5lrxevq/image/upload/v1761773308/food_recipes/Idli_with_Sambar_and_Chutney.jpg"
+  },
+  {
+    "name": "Kung Pao Vegetables",
+    "cloudinary_url": "https://res.cloudinary.com/dm5lrxevq/image/upload/v1761773311/food_recipes/Kung_Pao_Vegetables.jpg"
+  },
+  {
+    "name": "Lentil Tacos",
+    "cloudinary_url": "https://res.cloudinary.com/dm5lrxevq/image/upload/v1761773313/food_recipes/Lentil_Tacos.jpg"
+  },
+  {
+    "name": "Mapo Tofu",
+    "cloudinary_url": "https://res.cloudinary.com/dm5lrxevq/image/upload/v1761773316/food_recipes/Mapo_Tofu.jpg"
+  },
+  {
+    "name": "Masala Dosa",
+    "cloudinary_url": "https://res.cloudinary.com/dm5lrxevq/image/upload/v1761773341/food_recipes/Masala_Dosa.jpg"
+  },
+  {
+    "name": "Mexican Rice",
+    "cloudinary_url": "https://res.cloudinary.com/dm5lrxevq/image/upload/v1761773343/food_recipes/Mexican_Rice.jpg"
+  },
+  {
+    "name": "Momos",
+    "cloudinary_url": "https://res.cloudinary.com/dm5lrxevq/image/upload/v1761773344/food_recipes/Momos.jpg"
+  },
+  {
+    "name": "Palak Paneer",
+    "cloudinary_url": "https://res.cloudinary.com/dm5lrxevq/image/upload/v1761773357/food_recipes/Palak_Paneer.jpg"
+  },
+  {
+    "name": "Pav Bhaji",
+    "cloudinary_url": "https://res.cloudinary.com/dm5lrxevq/image/upload/v1761773358/food_recipes/Pav_Bhaji.jpg"
+  },
+  {
+    "name": "Spring Rolls",
+    "cloudinary_url": "https://res.cloudinary.com/dm5lrxevq/image/upload/v1761773362/food_recipes/Spring_Rolls.jpg"
+  },
+  {
+    "name": "Stir Fried Vegetables",
+    "cloudinary_url": "https://res.cloudinary.com/dm5lrxevq/image/upload/v1761773364/food_recipes/Stir_Fried_Vegetables.jpg"
+  },
+  {
+    "name": "Veg Manchurian",
+    "cloudinary_url": "https://res.cloudinary.com/dm5lrxevq/image/upload/v1761773365/food_recipes/Veg_Manchurian.jpg"
+  },
+  {
+    "name": "Vegan Nachos",
+    "cloudinary_url": "https://res.cloudinary.com/dm5lrxevq/image/upload/v1761773367/food_recipes/Vegan_Nachos.jpg"
+  },
+  {
+    "name": "Vegan Tamales",
+    "cloudinary_url": "https://res.cloudinary.com/dm5lrxevq/image/upload/v1761773368/food_recipes/Vegan_Tamales.jpg"
+  },
+  {
+    "name": "Vegetable Biryani",
+    "cloudinary_url": "https://res.cloudinary.com/dm5lrxevq/image/upload/v1761773370/food_recipes/Vegetable_Biryani.jpg"
+  },
+  {
+    "name": "Vegetable Fried Rice",
+    "cloudinary_url": "https://res.cloudinary.com/dm5lrxevq/image/upload/v1761773372/food_recipes/Vegetable_Fried_Rice.jpg"
+  },
+  {
+    "name": "Vegetable Pulao",
+    "cloudinary_url": "https://res.cloudinary.com/dm5lrxevq/image/upload/v1761773373/food_recipes/Vegetable_Pulao.jpg"
+  },
+  {
+    "name": "Vegetarian Burrito",
+    "cloudinary_url": "https://res.cloudinary.com/dm5lrxevq/image/upload/v1761773374/food_recipes/Vegetarian_Burrito.jpg"
+  },
+  {
+    "name": "Vegetarian Enchilada Casserole",
+    "cloudinary_url": "https://res.cloudinary.com/dm5lrxevq/image/upload/v1761773375/food_recipes/Vegetarian_Enchilada_Casserole.jpg"
+  },
+  {
+    "name": "Vegetarian Tortilla Soup",
+    "cloudinary_url": "https://res.cloudinary.com/dm5lrxevq/image/upload/v1761773377/food_recipes/Vegetarian_Tortilla_Soup.jpg"
+  },
+  {
+    "name": "Veggie Quesadilla",
+    "cloudinary_url": "https://res.cloudinary.com/dm5lrxevq/image/upload/v1761773379/food_recipes/Veggie_Quesadilla.jpg"
+  }
+]
