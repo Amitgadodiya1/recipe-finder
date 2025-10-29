@@ -4,7 +4,7 @@
 const BASE_URL =
   window.location.hostname === "localhost"
     ? "http://localhost:3001"
-    : "";
+    : "https://recipe-finder-2d56.onrender.com";
 async function loadRecipeOfTheDay() {
   const res = await fetch(`${BASE_URL}/api/recipes/random`);
   const recipe = await res.json();

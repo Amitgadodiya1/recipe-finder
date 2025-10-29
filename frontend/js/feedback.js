@@ -8,7 +8,7 @@ function showToast(message) {
 const BASE_URL =
   window.location.hostname === "localhost"
     ? "http://localhost:3001"
-    : "";// 🧠 Load feedback list
+    : "https://recipe-finder-2d56.onrender.com";// 🧠 Load feedback list
 async function loadFeedback() {
   const container = document.getElementById("feedback-list");
   container.innerHTML =

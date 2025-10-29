@@ -1,7 +1,7 @@
 const BASE_URL =
   window.location.hostname === "localhost"
     ? "http://localhost:3001"
-    : "";
+    : "https://recipe-finder-2d56.onrender.com";
 const recipeId = new URLSearchParams(window.location.search).get("id");
 
 // 🍲 Fetch recipe details
