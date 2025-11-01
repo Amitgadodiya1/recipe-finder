@@ -35,6 +35,7 @@ import dotenv from "dotenv";
 import recipeRoutes from "./routes/recipies.js";
 import cors from "cors";
 import feedbackRoutes from "./routes/feedbackRoutes.js"; // ✅ add this
+import doubtRoutes from "./routes/doubtRoutes.js";
 
 dotenv.config();
 const app = express();
@@ -61,6 +62,7 @@ app.get("/", (req, res) => {
 
 app.use("/api/recipes", recipeRoutes);
 app.use("/api/feedback", feedbackRoutes); // ✅ connect feedback
+app.use("/api/doubts", doubtRoutes);
 
 
 // MongoDB Connection

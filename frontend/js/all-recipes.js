@@ -14,7 +14,7 @@ const BASE_URL =
 
 // 🍳 Fetch recipes with pagination
 async function fetchRecipes(loadMore = false) {
-  const res = await fetch(`${BASE_URL}/api/recipes?page=${page}&limit=8`);
+  const res = await fetch(`${BASE_URL}/api/recipes?page=${page}&limit=30`);
   const data = await res.json();
   const recipesArray = Array.isArray(data) ? data : data.data || [];
 
@@ -57,7 +57,7 @@ function renderRecipes(grouped) {
 // 🍔 Single recipe card
 function recipeCard(recipe) {
   return `
-    <div class="bg-white rounded-xl shadow-md hover:shadow-xl transition-transform transform hover:scale-[1.02] cursor-pointer group"
+    <div class="bg-white rounded-xl shadow-md hover:shadow-xl transition-transform transform hover:scale-[1.02] cursor-pointer group dark:bg-[#2a2a2a]/70"
          onclick='openModal(${JSON.stringify(recipe).replace(/"/g, "&quot;")})'>
       <div class="w-full aspect-video overflow-hidden rounded-t-xl">
         <img src="${recipe.image}" alt="${recipe.name}"
@@ -65,10 +65,10 @@ function recipeCard(recipe) {
       </div>
       <div class="p-4 flex flex-col justify-between h-[160px]">
         <div>
-          <h4 class="font-semibold text-[#1b0e0e] truncate">${recipe.name}</h4>
-          <p class="text-sm text-gray-600 mt-1 line-clamp-2">${recipe.description}</p>
+          <h4 class="font-semibold text-[#1b0e0e]  truncate dark:text-[#ffff]">${recipe.name}</h4>
+          <p class="text-sm text-gray-600 mt-1 line-clamp-2 dark:text-[#ffff]">${recipe.description}</p>
         </div>
-        <div class="flex justify-between items-center mt-3">
+        <div class="flex justify-between items-center mt-3 dark:text-[#ffff]-300">
           <span class="text-xs text-gray-400">${recipe.category}</span>
           <span class="text-xs text-gray-400">⏱️ ${recipe.time?.total_minutes || 0} mins</span>
         </div>
@@ -105,7 +105,7 @@ function openModal(recipe) {
   document.getElementById("modal-category").textContent = recipe.category || recipe.cuisine;
 
   const list = document.getElementById("modal-procedure");
-  list.innerHTML = recipe.procedure.map(step => `<li>${step}</li>`).join("");
+  list.innerHTML = recipe.ingredients.map(step => `<li>${step}</li>`).join("");
 
   document.getElementById("view-recipe-btn").onclick = () => {
     window.location.href = `./recipe-details?id=${recipe._id}`;
@@ -143,8 +143,8 @@ document.getElementById("filter-cuisine").addEventListener("change", e => {
 });
 
 document.getElementById("filter-category").addEventListener("change", e => {
-  const category = e.target.value;
-  const filtered = allRecipes.filter(r => !category || r.category === category);
+  const dietType = e.target.value;
+  const filtered = allRecipes.filter(r => !dietType || r.dietType === dietType);
   renderRecipes(groupByCuisine(filtered));
 });
 

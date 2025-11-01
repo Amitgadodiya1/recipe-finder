@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" class="transition-colors duration-500">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Doubt Section – Taste Explorer</title>
+
+    <!-- Tailwind + Fonts -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap"
+    />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+      tailwind.config = { darkMode: "class" };
+      if (
+        localStorage.getItem("theme") === "dark" ||
+        (!localStorage.getItem("theme") &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches)
+      ) {
+        document.documentElement.classList.add("dark");
+      }
+    </script>
+
+    <link rel="stylesheet" href="./css/doubt.css" />
+  </head>
+
+  <body
+    class="bg-gradient-to-br from-[#fff5f5] via-[#fff] to-[#ffeaea] dark:from-[#0f0f0f] dark:via-[#1a1a1a] dark:to-[#1e1e1e] text-[#1b0e0e] dark:text-[#f5f5f5] font-[Plus Jakarta Sans] min-h-screen transition-colors duration-500"
+  >
+    <!-- 🌐 Navbar -->
+    <header
+      class="flex items-center justify-between border-b border-pink-100 dark:border-gray-700 px-5 sm:px-10 py-4 sticky top-0 bg-white/90 dark:bg-[#1e1e1e]/80 backdrop-blur-xl shadow-sm z-50"
+    >
+      <div class="flex items-center gap-3">
+        <div
+          class="size-8 flex items-center justify-center rounded-lg bg-gradient-to-br from-pink-500 to-red-400 text-white shadow-md"
+        >
+          🍴
+        </div>
+        <h1 class="text-lg sm:text-xl font-extrabold">Taste Explorer</h1>
+      </div>
+
+      <nav class="flex gap-6 text-sm font-medium items-center">
+        <a
+          href="./index.html"
+          class="hover:text-[#e63946] dark:hover:text-[#ff6b6b]"
+          >Home</a
+        >
+        <a
+          href="./all-recipes.html"
+          class="hover:text-[#e63946] dark:hover:text-[#ff6b6b]"
+          >Recipes</a
+        >
+        <a
+          href="./doubt.html"
+          class="text-[#e63946] dark:text-[#ff6b6b] font-semibold"
+          >Doubts</a
+        >
+        <a
+          href="./feedback.html"
+          class="hover:text-[#e63946] dark:hover:text-[#ff6b6b]"
+          >Feedback</a
+        >
+
+        <!-- 🌙 Dark Mode Toggle -->
+        <button
+          id="theme-toggle"
+          class="ml-4 w-9 h-9 rounded-full flex items-center justify-center text-[#e63946] dark:text-yellow-300 hover:bg-gray-100 dark:hover:bg-gray-800 transition"
+          title="Toggle dark mode"
+        >
+          ☀️
+        </button>
+      </nav>
+    </header>
+
+    <!-- 🧠 Doubt Section -->
+    <main class="px-5 sm:px-16 py-10 space-y-10">
+      <!-- Post Doubt -->
+      <section
+        class="max-w-3xl mx-auto bg-white dark:bg-[#2a2a2a] rounded-2xl shadow p-6 ask-section"
+      >
+        <h2 class="text-2xl font-bold mb-4">Ask a Doubt</h2>
+        <form id="doubtForm" class="space-y-3">
+          <select id="recipeSelect" name="recipeId" class="input-field border border-[#e3d4d4] dark:border-gray-700 bg-[#fffafc] dark:bg-[#1e1e1e] dark:text-white focus:ring-2 focus:ring-[#e8b5b7] focus:outline-none">
+            <option value="">🧂 Select a recipe (optional)</option>
+          </select>
+
+          <input
+            name="name"
+            type="text"
+            placeholder="Enter your name (optional)"
+            class="input-field border border-[#e3d4d4] dark:border-gray-700 bg-[#fffafc] dark:bg-[#1e1e1e] dark:text-white focus:ring-2 focus:ring-[#e8b5b7] focus:outline-none dark:text:white"
+          />
+          <input
+            name="title"
+            type="text"
+            placeholder="Enter your doubt title..."
+            class="input-field border border-[#e3d4d4] dark:border-gray-700 bg-[#fffafc] dark:bg-[#1e1e1e] dark:text-white focus:ring-2 focus:ring-[#e8b5b7] focus:outline-none"
+            required
+          />
+          <textarea
+            name="description"
+            placeholder="Describe your question..."
+            rows="3"
+            class="input-field border border-[#e3d4d4] dark:border-gray-700 bg-[#fffafc] dark:bg-[#1e1e1e] dark:text-white focus:ring-2 focus:ring-[#e8b5b7] focus:outline-none"
+            required
+          ></textarea>
+          <button type="submit" class="btn-primary">Post Doubt</button>
+        </form>
+      </section>
+
+      <!-- All Doubts -->
+      <section class="max-w-3xl mx-auto">
+        <h2 class="text-xl font-bold mb-4">All Doubts</h2>
+        <div id="doubtList" class="space-y-6">
+          <p class="text-gray-400 text-center animate-pulse">
+            Loading doubts...
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer
+      class="bg-[#1b0e0e] dark:bg-[#0f0f0f] text-white mt-16 py-8 px-5 sm:px-10 text-sm text-center rounded-t-[2rem] border-t border-gray-800 dark:border-gray-700"
+    >
+      <p>
+        © 2025
+        <span class="font-semibold text-pink-400">Taste Explorer</span> |
+        Crafted with ❤️ by
+        <span class="font-semibold text-pink-300">Janhavi Vyas</span>
+      </p>
+    </footer>
+
+    <!-- JS -->
+    <script src="./js/doubt.js"></script>
+    <script>
+      const toggleBtn = document.getElementById("theme-toggle");
+      const root = document.documentElement;
+
+      function setTheme(theme) {
+        if (theme === "dark") {
+          root.classList.add("dark");
+          toggleBtn.textContent = "🌙";
+        } else {
+          root.classList.remove("dark");
+          toggleBtn.textContent = "☀️";
+        }
+        localStorage.setItem("theme", theme);
+      }
+
+      toggleBtn.addEventListener("click", () => {
+        const isDark = root.classList.contains("dark");
+        setTheme(isDark ? "light" : "dark");
+      });
+
+      // Initialize icon on page load
+      if (root.classList.contains("dark")) toggleBtn.textContent = "🌙";
+      else toggleBtn.textContent = "☀️";
+    </script>
+  </body>
+</html>

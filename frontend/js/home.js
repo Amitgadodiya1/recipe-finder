@@ -1,6 +1,4 @@
 // 🌟 1. Load Recipe of the Day
-
-
 const BASE_URL =
   window.location.hostname === "localhost"
     ? "http://localhost:3001"
@@ -12,7 +10,7 @@ async function loadRecipeOfTheDay() {
   const section = document.getElementById("recipe-of-day");
   section.innerHTML = `
     <div class="relative w-full h-full">
-      <img src="${recipe.image}" alt="${recipe.name}" class="w-full h-full object-contain opacity-90"/>
+      <img src="${recipe.image}" alt="${recipe.name}" class="w-full h-full object-cover aspect-3/2 opacity-90"/>
       <div class="absolute inset-0 bg-black/40 flex flex-col justify-end p-8 text-white">
         <h2 class="text-2xl font-bold mb-1">${recipe.name}</h2>
         <p class="text-sm mb-3">${recipe.description}</p>
@@ -53,7 +51,7 @@ async function loadPopularRecipes(searchTerm = "", cuisine = "", maxTime = "") {
 function openQuickView(recipe) {
   document.getElementById("modal-img").src = recipe.image;
   document.getElementById("modal-name").textContent = recipe.name;
-  document.getElementById("modal-desc").textContent = recipe.description;
+  document.getElementById("modal-desc").textContent = recipe.ingredients;
   document.getElementById("modal-time").textContent = `⏱️ Total Time: ${recipe.time?.total_minutes || 0} mins`;
   document.getElementById("view-btn").onclick = () => {
     window.location.href = `./recipe-details?id=${recipe._id}`;

@@ -59,6 +59,8 @@
           class="text-[#e63946] dark:text-[#ff6b6b] font-semibold"
           >Recipes</a
         >
+        <a href="./doubt.html" class="block w-full text-center sm:w-auto py-2 hover:text-[#e63946] dark:hover:text-[#ff6b6b] transition active">Doubts</a>
+
         <a href="./feedback.html" class="hover:text-[#e63946] dark:hover:text-[#ff6b6b] transition"
           >Feedback</a
         >
@@ -89,6 +91,8 @@
         class="text-[#e63946] dark:text-[#ff6b6b] font-semibold"
         >Recipes</a
       >
+      <a href="./doubt.html" class="text-[#e63946] dark:text-[#ff6b6b] font-semibold">Doubts</a>
+
       <a href="./feedback.html" class="hover:text-[#e63946] dark:hover:text-[#ff6b6b]"
         >Feedback</a
       >
@@ -127,10 +131,10 @@
         id="filter-category"
         class="rounded-full border border-gray-300 dark:border-gray-700 px-8 py-2 text-sm bg-white dark:bg-[#1e1e1e] dark:text-white focus:ring-2 focus:ring-pink-400 dark:focus:ring-[#ff6b6b] shadow-sm transition"
       >
-        <option value="">All Categories</option>
-        <option value="Main Course">Main Course</option>
-        <option value="Dessert">Dessert</option>
-        <option value="Street Food">Street Food</option>
+        <option value="">Diet Type</option>
+        <option value="Vegetarian">Vegetarian</option>
+        <option value="Non-Vegetarian">Non-Vegetarian</option>
+        <option value="Vegan">Vegan</option>
       </select>
     </div>
 
@@ -142,7 +146,7 @@
 
       <div
         id="recipes-container"
-        class="grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-8 min-h-[300px] transition-all duration-300"
+        class="grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-8 min-h-[300px] transition-all duration-300 "
       >
         <div
           class="col-span-full text-center text-gray-400 py-10 animate-pulse"
@@ -182,7 +186,7 @@
         ></h2>
         <p id="modal-category" class="text-sm text-gray-500 mb-3"></p>
         <h3 class="font-semibold text-pink-600 dark:text-[#ff6b6b] mb-2">
-          🧑‍🍳 Procedure:
+          🧑‍🍳 Ingredients:
         </h3>
         <ul
           id="modal-procedure"

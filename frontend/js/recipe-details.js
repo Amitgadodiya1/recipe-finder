@@ -14,7 +14,6 @@ async function fetchRecipeDetails() {
     container.innerHTML = `
       <div class="bg-white dark:bg-[#2a2a2a] shadow-md rounded-xl overflow-hidden transition-colors duration-300">
         <img src="${recipe.image}" alt="${recipe.name}" class="w-full h-80 object-cover" />
-
         <div class="p-6 text-left">
           <div class="flex justify-between items-center mb-4">
             <h2 class="text-3xl font-bold text-[#1b0e0e] dark:text-white">${recipe.name}</h2>
@@ -46,19 +45,36 @@ async function fetchRecipeDetails() {
               class="border border-pink-500 dark:border-[#ff6b6b] text-pink-600 dark:text-[#ff6b6b] px-5 py-2 rounded-full hover:bg-pink-50 dark:hover:bg-[#2f2f2f] transition">
               ← Back to Recipes
             </a>
+            <button
+              id="ask-doubt-btn"
+              class="bg-gradient-to-r from-pink-500 to-red-500 hover:from-red-500 hover:to-pink-600 text-white font-semibold px-6 py-2 rounded-full shadow-md hover:shadow-lg transition-all duration-300"
+            >
+              💬 Ask a Doubt
+            </button>
           </div>
         </div>
       </div>
     `;
 
-    // Add like button listener
-    document.getElementById("like-btn").addEventListener("click", () => likeRecipe(recipeId));
+    // ✅ Now that button exists, attach listener here
+    const askBtn = document.getElementById("ask-doubt-btn");
+    if (askBtn) {
+      askBtn.addEventListener("click", () => {
+        window.location.href = `./doubt.html?recipeId=${recipeId}`;
+      });
+    }
+
+    // ✅ Like button works fine too
+    document
+      .getElementById("like-btn")
+      .addEventListener("click", () => likeRecipe(recipeId));
   } catch (err) {
     console.error(err);
     document.getElementById("recipe-details").innerHTML =
       `<p class="text-center text-red-500">Failed to load recipe.</p>`;
   }
 }
+
 
 // ⭐ Fetch related recipes
 async function fetchRelatedRecipes() {
@@ -120,3 +136,23 @@ document.addEventListener("DOMContentLoaded", () => {
   fetchRecipeDetails();
   fetchRelatedRecipes();
 });
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const askBtn = document.getElementById("ask-doubt-btn");
+
+    // Extract recipe ID from URL (e.g. ?id=6906668eb22cae137631fc5c)
+    const urlParams = new URLSearchParams(window.location.search);
+    const recipeId = urlParams.get("id");
+
+    if (askBtn && recipeId) {
+      askBtn.addEventListener("click", () => {
+        // Redirect to doubt page with recipeId param
+        window.location.href = `./doubt?recipeId=${recipeId}`;
+      });
+    } else if (askBtn) {
+      // If no recipe ID (fallback)
+      askBtn.addEventListener("click", () => {
+        window.location.href = `./doubt`;
+      });
+    }
+  });

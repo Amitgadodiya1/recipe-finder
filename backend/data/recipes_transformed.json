@@ -3,6 +3,18 @@
     {
       "name": "Masala Dosa",
       "description": "Crispy South Indian rice\u2013lentil crepes stuffed with spiced potato masala, served with sambar and coconut chutney.",
+      "calories": 420,
+      "ingredients": [
+    "1 cup parboiled rice",
+    "1/2 cup urad dal",
+    "1/4 tsp fenugreek seeds",
+    "3 medium potatoes (boiled)",
+    "1 onion (sliced)",
+    "1/2 tsp mustard seeds",
+    "1 sprig curry leaves",
+    "Salt to taste",
+    "Oil for cooking"
+  ],
       "time": {
         "prep_minutes": 30,
         "cook_minutes": 40,

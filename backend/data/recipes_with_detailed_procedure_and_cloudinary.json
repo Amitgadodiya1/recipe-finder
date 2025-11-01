@@ -2,7 +2,7 @@
   "Indian": [
     {
       "name": "Masala Dosa",
-      "description": "Crispy South Indian rice\u2013lentil crepes stuffed with spiced potato masala, served with sambar and coconut chutney.",
+      "description": "Crispy South Indian rice–lentil crepes stuffed with spiced potato masala, served with sambar and coconut chutney.",
       "time": {
         "prep_minutes": 30,
         "cook_minutes": 40,
@@ -12,23 +12,34 @@
       "image": "https://res.cloudinary.com/dm5lrxevq/image/upload/v1761773341/food_recipes/Masala_Dosa.jpg",
       "category": "South Indian",
       "procedure": [
-        "Soak rice, urad dal, and fenugreek for 6 hours. \u2014 Continue as per your taste preference or adjust seasoning to suit.",
-        "Grind and ferment overnight. \u2014 Continue as per your taste preference or adjust seasoning to suit.",
-        "Prepare potato masala with onions, curry leaves, turmeric, and boiled potatoes. \u2014 Boil until ingredients are tender but not mushy. Drain any excess water.",
-        "Spread dosa batter on hot tawa, add masala, fold, and serve with chutney/sambar. \u2014 Stir well so all ingredients combine evenly and absorb flavors."
+        "Soak rice, urad dal, and fenugreek for 6 hours. — Continue as per your taste preference or adjust seasoning to suit.",
+        "Grind and ferment overnight. — Continue as per your taste preference or adjust seasoning to suit.",
+        "Prepare potato masala with onions, curry leaves, turmeric, and boiled potatoes. — Boil until ingredients are tender but not mushy. Drain any excess water.",
+        "Spread dosa batter on hot tawa, add masala, fold, and serve with chutney/sambar. — Stir well so all ingredients combine evenly and absorb flavors."
       ],
       "cuisine": "Indian",
       "dietType": "Vegetarian",
       "likes": 23,
       "averageRating": 4.2,
       "ratingsCount": 35,
-      "tags": [
-        "spicy",
-        "sweet",
-        "gluten-free",
-        "savory"
-      ]
+      "tags": ["spicy", "sweet", "gluten-free", "savory"],
+      "ingredients": [
+        "rice",
+        "urad dal",
+        "fenugreek seeds",
+        "potato",
+        "onion",
+        "curry leaves",
+        "turmeric",
+        "mustard seeds",
+        "salt",
+        "oil",
+        "coconut chutney",
+        "sambar"
+      ],
+      "calories": 420
     },
+
     {
       "name": "Palak Paneer",
       "description": "Paneer cubes cooked in smooth spinach gravy flavored with garlic and spices.",
@@ -41,250 +52,358 @@
       "image": "https://res.cloudinary.com/dm5lrxevq/image/upload/v1761773357/food_recipes/Palak_Paneer.jpg",
       "category": "North Indian",
       "procedure": [
-        "Blanch spinach, blend to puree. \u2014 Continue as per your taste preference or adjust seasoning to suit.",
-        "Saut\u00e9 onions, garlic, and ginger. \u2014 Saut\u00e9 until the onions turn golden and the raw aroma disappears.",
-        "Add spices and spinach puree, simmer. \u2014 Stir well so all ingredients combine evenly and absorb flavors.",
-        "Add paneer cubes and finish with cream. \u2014 Stir well so all ingredients combine evenly and absorb flavors."
+        "Blanch spinach, blend to puree. — Continue as per your taste preference or adjust seasoning to suit.",
+        "Sauté onions, garlic, and ginger. — Sauté until the onions turn golden and the raw aroma disappears.",
+        "Add spices and spinach puree, simmer. — Stir well so all ingredients combine evenly and absorb flavors.",
+        "Add paneer cubes and finish with cream. — Stir well so all ingredients combine evenly and absorb flavors."
       ],
       "cuisine": "Indian",
       "dietType": "Vegetarian",
       "likes": 434,
       "averageRating": 4.2,
       "ratingsCount": 74,
-      "tags": [
-        "family-friendly",
-        "quick",
-        "gluten-free",
-        "savory"
-      ]
+      "tags": ["family-friendly", "quick", "gluten-free", "savory"],
+      "ingredients": [
+        "spinach",
+        "paneer",
+        "onion",
+        "tomato",
+        "garlic",
+        "ginger",
+        "green chili",
+        "garam masala",
+        "cumin seeds",
+        "salt",
+        "cream",
+        "oil"
+      ],
+      "calories": 380
     },
     {
-      "name": "Chole (Chana Masala)",
-      "description": "Punjabi-style chickpeas cooked in a spicy onion\u2013tomato gravy.",
-      "time": {
-        "prep_minutes": 15,
-        "cook_minutes": 35,
-        "inactive_minutes": 480,
-        "total_minutes": 530
-      },
-      "image": "https://tse1.mm.bing.net/th/id/OIP.m2WHkHK1cFCeatiAv1nbtAHaE7?pid=Api&P=0&h=180",
-      "category": "North Indian",
-      "procedure": [
-        "Soak chickpeas overnight, pressure cook. \u2014 Continue as per your taste preference or adjust seasoning to suit.",
-        "Cook onions, ginger-garlic, and tomatoes with spices. \u2014 Continue as per your taste preference or adjust seasoning to suit.",
-        "Add chickpeas, simmer until thick. \u2014 Stir well so all ingredients combine evenly and absorb flavors.",
-        "Garnish with coriander and serve. \u2014 Serve hot with your choice of sides or condiments for the best experience."
-      ],
-      "cuisine": "Indian",
-      "dietType": "Vegetarian",
-      "likes": 22,
-      "averageRating": 4.6,
-      "ratingsCount": 123,
-      "tags": [
-        "comfort food",
-        "quick"
-      ]
-    },
-    {
-      "name": "Vegetable Biryani",
-      "description": "Fragrant basmati rice cooked with spiced mixed vegetables and saffron.",
-      "time": {
-        "prep_minutes": 25,
-        "cook_minutes": 45,
-        "inactive_minutes": 30,
-        "total_minutes": 100
-      },
-      "image": "https://res.cloudinary.com/dm5lrxevq/image/upload/v1761773370/food_recipes/Vegetable_Biryani.jpg",
-      "category": "Hyderabadi / Mughlai",
-      "procedure": [
-        "Parboil rice with whole spices. \u2014 Boil until ingredients are tender but not mushy. Drain any excess water.",
-        "Cook vegetables with biryani masala. \u2014 Continue as per your taste preference or adjust seasoning to suit.",
-        "Layer rice and vegetables, add saffron milk. \u2014 Stir well so all ingredients combine evenly and absorb flavors.",
-        "Dum cook for 20 minutes. \u2014 Continue as per your taste preference or adjust seasoning to suit."
-      ],
-      "cuisine": "Indian",
-      "dietType": "Vegetarian",
-      "likes": 343,
-      "averageRating": 4.5,
-      "ratingsCount": 62,
-      "tags": [
-        "vegetarian",
-        "gluten-free"
-      ]
-    },
-    {
-      "name": "Baingan Bharta",
-      "description": "Smoky roasted eggplant mashed and cooked with onions, tomatoes, and spices.",
-      "time": {
-        "prep_minutes": 15,
-        "cook_minutes": 30,
-        "inactive_minutes": 10,
-        "total_minutes": 55
-      },
-      "image": "https://res.cloudinary.com/dm5lrxevq/image/upload/v1761773269/food_recipes/Baingan_Bharta.jpg",
-      "category": "North Indian (Punjabi)",
-      "procedure": [
-        "Roast brinjal on flame, peel and mash. \u2014 Continue as per your taste preference or adjust seasoning to suit.",
-        "Saut\u00e9 onions, ginger, garlic, and tomatoes. \u2014 Saut\u00e9 until the onions turn golden and the raw aroma disappears.",
-        "Add mashed brinjal, spices, and cook. \u2014 Stir well so all ingredients combine evenly and absorb flavors.",
-        "Garnish with coriander. \u2014 Continue as per your taste preference or adjust seasoning to suit."
-      ],
-      "cuisine": "Indian",
-      "dietType": "Vegetarian",
-      "likes": 333,
-      "averageRating": 3.7,
-      "ratingsCount": 187,
-      "tags": [
-        "family-friendly",
-        "vegan"
-      ]
-    },
-    {
-      "name": "Pav Bhaji",
-      "description": "Spicy mashed vegetable curry served with butter-toasted bread.",
-      "time": {
-        "prep_minutes": 15,
-        "cook_minutes": 35,
-        "inactive_minutes": 0,
-        "total_minutes": 50
-      },
-      "image": "https://res.cloudinary.com/dm5lrxevq/image/upload/v1761773358/food_recipes/Pav_Bhaji.jpg",
-      "category": "Mumbai Street Food",
-      "procedure": [
-        "Boil potatoes, peas, cauliflower. \u2014 Boil until ingredients are tender but not mushy. Drain any excess water.",
-        "Cook onion, capsicum, and tomato with pav bhaji masala. \u2014 Continue as per your taste preference or adjust seasoning to suit.",
-        "Mash in vegetables, simmer with butter. \u2014 Continue as per your taste preference or adjust seasoning to suit.",
-        "Serve with toasted pav. \u2014 Serve hot with your choice of sides or condiments for the best experience."
-      ],
-      "cuisine": "Indian",
-      "dietType": "Vegetarian",
-      "likes": 312,
-      "averageRating": 4.1,
-      "ratingsCount": 133,
-      "tags": [
-        "family-friendly",
-        "healthy",
-        "vegan",
-        "mild"
-      ]
-    },
-    {
-      "name": "Idli with Sambar",
-      "description": "Steamed rice\u2013lentil cakes with a tangy vegetable-lentil stew.",
-      "time": {
-        "prep_minutes": 25,
-        "cook_minutes": 30,
-        "inactive_minutes": 600,
-        "total_minutes": 655
-      },
-      "image": "https://foodiewish.com/wp-content/uploads/2020/04/Idli-Sambar-Recipe-728x518.jpg",
-      "category": "South Indian",
-      "procedure": [
-        "Ferment rice\u2013dal batter overnight. \u2014 Continue as per your taste preference or adjust seasoning to suit.",
-        "Steam batter in idli plates. \u2014 Continue as per your taste preference or adjust seasoning to suit.",
-        "Prepare sambar with toor dal, tamarind, and vegetables. \u2014 Continue as per your taste preference or adjust seasoning to suit.",
-        "Serve hot with chutney. \u2014 Serve hot with your choice of sides or condiments for the best experience."
-      ],
-      "cuisine": "Indian",
-      "dietType": "Vegetarian",
-      "likes": 33,
-      "averageRating": 4.9,
-      "ratingsCount": 101,
-      "tags": [
-        "sweet",
-        "comfort food",
-        "festival",
-        "mild"
-      ]
-    },
-    {
-      "name": "Aloo Paratha",
-      "description": "Whole-wheat flatbread stuffed with spiced potato mash, cooked on a tawa.",
-      "time": {
-        "prep_minutes": 20,
-        "cook_minutes": 20,
-        "inactive_minutes": 15,
-        "total_minutes": 55
-      },
-      "image": "https://res.cloudinary.com/dm5lrxevq/image/upload/v1761773267/food_recipes/Aloo_Paratha.jpg",
-      "category": "North Indian (Punjabi)",
-      "procedure": [
-        "Prepare dough with wheat flour. \u2014 Continue as per your taste preference or adjust seasoning to suit.",
-        "Boil and mash potatoes, add spices. \u2014 Boil until ingredients are tender but not mushy. Drain any excess water.",
-        "Stuff into dough balls, roll, and cook on tawa with ghee. \u2014 Continue as per your taste preference or adjust seasoning to suit.",
-        "Serve with curd or pickle. \u2014 Serve hot with your choice of sides or condiments for the best experience."
-      ],
-      "cuisine": "Indian",
-      "dietType": "Vegetarian",
-      "likes": 208,
-      "averageRating": 4.6,
-      "ratingsCount": 149,
-      "tags": [
-        "traditional",
-        "gluten-free",
-        "mild",
-        "family-friendly",
-        "vegetarian"
-      ]
-    },
-    {
-      "name": "Vegetable Pulao",
-      "description": "Quick one-pot rice dish cooked with mixed vegetables and mild spices.",
-      "time": {
-        "prep_minutes": 10,
-        "cook_minutes": 25,
-        "inactive_minutes": 0,
-        "total_minutes": 35
-      },
-      "image": "https://res.cloudinary.com/dm5lrxevq/image/upload/v1761773373/food_recipes/Vegetable_Pulao.jpg",
-      "category": "North Indian",
-      "procedure": [
-        "Heat oil, saut\u00e9 spices, onions, and ginger-garlic. \u2014 Saut\u00e9 until the onions turn golden and the raw aroma disappears.",
-        "Add vegetables and soaked rice. \u2014 Stir well so all ingredients combine evenly and absorb flavors.",
-        "Cook with water until rice is done. \u2014 Continue as per your taste preference or adjust seasoning to suit.",
-        "Fluff and serve with raita. \u2014 Serve hot with your choice of sides or condiments for the best experience."
-      ],
-      "cuisine": "Indian",
-      "dietType": "Vegetarian",
-      "likes": 194,
-      "averageRating": 4.7,
-      "ratingsCount": 221,
-      "tags": [
-        "street food",
-        "mild",
-        "savory"
-      ]
-    },
-    {
-      "name": "Gulab Jamun",
-      "description": "Deep-fried milk-solid dumplings soaked in cardamom\u2013rose sugar syrup.",
-      "time": {
-        "prep_minutes": 15,
-        "cook_minutes": 30,
-        "inactive_minutes": 20,
-        "total_minutes": 65
-      },
-      "image": "https://res.cloudinary.com/dm5lrxevq/image/upload/v1761773301/food_recipes/Gulab_Jamun.jpg",
-      "category": "Indian Dessert",
-      "procedure": [
-        "Prepare dough with khoya and flour. \u2014 Continue as per your taste preference or adjust seasoning to suit.",
-        "Shape into balls, fry until golden. \u2014 Fry on medium flame until golden brown, stirring occasionally for even cooking.",
-        "Soak in warm sugar syrup with cardamom and rose water. \u2014 Continue as per your taste preference or adjust seasoning to suit.",
-        "Serve warm. \u2014 Serve hot with your choice of sides or condiments for the best experience."
-      ],
-      "cuisine": "Indian",
-      "dietType": "Vegetarian",
-      "likes": 194,
-      "averageRating": 3.6,
-      "ratingsCount": 138,
-      "tags": [
-        "comfort food",
-        "gluten-free",
-        "vegan",
-        "quick"
+      "Indian": [
+        {
+          "name": "Chole (Chana Masala)",
+          "description": "Punjabi-style chickpeas cooked in a spicy onion–tomato gravy.",
+          "time": {
+            "prep_minutes": 15,
+            "cook_minutes": 35,
+            "inactive_minutes": 480,
+            "total_minutes": 530
+          },
+          "image": "https://res.cloudinary.com/dm5lrxevq/image/upload/v1761773290/food_recipes/Chickpea_Stew.jpg",
+          "category": "North Indian",
+          "procedure": [
+            "Soak chickpeas overnight, pressure cook.",
+            "Cook onions, ginger-garlic, and tomatoes with spices.",
+            "Add chickpeas, simmer until thick.",
+            "Garnish with coriander and serve."
+          ],
+          "cuisine": "Indian",
+          "dietType": "Vegetarian",
+          "likes": 22,
+          "averageRating": 4.6,
+          "ratingsCount": 123,
+          "tags": ["comfort food", "quick"],
+          "ingredients": [
+            "chickpeas",
+            "onion",
+            "tomato",
+            "ginger",
+            "garlic",
+            "green chili",
+            "cumin seeds",
+            "coriander powder",
+            "garam masala",
+            "turmeric",
+            "red chili powder",
+            "oil",
+            "salt",
+            "fresh coriander"
+          ],
+          "calories": 360
+        },
+        {
+          "name": "Vegetable Biryani",
+          "description": "Fragrant basmati rice cooked with spiced mixed vegetables and saffron.",
+          "time": {
+            "prep_minutes": 25,
+            "cook_minutes": 45,
+            "inactive_minutes": 30,
+            "total_minutes": 100
+          },
+          "image": "https://res.cloudinary.com/dm5lrxevq/image/upload/v1761773370/food_recipes/Vegetable_Biryani.jpg",
+          "category": "Hyderabadi / Mughlai",
+          "procedure": [
+            "Parboil rice with whole spices.",
+            "Cook vegetables with biryani masala.",
+            "Layer rice and vegetables, add saffron milk.",
+            "Dum cook for 20 minutes."
+          ],
+          "cuisine": "Indian",
+          "dietType": "Vegetarian",
+          "likes": 343,
+          "averageRating": 4.5,
+          "ratingsCount": 62,
+          "tags": ["vegetarian", "gluten-free"],
+          "ingredients": [
+            "basmati rice",
+            "mixed vegetables",
+            "onion",
+            "tomato",
+            "ginger",
+            "garlic",
+            "biryani masala",
+            "cardamom",
+            "cloves",
+            "cinnamon",
+            "bay leaf",
+            "saffron milk",
+            "salt",
+            "ghee"
+          ],
+          "calories": 480
+        },
+        {
+          "name": "Baingan Bharta",
+          "description": "Smoky roasted eggplant mashed and cooked with onions, tomatoes, and spices.",
+          "time": {
+            "prep_minutes": 15,
+            "cook_minutes": 30,
+            "inactive_minutes": 10,
+            "total_minutes": 55
+          },
+          "image": "https://res.cloudinary.com/dm5lrxevq/image/upload/v1761773269/food_recipes/Baingan_Bharta.jpg",
+          "category": "North Indian (Punjabi)",
+          "procedure": [
+            "Roast brinjal on flame, peel and mash.",
+            "Sauté onions, ginger, garlic, and tomatoes.",
+            "Add mashed brinjal, spices, and cook.",
+            "Garnish with coriander."
+          ],
+          "cuisine": "Indian",
+          "dietType": "Vegetarian",
+          "likes": 333,
+          "averageRating": 3.7,
+          "ratingsCount": 187,
+          "tags": ["family-friendly", "vegan"],
+          "ingredients": [
+            "eggplant",
+            "onion",
+            "tomato",
+            "garlic",
+            "ginger",
+            "green chili",
+            "cumin seeds",
+            "turmeric",
+            "chili powder",
+            "garam masala",
+            "oil",
+            "salt",
+            "coriander leaves"
+          ],
+          "calories": 260
+        },
+        {
+          "name": "Pav Bhaji",
+          "description": "Spicy mashed vegetable curry served with butter-toasted bread.",
+          "time": {
+            "prep_minutes": 15,
+            "cook_minutes": 35,
+            "inactive_minutes": 0,
+            "total_minutes": 50
+          },
+          "image": "https://res.cloudinary.com/dm5lrxevq/image/upload/v1761773358/food_recipes/Pav_Bhaji.jpg",
+          "category": "Mumbai Street Food",
+          "procedure": [
+            "Boil potatoes, peas, cauliflower.",
+            "Cook onion, capsicum, and tomato with pav bhaji masala.",
+            "Mash in vegetables, simmer with butter.",
+            "Serve with toasted pav."
+          ],
+          "cuisine": "Indian",
+          "dietType": "Vegetarian",
+          "likes": 312,
+          "averageRating": 4.1,
+          "ratingsCount": 133,
+          "tags": ["family-friendly", "healthy", "vegan", "mild"],
+          "ingredients": [
+            "potato",
+            "cauliflower",
+            "peas",
+            "tomato",
+            "onion",
+            "capsicum",
+            "pav bhaji masala",
+            "butter",
+            "garlic",
+            "ginger",
+            "lemon",
+            "pav bread"
+          ],
+          "calories": 410
+        },
+        {
+          "name": "Idli with Sambar",
+          "description": "Steamed rice–lentil cakes with a tangy vegetable-lentil stew.",
+          "time": {
+            "prep_minutes": 25,
+            "cook_minutes": 30,
+            "inactive_minutes": 600,
+            "total_minutes": 655
+          },
+          "image": "https://res.cloudinary.com/dm5lrxevq/image/upload/v1761773308/food_recipes/Idli_with_Sambar_and_Chutney.jpg",
+          "category": "South Indian",
+          "procedure": [
+            "Ferment rice–dal batter overnight.",
+            "Steam batter in idli plates.",
+            "Prepare sambar with toor dal, tamarind, and vegetables.",
+            "Serve hot with chutney."
+          ],
+          "cuisine": "Indian",
+          "dietType": "Vegetarian",
+          "likes": 33,
+          "averageRating": 4.9,
+          "ratingsCount": 101,
+          "tags": ["sweet", "comfort food", "festival", "mild"],
+          "ingredients": [
+            "rice",
+            "urad dal",
+            "fenugreek seeds",
+            "toor dal",
+            "tamarind",
+            "onion",
+            "tomato",
+            "carrot",
+            "drumstick",
+            "mustard seeds",
+            "curry leaves",
+            "salt",
+            "oil"
+          ],
+          "calories": 330
+        },
+        {
+          "name": "Aloo Paratha",
+          "description": "Whole-wheat flatbread stuffed with spiced potato mash, cooked on a tawa.",
+          "time": {
+            "prep_minutes": 20,
+            "cook_minutes": 20,
+            "inactive_minutes": 15,
+            "total_minutes": 55
+          },
+          "image": "https://res.cloudinary.com/dm5lrxevq/image/upload/v1761773267/food_recipes/Aloo_Paratha.jpg",
+          "category": "North Indian (Punjabi)",
+          "procedure": [
+            "Prepare dough with wheat flour.",
+            "Boil and mash potatoes, add spices.",
+            "Stuff into dough balls, roll, and cook on tawa with ghee.",
+            "Serve with curd or pickle."
+          ],
+          "cuisine": "Indian",
+          "dietType": "Vegetarian",
+          "likes": 208,
+          "averageRating": 4.6,
+          "ratingsCount": 149,
+          "tags": [
+            "traditional",
+            "gluten-free",
+            "mild",
+            "family-friendly",
+            "vegetarian"
+          ],
+          "ingredients": [
+            "wheat flour",
+            "potato",
+            "onion",
+            "green chili",
+            "coriander leaves",
+            "ajwain",
+            "garam masala",
+            "salt",
+            "ghee",
+            "curd"
+          ],
+          "calories": 370
+        },
+        {
+          "name": "Vegetable Pulao",
+          "description": "Quick one-pot rice dish cooked with mixed vegetables and mild spices.",
+          "time": {
+            "prep_minutes": 10,
+            "cook_minutes": 25,
+            "inactive_minutes": 0,
+            "total_minutes": 35
+          },
+          "image": "https://res.cloudinary.com/dm5lrxevq/image/upload/v1761773373/food_recipes/Vegetable_Pulao.jpg",
+          "category": "North Indian",
+          "procedure": [
+            "Heat oil, sauté spices, onions, and ginger-garlic.",
+            "Add vegetables and soaked rice.",
+            "Cook with water until rice is done.",
+            "Fluff and serve with raita."
+          ],
+          "cuisine": "Indian",
+          "dietType": "Vegetarian",
+          "likes": 194,
+          "averageRating": 4.7,
+          "ratingsCount": 221,
+          "tags": ["street food", "mild", "savory"],
+          "ingredients": [
+            "basmati rice",
+            "carrot",
+            "peas",
+            "beans",
+            "onion",
+            "ginger-garlic paste",
+            "cloves",
+            "cinnamon",
+            "cardamom",
+            "bay leaf",
+            "salt",
+            "oil"
+          ],
+          "calories": 350
+        },
+        {
+          "name": "Gulab Jamun",
+          "description": "Deep-fried milk-solid dumplings soaked in cardamom–rose sugar syrup.",
+          "time": {
+            "prep_minutes": 15,
+            "cook_minutes": 30,
+            "inactive_minutes": 20,
+            "total_minutes": 65
+          },
+          "image": "https://res.cloudinary.com/dm5lrxevq/image/upload/v1761773301/food_recipes/Gulab_Jamun.jpg",
+          "category": "Indian Dessert",
+          "procedure": [
+            "Prepare dough with khoya and flour.",
+            "Shape into balls, fry until golden.",
+            "Soak in warm sugar syrup with cardamom and rose water.",
+            "Serve warm."
+          ],
+          "cuisine": "Indian",
+          "dietType": "Vegetarian",
+          "likes": 194,
+          "averageRating": 3.6,
+          "ratingsCount": 138,
+          "tags": ["comfort food", "gluten-free", "vegan", "quick"],
+          "ingredients": [
+            "khoya",
+            "maida flour",
+            "baking soda",
+            "milk",
+            "sugar",
+            "cardamom",
+            "rose water",
+            "ghee",
+            "oil"
+          ],
+          "calories": 310
+        }
       ]
     }
   ],
+
   "Chinese": [
     {
       "name": "Vegetable Fried Rice",
@@ -298,22 +417,30 @@
       "image": "https://res.cloudinary.com/dm5lrxevq/image/upload/v1761773372/food_recipes/Vegetable_Fried_Rice.jpg",
       "category": "Chinese Main",
       "procedure": [
-        "Cook rice and cool. \u2014 Continue as per your taste preference or adjust seasoning to suit.",
-        "Heat oil, add garlic and vegetables. \u2014 Stir well so all ingredients combine evenly and absorb flavors.",
-        "Add soy sauce, salt, and pepper. \u2014 Stir well so all ingredients combine evenly and absorb flavors.",
-        "Mix in rice, stir-fry on high flame. \u2014 Fry on medium flame until golden brown, stirring occasionally for even cooking."
+        "Cook rice and cool.",
+        "Heat oil, add garlic and vegetables.",
+        "Add soy sauce, salt, and pepper.",
+        "Mix in rice, stir-fry on high flame."
       ],
       "cuisine": "Chinese",
       "dietType": "Vegan",
       "likes": 372,
       "averageRating": 5.0,
       "ratingsCount": 13,
-      "tags": [
-        "spicy",
-        "family-friendly",
-        "sweet",
-        "savory"
-      ]
+      "tags": ["spicy", "family-friendly", "sweet", "savory"],
+      "ingredients": [
+        "cooked rice",
+        "carrot",
+        "bell pepper",
+        "spring onion",
+        "green beans",
+        "soy sauce",
+        "garlic",
+        "black pepper",
+        "salt",
+        "sesame oil"
+      ],
+      "calories": 320
     },
     {
       "name": "Veg Manchurian",
@@ -327,20 +454,30 @@
       "image": "https://res.cloudinary.com/dm5lrxevq/image/upload/v1761773365/food_recipes/Veg_Manchurian.jpg",
       "category": "Chinese Indo-Chinese",
       "procedure": [
-        "Make balls from grated cabbage, carrot, and flour. \u2014 Continue as per your taste preference or adjust seasoning to suit.",
-        "Deep fry until golden. \u2014 Fry on medium flame until golden brown, stirring occasionally for even cooking.",
-        "Prepare sauce with garlic, soy, chili sauce. \u2014 Continue as per your taste preference or adjust seasoning to suit.",
-        "Simmer balls in sauce and serve. \u2014 Serve hot with your choice of sides or condiments for the best experience."
+        "Make balls from grated cabbage, carrot, and flour.",
+        "Deep fry until golden.",
+        "Prepare sauce with garlic, soy, chili sauce.",
+        "Simmer balls in sauce and serve."
       ],
       "cuisine": "Chinese",
       "dietType": "Vegetarian",
       "likes": 6,
       "averageRating": 4.3,
       "ratingsCount": 177,
-      "tags": [
-        "street food",
-        "gluten-free"
-      ]
+      "tags": ["street food", "gluten-free"],
+      "ingredients": [
+        "cabbage",
+        "carrot",
+        "corn flour",
+        "ginger",
+        "garlic",
+        "soy sauce",
+        "chili sauce",
+        "spring onion",
+        "salt",
+        "oil"
+      ],
+      "calories": 370
     },
     {
       "name": "Hakka Noodles",
@@ -354,21 +491,31 @@
       "image": "https://res.cloudinary.com/dm5lrxevq/image/upload/v1761773304/food_recipes/Hakka_Noodles.jpg",
       "category": "Chinese Main",
       "procedure": [
-        "Boil noodles and drain. \u2014 Boil until ingredients are tender but not mushy. Drain any excess water.",
-        "Heat oil, saut\u00e9 garlic and vegetables. \u2014 Saut\u00e9 until the onions turn golden and the raw aroma disappears.",
-        "Add soy, vinegar, chili sauce. \u2014 Stir well so all ingredients combine evenly and absorb flavors.",
-        "Toss in noodles and stir-fry. \u2014 Fry on medium flame until golden brown, stirring occasionally for even cooking."
+        "Boil noodles and drain.",
+        "Heat oil, sauté garlic and vegetables.",
+        "Add soy, vinegar, chili sauce.",
+        "Toss in noodles and stir-fry."
       ],
       "cuisine": "Chinese",
       "dietType": "Vegetarian",
       "likes": 395,
       "averageRating": 3.6,
       "ratingsCount": 133,
-      "tags": [
-        "sweet",
-        "festival",
-        "vegan"
-      ]
+      "tags": ["sweet", "festival", "vegan"],
+      "ingredients": [
+        "noodles",
+        "carrot",
+        "cabbage",
+        "bell pepper",
+        "spring onion",
+        "soy sauce",
+        "vinegar",
+        "chili sauce",
+        "garlic",
+        "oil",
+        "salt"
+      ],
+      "calories": 400
     },
     {
       "name": "Mapo Tofu (Veg)",
@@ -382,22 +529,29 @@
       "image": "https://res.cloudinary.com/dm5lrxevq/image/upload/v1761773316/food_recipes/Mapo_Tofu.jpg",
       "category": "Chinese Sichuan",
       "procedure": [
-        "Cube tofu, blanch lightly. \u2014 Continue as per your taste preference or adjust seasoning to suit.",
-        "Prepare sauce with garlic, ginger, soy, chili paste, Sichuan pepper. \u2014 Continue as per your taste preference or adjust seasoning to suit.",
-        "Simmer tofu in sauce. \u2014 Continue as per your taste preference or adjust seasoning to suit.",
-        "Garnish with scallions. \u2014 Continue as per your taste preference or adjust seasoning to suit."
+        "Cube tofu, blanch lightly.",
+        "Prepare sauce with garlic, ginger, soy, chili paste, Sichuan pepper.",
+        "Simmer tofu in sauce.",
+        "Garnish with scallions."
       ],
       "cuisine": "Chinese",
       "dietType": "Vegan",
       "likes": 399,
       "averageRating": 4.0,
       "ratingsCount": 45,
-      "tags": [
-        "sweet",
-        "quick",
-        "festival",
-        "vegan"
-      ]
+      "tags": ["sweet", "quick", "festival", "vegan"],
+      "ingredients": [
+        "tofu",
+        "garlic",
+        "ginger",
+        "soy sauce",
+        "chili paste",
+        "Sichuan peppercorns",
+        "spring onion",
+        "cornstarch",
+        "sesame oil"
+      ],
+      "calories": 280
     },
     {
       "name": "Spring Rolls",
@@ -411,21 +565,29 @@
       "image": "https://res.cloudinary.com/dm5lrxevq/image/upload/v1761773362/food_recipes/Spring_Rolls.jpg",
       "category": "Chinese Snack",
       "procedure": [
-        "Prepare filling with cabbage, carrot, noodles, and sauces. \u2014 Continue as per your taste preference or adjust seasoning to suit.",
-        "Fill spring roll sheets and roll tightly. \u2014 Continue as per your taste preference or adjust seasoning to suit.",
-        "Deep fry until golden. \u2014 Fry on medium flame until golden brown, stirring occasionally for even cooking.",
-        "Serve with sweet chili sauce. \u2014 Serve hot with your choice of sides or condiments for the best experience."
+        "Prepare filling with cabbage, carrot, noodles, and sauces.",
+        "Fill spring roll sheets and roll tightly.",
+        "Deep fry until golden.",
+        "Serve with sweet chili sauce."
       ],
       "cuisine": "Chinese",
       "dietType": "Vegan",
       "likes": 432,
       "averageRating": 4.1,
       "ratingsCount": 94,
-      "tags": [
-        "spicy",
-        "sweet",
-        "quick"
-      ]
+      "tags": ["spicy", "sweet", "quick"],
+      "ingredients": [
+        "spring roll sheets",
+        "cabbage",
+        "carrot",
+        "noodles",
+        "soy sauce",
+        "vinegar",
+        "chili sauce",
+        "salt",
+        "oil"
+      ],
+      "calories": 290
     },
     {
       "name": "Hot and Sour Soup",
@@ -439,20 +601,29 @@
       "image": "https://res.cloudinary.com/dm5lrxevq/image/upload/v1761773306/food_recipes/Hot_and_Sour_Soup.jpg",
       "category": "Chinese Soup",
       "procedure": [
-        "Boil vegetable stock. \u2014 Boil until ingredients are tender but not mushy. Drain any excess water.",
-        "Add mushrooms, cabbage, carrots. \u2014 Stir well so all ingredients combine evenly and absorb flavors.",
-        "Season with soy, vinegar, chili paste. \u2014 Continue as per your taste preference or adjust seasoning to suit.",
-        "Thicken with cornstarch slurry. \u2014 Continue as per your taste preference or adjust seasoning to suit."
+        "Boil vegetable stock.",
+        "Add mushrooms, cabbage, carrots.",
+        "Season with soy, vinegar, chili paste.",
+        "Thicken with cornstarch slurry."
       ],
       "cuisine": "Chinese",
       "dietType": "Vegetarian",
       "likes": 362,
       "averageRating": 3.6,
       "ratingsCount": 133,
-      "tags": [
-        "family-friendly",
-        "gluten-free"
-      ]
+      "tags": ["family-friendly", "gluten-free"],
+      "ingredients": [
+        "vegetable stock",
+        "mushroom",
+        "carrot",
+        "cabbage",
+        "soy sauce",
+        "vinegar",
+        "chili paste",
+        "cornstarch",
+        "black pepper"
+      ],
+      "calories": 180
     },
     {
       "name": "Kung Pao Vegetables",
@@ -466,21 +637,30 @@
       "image": "https://res.cloudinary.com/dm5lrxevq/image/upload/v1761773311/food_recipes/Kung_Pao_Vegetables.jpg",
       "category": "Chinese Sichuan",
       "procedure": [
-        "Roast peanuts. \u2014 Continue as per your taste preference or adjust seasoning to suit.",
-        "Stir-fry garlic, ginger, and vegetables. \u2014 Fry on medium flame until golden brown, stirring occasionally for even cooking.",
-        "Add soy, vinegar, chili paste. \u2014 Stir well so all ingredients combine evenly and absorb flavors.",
-        "Mix in peanuts and toss well. \u2014 Stir well so all ingredients combine evenly and absorb flavors."
+        "Roast peanuts.",
+        "Stir-fry garlic, ginger, and vegetables.",
+        "Add soy, vinegar, chili paste.",
+        "Mix in peanuts and toss well."
       ],
       "cuisine": "Chinese",
       "dietType": "Vegetarian",
       "likes": 9,
       "averageRating": 3.9,
       "ratingsCount": 57,
-      "tags": [
-        "quick",
-        "festival",
-        "mild"
-      ]
+      "tags": ["quick", "festival", "mild"],
+      "ingredients": [
+        "bell pepper",
+        "zucchini",
+        "onion",
+        "garlic",
+        "ginger",
+        "soy sauce",
+        "vinegar",
+        "dry red chili",
+        "peanuts",
+        "oil"
+      ],
+      "calories": 350
     },
     {
       "name": "Chili Garlic Noodles",
@@ -494,27 +674,32 @@
       "image": "https://res.cloudinary.com/dm5lrxevq/image/upload/v1761773299/food_recipes/Chili_Garlic_Noodles.jpg",
       "category": "Chinese Main",
       "procedure": [
-        "Boil noodles. \u2014 Boil until ingredients are tender but not mushy. Drain any excess water.",
-        "Heat oil, saut\u00e9 garlic and chilies. \u2014 Saut\u00e9 until the onions turn golden and the raw aroma disappears.",
-        "Add sauces and toss noodles. \u2014 Stir well so all ingredients combine evenly and absorb flavors.",
-        "Serve hot. \u2014 Serve hot with your choice of sides or condiments for the best experience."
+        "Boil noodles.",
+        "Heat oil, sauté garlic and chilies.",
+        "Add sauces and toss noodles.",
+        "Serve hot."
       ],
       "cuisine": "Chinese",
       "dietType": "Vegan",
       "likes": 93,
       "averageRating": 4.6,
       "ratingsCount": 215,
-      "tags": [
-        "quick",
-        "vegetarian",
-        "mild",
-        "crispy",
-        "healthy"
-      ]
+      "tags": ["quick", "vegetarian", "mild", "crispy", "healthy"],
+      "ingredients": [
+        "noodles",
+        "garlic",
+        "chili paste",
+        "soy sauce",
+        "spring onion",
+        "oil",
+        "vinegar",
+        "salt"
+      ],
+      "calories": 310
     },
     {
       "name": "Stir-Fried Broccoli with Garlic Sauce",
-      "description": "Healthy stir-fried broccoli in soy\u2013garlic sauce.",
+      "description": "Healthy stir-fried broccoli in soy–garlic sauce.",
       "time": {
         "prep_minutes": 10,
         "cook_minutes": 10,
@@ -524,22 +709,28 @@
       "image": "https://res.cloudinary.com/dm5lrxevq/image/upload/v1761773272/food_recipes/Broccoli_with_Garlic_Sauce.jpg",
       "category": "Chinese Healthy",
       "procedure": [
-        "Blanch broccoli. \u2014 Continue as per your taste preference or adjust seasoning to suit.",
-        "Stir-fry garlic, soy, and cornstarch slurry. \u2014 Fry on medium flame until golden brown, stirring occasionally for even cooking.",
-        "Add broccoli and coat well. \u2014 Stir well so all ingredients combine evenly and absorb flavors.",
-        "Serve hot. \u2014 Serve hot with your choice of sides or condiments for the best experience."
+        "Blanch broccoli.",
+        "Stir-fry garlic, soy, and cornstarch slurry.",
+        "Add broccoli and coat well.",
+        "Serve hot."
       ],
       "cuisine": "Chinese",
       "dietType": "Non-Vegetarian",
       "likes": 437,
       "averageRating": 3.9,
       "ratingsCount": 101,
-      "tags": [
-        "family-friendly",
-        "savory",
-        "vegan",
-        "mild"
-      ]
+      "tags": ["family-friendly", "savory", "vegan", "mild"],
+      "ingredients": [
+        "broccoli",
+        "garlic",
+        "soy sauce",
+        "cornstarch",
+        "chicken broth",
+        "oil",
+        "salt",
+        "pepper"
+      ],
+      "calories": 240
     },
     {
       "name": "Steamed Veg Dumplings",
@@ -550,27 +741,36 @@
         "inactive_minutes": 15,
         "total_minutes": 60
       },
-      "image": "https://imagesvc.meredithcorp.io/v3/mm/image?q=60&c=sc&rect=0%2C395%2C1667%2C1228&poi=[783%2C816]&w=1667&h=834&url=https:%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F44%2F2021%2F07%2F21%2Fsteamed-vegetable-dumplings-recipe.jpg",
+      "image": "https://res.cloudinary.com/dm5lrxevq/image/upload/v1761773344/food_recipes/Momos.jpg",
       "category": "Chinese Dim Sum",
       "procedure": [
-        "Prepare dough and veg filling. \u2014 Continue as per your taste preference or adjust seasoning to suit.",
-        "Stuff and fold dumplings. \u2014 Continue as per your taste preference or adjust seasoning to suit.",
-        "Steam for 10\u201312 mins. \u2014 Continue as per your taste preference or adjust seasoning to suit.",
-        "Serve with dipping sauce. \u2014 Serve hot with your choice of sides or condiments for the best experience."
+        "Prepare dough and veg filling.",
+        "Stuff and fold dumplings.",
+        "Steam for 10–12 mins.",
+        "Serve with dipping sauce."
       ],
       "cuisine": "Chinese",
       "dietType": "Non-Vegetarian",
       "likes": 125,
       "averageRating": 3.7,
       "ratingsCount": 97,
-      "tags": [
-        "family-friendly",
-        "vegetarian",
-        "comfort food",
-        "vegan"
-      ]
+      "tags": ["family-friendly", "vegetarian", "comfort food", "vegan"],
+      "ingredients": [
+        "dumpling wrappers",
+        "cabbage",
+        "carrot",
+        "spring onion",
+        "soy sauce",
+        "chicken mince",
+        "ginger",
+        "garlic",
+        "salt",
+        "oil"
+      ],
+      "calories": 290
     }
   ],
+
   "Mexican": [
     {
       "name": "Vegetarian Tacos",
@@ -581,23 +781,34 @@
         "inactive_minutes": 0,
         "total_minutes": 35
       },
-      "image": "https://www.twopeasandtheirpod.com/wp-content/uploads/2021/06/Veggie-Tacos4572-650x975.jpg",
+      "image": "https://res.cloudinary.com/dm5lrxevq/image/upload/v1761773313/food_recipes/Lentil_Tacos.jpg",
       "category": "Mexican Street Food",
       "procedure": [
-        "Warm tortillas. \u2014 Continue as per your taste preference or adjust seasoning to suit.",
-        "Prepare filling with beans, peppers, onions. \u2014 Continue as per your taste preference or adjust seasoning to suit.",
-        "Top with salsa and avocado. \u2014 Continue as per your taste preference or adjust seasoning to suit.",
-        "Fold and serve. \u2014 Serve hot with your choice of sides or condiments for the best experience."
+        "Warm tortillas.",
+        "Prepare filling with beans, peppers, onions.",
+        "Top with salsa and avocado.",
+        "Fold and serve."
       ],
       "cuisine": "Mexican",
       "dietType": "Non-Vegetarian",
       "likes": 21,
       "averageRating": 4.5,
       "ratingsCount": 192,
-      "tags": [
-        "vegan",
-        "crispy"
-      ]
+      "tags": ["vegan", "crispy"],
+      "ingredients": [
+        "corn tortillas",
+        "black beans",
+        "chicken strips",
+        "bell peppers",
+        "onion",
+        "tomato salsa",
+        "avocado",
+        "lime juice",
+        "olive oil",
+        "salt",
+        "pepper"
+      ],
+      "calories": 420
     },
     {
       "name": "Vegetarian Enchiladas",
@@ -608,23 +819,34 @@
         "inactive_minutes": 0,
         "total_minutes": 55
       },
-      "image": "https://tse1.mm.bing.net/th/id/OIP.MpHkNs8uAMEnPKKhb5iiggHaFi?pid=Api&P=0&h=180",
+      "image": "https://res.cloudinary.com/dm5lrxevq/image/upload/v1761773375/food_recipes/Vegetarian_Enchilada_Casserole.jpg",
       "category": "Mexican Main",
       "procedure": [
-        "Stuff tortillas with beans and vegetables. \u2014 Continue as per your taste preference or adjust seasoning to suit.",
-        "Roll and place in baking dish. \u2014 Continue as per your taste preference or adjust seasoning to suit.",
-        "Top with enchilada sauce and cheese. \u2014 Continue as per your taste preference or adjust seasoning to suit.",
-        "Bake until golden. \u2014 Bake in a preheated oven at 180\u00b0C (350\u00b0F) until golden and crisp."
+        "Stuff tortillas with beans and vegetables.",
+        "Roll and place in baking dish.",
+        "Top with enchilada sauce and cheese.",
+        "Bake until golden."
       ],
       "cuisine": "Mexican",
       "dietType": "Vegetarian",
       "likes": 127,
       "averageRating": 4.8,
       "ratingsCount": 181,
-      "tags": [
-        "family-friendly",
-        "savory"
-      ]
+      "tags": ["family-friendly", "savory"],
+      "ingredients": [
+        "corn tortillas",
+        "black beans",
+        "cheddar cheese",
+        "enchilada sauce",
+        "onion",
+        "bell pepper",
+        "garlic",
+        "olive oil",
+        "chili powder",
+        "cumin",
+        "salt"
+      ],
+      "calories": 480
     },
     {
       "name": "Vegetarian Quesadilla",
@@ -635,23 +857,33 @@
         "inactive_minutes": 0,
         "total_minutes": 20
       },
-      "image": "https://tse3.mm.bing.net/th/id/OIP.JQeUHYJUz0ieNB_7VLzP2wHaE8?pid=Api&P=0&h=180",
+      "image": "https://res.cloudinary.com/dm5lrxevq/image/upload/v1761773379/food_recipes/Veggie_Quesadilla.jpg",
       "category": "Mexican Snack",
       "procedure": [
-        "Heat tortilla. \u2014 Continue as per your taste preference or adjust seasoning to suit.",
-        "Fill with cheese and vegetables. \u2014 Continue as per your taste preference or adjust seasoning to suit.",
-        "Fold and grill until crispy. \u2014 Continue as per your taste preference or adjust seasoning to suit.",
-        "Serve with salsa. \u2014 Serve hot with your choice of sides or condiments for the best experience."
+        "Heat tortilla.",
+        "Fill with cheese and vegetables.",
+        "Fold and grill until crispy.",
+        "Serve with salsa."
       ],
       "cuisine": "Mexican",
       "dietType": "Vegan",
       "likes": 387,
       "averageRating": 3.9,
       "ratingsCount": 203,
-      "tags": [
-        "savory",
-        "mild"
-      ]
+      "tags": ["savory", "mild"],
+      "ingredients": [
+        "flour tortillas",
+        "mozzarella cheese",
+        "bell peppers",
+        "onion",
+        "corn",
+        "black beans",
+        "tomato salsa",
+        "olive oil",
+        "salt",
+        "pepper"
+      ],
+      "calories": 390
     },
     {
       "name": "Vegetarian Burrito",
@@ -665,10 +897,10 @@
       "image": "https://res.cloudinary.com/dm5lrxevq/image/upload/v1761773374/food_recipes/Vegetarian_Burrito.jpg",
       "category": "Mexican Main",
       "procedure": [
-        "Warm tortilla. \u2014 Continue as per your taste preference or adjust seasoning to suit.",
-        "Fill with rice, beans, and vegetables. \u2014 Continue as per your taste preference or adjust seasoning to suit.",
-        "Roll tightly. \u2014 Continue as per your taste preference or adjust seasoning to suit.",
-        "Serve with salsa. \u2014 Serve hot with your choice of sides or condiments for the best experience."
+        "Warm tortilla.",
+        "Fill with rice, beans, and vegetables.",
+        "Roll tightly.",
+        "Serve with salsa."
       ],
       "cuisine": "Mexican",
       "dietType": "Non-Vegetarian",
@@ -681,34 +913,54 @@
         "mild",
         "family-friendly",
         "street food"
-      ]
+      ],
+      "ingredients": [
+        "flour tortilla",
+        "rice",
+        "black beans",
+        "chicken breast",
+        "bell pepper",
+        "onion",
+        "salsa",
+        "cheese",
+        "lettuce",
+        "sour cream"
+      ],
+      "calories": 520
     },
     {
       "name": "Vegetarian Nachos",
-      "description": "Crispy tortilla chips topped with beans, cheese, jalape\u00f1os, and salsa.",
+      "description": "Crispy tortilla chips topped with beans, cheese, jalapeños, and salsa.",
       "time": {
         "prep_minutes": 10,
         "cook_minutes": 10,
         "inactive_minutes": 0,
         "total_minutes": 20
       },
-      "image": "https://www.frugalandthriving.com.au/wp-content/uploads/2013/12/Vegetarian-Nachos-s.jpg?x63963",
+      "image": "https://res.cloudinary.com/dm5lrxevq/image/upload/v1761773367/food_recipes/Vegan_Nachos.jpg",
       "category": "Mexican Appetizer",
       "procedure": [
-        "Arrange nachos on plate. \u2014 Continue as per your taste preference or adjust seasoning to suit.",
-        "Top with beans, cheese, salsa, and jalape\u00f1os. \u2014 Continue as per your taste preference or adjust seasoning to suit.",
-        "Bake or microwave until cheese melts. \u2014 Bake in a preheated oven at 180\u00b0C (350\u00b0F) until golden and crisp.",
-        "Serve with guacamole. \u2014 Serve hot with your choice of sides or condiments for the best experience."
+        "Arrange nachos on plate.",
+        "Top with beans, cheese, salsa, and jalapeños.",
+        "Bake or microwave until cheese melts.",
+        "Serve with guacamole."
       ],
       "cuisine": "Mexican",
       "dietType": "Vegetarian",
       "likes": 252,
       "averageRating": 4.8,
       "ratingsCount": 23,
-      "tags": [
-        "traditional",
-        "quick"
-      ]
+      "tags": ["traditional", "quick"],
+      "ingredients": [
+        "tortilla chips",
+        "black beans",
+        "cheddar cheese",
+        "salsa",
+        "jalapeños",
+        "guacamole",
+        "sour cream"
+      ],
+      "calories": 450
     },
     {
       "name": "Vegetarian Fajitas",
@@ -719,22 +971,32 @@
         "inactive_minutes": 0,
         "total_minutes": 30
       },
-      "image": "https://amindfullmom.com/wp-content/uploads/2019/12/Easy-Fajitas.jpg",
+      "image": "https://res.cloudinary.com/dm5lrxevq/image/upload/v1761773364/food_recipes/Stir_Fried_Vegetables.jpg",
       "category": "Mexican Main",
       "procedure": [
-        "Grill peppers, onions, and mushrooms. \u2014 Continue as per your taste preference or adjust seasoning to suit.",
-        "Serve with warm tortillas. \u2014 Serve hot with your choice of sides or condiments for the best experience.",
-        "Add salsa or guacamole. \u2014 Stir well so all ingredients combine evenly and absorb flavors."
+        "Grill peppers, onions, and mushrooms.",
+        "Serve with warm tortillas.",
+        "Add salsa or guacamole."
       ],
       "cuisine": "Mexican",
       "dietType": "Vegetarian",
       "likes": 56,
       "averageRating": 4.3,
       "ratingsCount": 149,
-      "tags": [
-        "healthy",
-        "vegetarian"
-      ]
+      "tags": ["healthy", "vegetarian"],
+      "ingredients": [
+        "flour tortillas",
+        "bell peppers",
+        "onion",
+        "mushrooms",
+        "olive oil",
+        "lime juice",
+        "salsa",
+        "guacamole",
+        "salt",
+        "pepper"
+      ],
+      "calories": 370
     },
     {
       "name": "Vegetarian Tamales",
@@ -745,23 +1007,33 @@
         "inactive_minutes": 30,
         "total_minutes": 130
       },
-      "image": "https://i.cdn.newsbytesapp.com/images/28710311715898462.jpeg",
+      "image": "https://res.cloudinary.com/dm5lrxevq/image/upload/v1761773368/food_recipes/Vegan_Tamales.jpg",
       "category": "Mexican Traditional",
       "procedure": [
-        "Prepare masa dough. \u2014 Continue as per your taste preference or adjust seasoning to suit.",
-        "Fill with beans and vegetables. \u2014 Continue as per your taste preference or adjust seasoning to suit.",
-        "Wrap in corn husks. \u2014 Continue as per your taste preference or adjust seasoning to suit.",
-        "Steam until cooked. \u2014 Continue as per your taste preference or adjust seasoning to suit."
+        "Prepare masa dough.",
+        "Fill with beans and vegetables.",
+        "Wrap in corn husks.",
+        "Steam until cooked."
       ],
       "cuisine": "Mexican",
       "dietType": "Non-Vegetarian",
       "likes": 94,
       "averageRating": 4.9,
       "ratingsCount": 81,
-      "tags": [
-        "family-friendly",
-        "sweet"
-      ]
+      "tags": ["family-friendly", "sweet"],
+      "ingredients": [
+        "masa harina (corn dough)",
+        "black beans",
+        "chicken mince",
+        "onion",
+        "bell pepper",
+        "corn husks",
+        "olive oil",
+        "cumin",
+        "salt",
+        "broth"
+      ],
+      "calories": 460
     },
     {
       "name": "Chiles Rellenos (Veg)",
@@ -772,24 +1044,31 @@
         "inactive_minutes": 15,
         "total_minutes": 75
       },
-      "image": "https://images.squarespace-cdn.com/content/v1/56c3a1e3356fb07aeced9ee1/1628834820037-6QXJXU7W3ZQYD09BPM5O/chile_rellenos_chowhound.jpg",
+      "image": "https://res.cloudinary.com/dm5lrxevq/image/upload/v1761773297/food_recipes/Chile_Rellenos.jpg",
       "category": "Mexican Traditional",
       "procedure": [
-        "Roast poblano peppers, peel skin. \u2014 Continue as per your taste preference or adjust seasoning to suit.",
-        "Stuff with cheese or beans. \u2014 Continue as per your taste preference or adjust seasoning to suit.",
-        "Dip in batter and fry. \u2014 Fry on medium flame until golden brown, stirring occasionally for even cooking.",
-        "Serve with tomato salsa. \u2014 Serve hot with your choice of sides or condiments for the best experience."
+        "Roast poblano peppers, peel skin.",
+        "Stuff with cheese or beans.",
+        "Dip in batter and fry.",
+        "Serve with tomato salsa."
       ],
       "cuisine": "Mexican",
       "dietType": "Vegan",
       "likes": 418,
       "averageRating": 4.8,
       "ratingsCount": 231,
-      "tags": [
-        "spicy",
-        "family-friendly",
-        "street food"
-      ]
+      "tags": ["spicy", "family-friendly", "street food"],
+      "ingredients": [
+        "poblano peppers",
+        "black beans",
+        "cheese",
+        "flour",
+        "eggs",
+        "tomato salsa",
+        "oil",
+        "salt"
+      ],
+      "calories": 430
     },
     {
       "name": "Vegetarian Tortilla Soup",
@@ -803,20 +1082,30 @@
       "image": "https://res.cloudinary.com/dm5lrxevq/image/upload/v1761773377/food_recipes/Vegetarian_Tortilla_Soup.jpg",
       "category": "Mexican Soup",
       "procedure": [
-        "Cook onions, garlic, and tomatoes. \u2014 Continue as per your taste preference or adjust seasoning to suit.",
-        "Add beans, corn, and broth. \u2014 Stir well so all ingredients combine evenly and absorb flavors.",
-        "Simmer and season. \u2014 Continue as per your taste preference or adjust seasoning to suit.",
-        "Serve with tortilla strips and avocado. \u2014 Serve hot with your choice of sides or condiments for the best experience."
+        "Cook onions, garlic, and tomatoes.",
+        "Add beans, corn, and broth.",
+        "Simmer and season.",
+        "Serve with tortilla strips and avocado."
       ],
       "cuisine": "Mexican",
       "dietType": "Vegan",
       "likes": 249,
       "averageRating": 3.7,
       "ratingsCount": 149,
-      "tags": [
-        "spicy",
-        "savory"
-      ]
+      "tags": ["spicy", "savory"],
+      "ingredients": [
+        "tomatoes",
+        "onion",
+        "garlic",
+        "black beans",
+        "corn kernels",
+        "vegetable broth",
+        "tortilla strips",
+        "avocado",
+        "lime juice",
+        "chili powder"
+      ],
+      "calories": 310
     },
     {
       "name": "Mexican Rice",
@@ -830,23 +1119,29 @@
       "image": "https://res.cloudinary.com/dm5lrxevq/image/upload/v1761773343/food_recipes/Mexican_Rice.jpg",
       "category": "Mexican Side Dish",
       "procedure": [
-        "Saut\u00e9 onion, garlic, and tomato paste. \u2014 Saut\u00e9 until the onions turn golden and the raw aroma disappears.",
-        "Add rice and fry lightly. \u2014 Fry on medium flame until golden brown, stirring occasionally for even cooking.",
-        "Pour in broth and simmer. \u2014 Continue as per your taste preference or adjust seasoning to suit.",
-        "Fluff and serve. \u2014 Serve hot with your choice of sides or condiments for the best experience."
+        "Sauté onion, garlic, and tomato paste.",
+        "Add rice and fry lightly.",
+        "Pour in broth and simmer.",
+        "Fluff and serve."
       ],
       "cuisine": "Mexican",
       "dietType": "Vegetarian",
       "likes": 257,
       "averageRating": 4.1,
       "ratingsCount": 112,
-      "tags": [
-        "quick",
-        "spicy",
-        "savory",
-        "family-friendly",
-        "sweet"
-      ]
+      "tags": ["quick", "spicy", "savory", "family-friendly", "sweet"],
+      "ingredients": [
+        "long-grain rice",
+        "onion",
+        "garlic",
+        "tomato paste",
+        "vegetable broth",
+        "olive oil",
+        "cumin",
+        "salt",
+        "pepper"
+      ],
+      "calories": 340
     }
   ]
 }

@@ -27,7 +27,7 @@ async function loadFeedback() {
     container.innerHTML = feedbacks
       .map(
         (f) => `
-      <div class="feedback-item">
+      <div class="feedback-item dark:bg-[#1e1e1e] dark:text-white">
         <p class="message text-sm">${f.message}</p>
         <small class="date text-xs text-[#8b5b5c]">
           ${new Date(f.createdAt).toLocaleString()}

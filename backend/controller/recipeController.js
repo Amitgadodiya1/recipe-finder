@@ -3,7 +3,7 @@ import Recipe from "../models/Recipe.js";
 // ✅ Get all recipes (with filters + pagination)
 export const getAllRecipes = async (req, res) => {
   try {
-    const { cuisine, category, search, page = 1, limit = 10 } = req.query;
+    const { cuisine, category, search, page = 1, limit = 30 } = req.query;
     const filter = {};
 
     if (cuisine) filter.cuisine = cuisine;

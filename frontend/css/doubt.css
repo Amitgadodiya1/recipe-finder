@@ -1,0 +1,84 @@
+.input-field {
+  width: 100%;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  padding: 0.6rem 1rem;
+  background: transparent;
+  transition: border 0.2s, box-shadow 0.2s;
+  color: black;
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: #e63946;
+  box-shadow: 0 0 0 2px #fecaca;
+}
+
+.btn-primary {
+  background: linear-gradient(to right, #e63946, #ff6b6b);
+  color: white;
+  font-weight: 600;
+  padding: 0.6rem 1.5rem;
+  border-radius: 9999px;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(to right, #d62839, #ff3b3b);
+  transform: scale(1.03);
+}
+
+/* Ask Section */
+.ask-section {
+  border-top: 4px solid #e63946;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+}
+.dark .ask-section {
+  border-top: 4px solid #ff6b6b;
+}
+
+/* Doubt Card */
+.doubt-card {
+  background: white;
+  border-radius: 1rem;
+  padding: 1.2rem;
+  border: 1px solid #f3f4f6;
+  box-shadow: 0 4px 14px rgba(230, 57, 70, 0.08);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.doubt-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(230, 57, 70, 0.12);
+}
+
+.dark .doubt-card {
+  background: #1e1e1e;
+  border-color: #333;
+  box-shadow: 0 4px 12px rgba(255, 107, 107, 0.1);
+}
+
+/* Reply Block */
+.reply-block {
+  border-left: 3px solid #fca5a5;
+  padding-left: 1rem;
+  margin-top: 0.75rem;
+}
+.dark .reply-block {
+  border-color: #ff6b6b;
+}
+
+/* Vote Buttons */
+.vote-btn {
+  background: #f8f8f8;
+  border-radius: 9999px;
+  padding: 0.2rem 0.6rem;
+  font-size: 0.85rem;
+  transition: background 0.2s;
+}
+.vote-btn:hover {
+  background: #ffe5e5;
+}
+.dark .vote-btn {
+  background: #2a2a2a;
+}
