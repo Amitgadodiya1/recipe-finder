@@ -8,6 +8,7 @@
   ],
   "routes": [
     { "src": "/$", "dest": "/frontend/index.html" },
+    { "src": "/all-recipes", "dest": "/frontend/all-recipes.html" },
     { "src": "/recipe-details", "dest": "/frontend/recipe-details.html" },
     { "src": "/doubt", "dest": "/frontend/doubt.html" },
     { "src": "/feedback", "dest": "/frontend/feedback.html" },
