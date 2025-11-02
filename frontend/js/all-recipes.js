@@ -1,7 +1,13 @@
 // 📱 Mobile menu toggle
-const mobileMenu = document.getElementById("mobile-menu");
-document.getElementById("menu-btn").addEventListener("click", () => {
-  mobileMenu.classList.toggle("hidden");
+document.addEventListener("DOMContentLoaded", () => {
+  const menuBtn = document.getElementById("menu-btn");
+  const mobileMenu = document.getElementById("mobile-menu");
+
+  if (menuBtn && mobileMenu) {
+    menuBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+  }
 });
 
 let allRecipes = [];
@@ -10,7 +16,7 @@ let page = 1;
 const BASE_URL =
   window.location.hostname === "localhost"
     ? "http://localhost:3001"
-    : "https://recipe-finder-2d56.onrender.com";
+    : "https://recipes-containerrecipe-finder-2d56.onrender.com";
 
 // 🍳 Fetch recipes with pagination
 async function fetchRecipes(loadMore = false) {
