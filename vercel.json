@@ -7,7 +7,10 @@
     }
   ],
   "routes": [
-    { "src": "/", "dest": "/frontend/index.html" },
+    { "src": "/$", "dest": "/frontend/index.html" },
+    { "src": "/recipe-details", "dest": "/frontend/recipe-details.html" },
+    { "src": "/doubt", "dest": "/frontend/doubt.html" },
+    { "src": "/feedback", "dest": "/frontend/feedback.html" },
     { "src": "/(.*)", "dest": "/frontend/$1" }
   ]
 }
