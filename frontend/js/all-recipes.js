@@ -114,7 +114,7 @@ function openModal(recipe) {
   list.innerHTML = recipe.ingredients.map(step => `<li>${step}</li>`).join("");
 
   document.getElementById("view-recipe-btn").onclick = () => {
-    window.location.href = `./recipe-details?id=${recipe._id}`;
+    window.location.href = `./recipe-details?id=${recipe._id}` || `./recipe-details.html?id=${recipe._id}`;
   };
 
   document.getElementById("recipe-modal").classList.remove("hidden");

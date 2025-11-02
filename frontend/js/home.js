@@ -54,7 +54,7 @@ function openQuickView(recipe) {
   document.getElementById("modal-desc").textContent = recipe.ingredients;
   document.getElementById("modal-time").textContent = `⏱️ Total Time: ${recipe.time?.total_minutes || 0} mins`;
   document.getElementById("view-btn").onclick = () => {
-    window.location.href = `./recipe-details?id=${recipe._id}`;
+    window.location.href = `./recipe-details?id=${recipe._id}` || `./recipe-details.html?id=${recipe._id}`;
   };
   document.getElementById("quick-modal").classList.remove("hidden");
 }
