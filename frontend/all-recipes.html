@@ -13,8 +13,9 @@
       onload="this.rel='stylesheet'"
       href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap"
     />
+
+    <!-- 🌓 Load theme preference early -->
     <script>
-      // 🌓 Load theme preference early to avoid flicker
       if (
         localStorage.getItem("theme") === "dark" ||
         (!localStorage.getItem("theme") &&
@@ -23,14 +24,12 @@
         document.documentElement.classList.add("dark");
       }
     </script>
+
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <script>
-      tailwind.config = {
-        darkMode: "class",
-      };
+      tailwind.config = { darkMode: "class" };
     </script>
 
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="./css/all-recipes.css" />
   </head>
 
@@ -39,76 +38,90 @@
   >
     <!-- 🌐 Header -->
     <header
-      class="sticky top-0 z-50 bg-white/90 dark:bg-[#1e1e1e]/80 backdrop-blur-xl border-b border-pink-100 dark:border-gray-700 flex justify-between items-center px-8 sm:px-16 py-4 shadow-sm transition-colors"
+      class="sticky top-0 z-50 bg-white/90 dark:bg-[#1e1e1e]/80 backdrop-blur-xl border-b border-pink-100 dark:border-gray-700 flex justify-between items-center px-5 sm:px-10 py-4 shadow-sm transition-colors"
     >
-      <div class="flex items-center gap-3">
+      <!-- 🍴 Brand -->
+      <div class="flex items-center gap-3 text-[#1b0e0e] dark:text-[#f5f5f5]">
         <div
           class="w-8 h-8 flex items-center justify-center rounded-lg bg-gradient-to-br from-pink-500 to-red-400 text-white shadow-md"
         >
           🍴
         </div>
-        <h1 class="text-lg font-extrabold tracking-tight">Taste Explorer</h1>
+        <h1 class="text-lg sm:text-xl font-extrabold tracking-tight">
+          Taste Explorer
+        </h1>
       </div>
 
-      <nav class="hidden sm:flex gap-8 text-[15px] font-medium items-center">
-        <a href="./index.html" class="hover:text-[#e63946] dark:hover:text-[#ff6b6b] transition"
+      <!-- 🌙 + ☰ Buttons -->
+      <div class="flex items-center gap-4 sm:hidden">
+        <button
+          id="theme-toggle-mobile"
+          class="w-9 h-9 rounded-full flex items-center justify-center text-[#e63946] dark:text-yellow-300 hover:bg-gray-100 dark:hover:bg-gray-800 transition"
+          title="Toggle dark mode"
+        >
+          ☀️
+        </button>
+        <button
+          id="menu-toggle"
+          class="text-2xl text-[#e63946] dark:text-[#ff6b6b] focus:outline-none"
+        >
+          ☰
+        </button>
+      </div>
+
+      <!-- 🌍 Navigation -->
+      <nav
+        id="nav-links"
+        class="hidden sm:flex flex-col sm:flex-row items-center gap-4 sm:gap-6 text-[15px] font-medium absolute sm:static top-16 left-0 w-full sm:w-auto bg-white dark:bg-[#1e1e1e] sm:bg-transparent sm:dark:bg-transparent border-t sm:border-0 border-gray-200 dark:border-gray-700 shadow-lg sm:shadow-none p-6 sm:p-0 rounded-b-2xl sm:rounded-none transition-all duration-300"
+      >
+        <a
+          href="./index.html"
+          class="block w-full text-center sm:w-auto py-2 hover:text-[#e63946] dark:hover:text-[#ff6b6b]"
           >Home</a
         >
         <a
           href="./all-recipes.html"
-          class="text-[#e63946] dark:text-[#ff6b6b] font-semibold"
+          class="block w-full text-center sm:w-auto py-2 text-[#e63946] dark:text-[#ff6b6b] font-semibold"
           >Recipes</a
         >
-        <a href="./doubt.html" class="block w-full text-center sm:w-auto py-2 hover:text-[#e63946] dark:hover:text-[#ff6b6b] transition active">Doubts</a>
-
-        <a href="./feedback.html" class="hover:text-[#e63946] dark:hover:text-[#ff6b6b] transition"
+        <a
+          href="./doubt.html"
+          class="block w-full text-center sm:w-auto py-2 hover:text-[#e63946] dark:hover:text-[#ff6b6b]"
+          >Doubts</a
+        >
+        <a
+          href="./feedback.html"
+          class="block w-full text-center sm:w-auto py-2 hover:text-[#e63946] dark:hover:text-[#ff6b6b]"
           >Feedback</a
         >
 
-        <!-- 🌙 Theme Toggle -->
+        <a
+          href="./all-recipes.html"
+          class="sm:hidden bg-[#e63946] dark:bg-[#ff6b6b] text-white px-6 py-2 rounded-full text-sm font-semibold shadow-md hover:bg-[#d62839] dark:hover:bg-[#ff3b3b] transition mt-3 text-center w-full"
+        >
+          Explore Recipes
+        </a>
         <button
           id="theme-toggle"
-          class="ml-4 w-9 h-9 rounded-full flex items-center justify-center text-[#e63946] dark:text-yellow-300 hover:bg-gray-100 dark:hover:bg-gray-800 transition"
+          class="hidden sm:flex w-9 h-9 ml-2 rounded-full items-center justify-center text-[#e63946] dark:text-yellow-300 hover:bg-gray-100 dark:hover:bg-gray-800 transition"
           title="Toggle dark mode"
         >
           ☀️
         </button>
       </nav>
-
-      <button id="menu-btn" class="sm:hidden text-2xl text-[#e63946]">☰</button>
     </header>
 
-    <!-- 📱 Mobile menu -->
-    <nav
-      id="mobile-menu"
-      class="hidden flex flex-col sm:hidden gap-4 px-6 py-4 bg-[#fff6f6] dark:bg-[#1a1a1a] border-b border-[#f3e7e8] dark:border-gray-700 shadow-md text-sm font-medium transition-colors"
-    >
-      <a href="./index.html" class="hover:text-[#e63946] dark:hover:text-[#ff6b6b]"
-        >Home</a
-      >
-      <a
-        href="./all-recipes.html"
-        class="text-[#e63946] dark:text-[#ff6b6b] font-semibold"
-        >Recipes</a
-      >
-      <a href="./doubt.html" class="text-[#e63946] dark:text-[#ff6b6b] font-semibold">Doubts</a>
-
-      <a href="./feedback.html" class="hover:text-[#e63946] dark:hover:text-[#ff6b6b]"
-        >Feedback</a
-      >
-    </nav>
-
     <!-- 🔍 Search & Filters -->
-    <div
-      class="flex flex-col sm:flex-row justify-center items-center gap-3 py-6 px-6 sm:px-12 bg-white/60 dark:bg-[#2a2a2a]/70 backdrop-blur-md rounded-xl mx-6 mt-6 shadow-md transition-colors"
+    <section
+      class="flex flex-col sm:flex-row justify-center items-center gap-3 py-6 px-6 sm:px-10 lg:px-16 bg-white/60 dark:bg-[#2a2a2a]/70 backdrop-blur-md rounded-xl mx-6 mt-6 shadow-md transition-colors"
     >
       <div
-        class="flex items-center w-full sm:w-[350px] bg-white dark:bg-[#1e1e1e] rounded-full shadow-sm border border-gray-200 dark:border-gray-700 transition-colors"
+        class="flex items-center w-full sm:w-[350px] bg-white dark:bg-[#1e1e1e] rounded-full shadow-sm border border-gray-200 dark:border-gray-700"
       >
         <input
           id="searchInput"
           placeholder="Search recipes..."
-          class="w-full px-5 py-2 rounded-full text-sm bg-transparent focus:outline-none focus:ring-2 focus:ring-pink-400 dark:focus:ring-[#ff6b6b] transition"
+          class="w-full px-5 py-2 rounded-full text-sm bg-transparent focus:outline-none focus:ring-2 focus:ring-pink-400 dark:focus:ring-[#ff6b6b]"
         />
         <button
           class="px-4 py-2 text-[#e63946] dark:text-[#ff6b6b] hover:text-white hover:bg-[#e63946] dark:hover:bg-[#ff6b6b] rounded-full transition font-semibold"
@@ -119,7 +132,7 @@
 
       <select
         id="filter-cuisine"
-        class="rounded-full border border-gray-300 dark:border-gray-700 px-8 py-2 text-sm bg-white dark:bg-[#1e1e1e] dark:text-white focus:ring-2 focus:ring-pink-400 dark:focus:ring-[#ff6b6b] shadow-sm transition"
+        class="rounded-full border border-gray-300 dark:border-gray-700 px-8 py-2 text-sm bg-white dark:bg-[#1e1e1e] dark:text-white focus:ring-2 focus:ring-pink-400 dark:focus:ring-[#ff6b6b] shadow-sm"
       >
         <option value="">All Cuisines</option>
         <option value="Indian">Indian</option>
@@ -129,14 +142,14 @@
 
       <select
         id="filter-category"
-        class="rounded-full border border-gray-300 dark:border-gray-700 px-8 py-2 text-sm bg-white dark:bg-[#1e1e1e] dark:text-white focus:ring-2 focus:ring-pink-400 dark:focus:ring-[#ff6b6b] shadow-sm transition"
+        class="rounded-full border border-gray-300 dark:border-gray-700 px-8 py-2 text-sm bg-white dark:bg-[#1e1e1e] dark:text-white focus:ring-2 focus:ring-pink-400 dark:focus:ring-[#ff6b6b] shadow-sm"
       >
         <option value="">Diet Type</option>
         <option value="Vegetarian">Vegetarian</option>
         <option value="Non-Vegetarian">Non-Vegetarian</option>
         <option value="Vegan">Vegan</option>
       </select>
-    </div>
+    </section>
 
     <!-- 🍱 Recipes Section -->
     <main class="flex-1 px-6 sm:px-10 lg:px-20 mt-10">
@@ -146,7 +159,7 @@
 
       <div
         id="recipes-container"
-        class="grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-8 min-h-[300px] transition-all duration-300 "
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 min-h-[300px] transition-all duration-300"
       >
         <div
           class="col-span-full text-center text-gray-400 py-10 animate-pulse"
@@ -158,7 +171,7 @@
       <div class="flex justify-center mt-10">
         <button
           id="load-more"
-          class="bg-gradient-to-r from-[#e63946] to-[#ff6b6b] hover:from-[#d62839] hover:to-[#ff3b3b] dark:from-[#ff6b6b] dark:to-[#e63946] dark:hover:from-[#ff8585] dark:hover:to-[#ff3b3b] text-white px-8 py-2 rounded-full font-semibold shadow-md hover:shadow-lg transition-all duration-300"
+          class="bg-gradient-to-r from-[#e63946] to-[#ff6b6b] hover:from-[#d62839] hover:to-[#ff3b3b] dark:from-[#ff6b6b] dark:to-[#e63946] text-white px-8 py-2 rounded-full font-semibold shadow-md hover:shadow-lg transition-all duration-300"
         >
           Load More ↓
         </button>
@@ -179,7 +192,10 @@
         >
           ✖
         </button>
-        <img id="modal-image" class="w-full h-60 object-cover rounded-xl mb-4" />
+        <img
+          id="modal-image"
+          class="w-full h-56 sm:h-60 object-cover rounded-xl mb-4"
+        />
         <h2
           id="modal-name"
           class="text-2xl font-bold mb-2 text-[#1b0e0e] dark:text-white"
@@ -215,30 +231,68 @@
     <!-- JS -->
     <script src="./js/all-recipes.js"></script>
 
-    <!-- 🌙 Dark Mode Script -->
+    <!-- 🌙 Dark Mode + Hamburger -->
     <script>
-      const toggleBtn = document.getElementById("theme-toggle");
+      const themeBtnDesktop = document.getElementById("theme-toggle");
+      const themeBtnMobile = document.getElementById("theme-toggle-mobile");
+      const menuToggle = document.getElementById("menu-toggle");
+      const navLinks = document.getElementById("nav-links");
       const root = document.documentElement;
 
+      // 🌙 Theme toggle
       function setTheme(theme) {
         if (theme === "dark") {
           root.classList.add("dark");
-          toggleBtn.textContent = "🌙";
+          themeBtnDesktop.textContent = themeBtnMobile.textContent = "🌙";
         } else {
           root.classList.remove("dark");
-          toggleBtn.textContent = "☀️";
+          themeBtnDesktop.textContent = themeBtnMobile.textContent = "☀️";
         }
         localStorage.setItem("theme", theme);
       }
 
-      toggleBtn.addEventListener("click", () => {
-        const isDark = root.classList.contains("dark");
-        setTheme(isDark ? "light" : "dark");
+      [themeBtnDesktop, themeBtnMobile].forEach((btn) => {
+        if (btn)
+          btn.addEventListener("click", () => {
+            const isDark = root.classList.contains("dark");
+            setTheme(isDark ? "light" : "dark");
+          });
       });
 
-      // Initialize icon on page load
-      if (root.classList.contains("dark")) toggleBtn.textContent = "🌙";
-      else toggleBtn.textContent = "☀️";
+      // ☰ Hamburger Menu
+      menuToggle.addEventListener("click", () => {
+        navLinks.classList.toggle("hidden");
+        navLinks.classList.toggle("animate-slideDown");
+      });
+
+      // Close menu when a link is clicked (mobile)
+      document.querySelectorAll("#nav-links a").forEach((link) => {
+        link.addEventListener("click", () => {
+          if (window.innerWidth < 640) navLinks.classList.add("hidden");
+        });
+      });
+
+      // Initialize theme button icon
+      if (root.classList.contains("dark"))
+        themeBtnDesktop.textContent = themeBtnMobile.textContent = "🌙";
+      else themeBtnDesktop.textContent = themeBtnMobile.textContent = "☀️";
     </script>
+
+    <!-- 🌀 Slide Animation -->
+    <style>
+      @keyframes slideDown {
+        0% {
+          opacity: 0;
+          transform: translateY(-10px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .animate-slideDown {
+        animation: slideDown 0.25s ease forwards;
+      }
+    </style>
   </body>
 </html>

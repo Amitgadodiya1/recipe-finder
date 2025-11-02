@@ -32,6 +32,7 @@
     <header
       class="flex items-center justify-between border-b border-pink-100 dark:border-gray-700 px-5 sm:px-10 py-4 sticky top-0 bg-white/90 dark:bg-[#1e1e1e]/80 backdrop-blur-xl shadow-sm z-50"
     >
+      <!-- 🍴 Brand -->
       <div class="flex items-center gap-3">
         <div
           class="size-8 flex items-center justify-center rounded-lg bg-gradient-to-br from-pink-500 to-red-400 text-white shadow-md"
@@ -41,32 +42,58 @@
         <h1 class="text-lg sm:text-xl font-extrabold">Taste Explorer</h1>
       </div>
 
-      <nav class="flex gap-6 text-sm font-medium items-center">
+      <!-- 🌙 + ☰ Buttons (Mobile) -->
+      <div class="flex items-center gap-4 sm:hidden">
+        <button
+          id="theme-toggle-mobile"
+          class="w-9 h-9 rounded-full flex items-center justify-center text-[#e63946] dark:text-yellow-300 hover:bg-gray-100 dark:hover:bg-gray-800 transition"
+          title="Toggle dark mode"
+        >
+          ☀️
+        </button>
+        <button
+          id="menu-toggle"
+          class="text-2xl text-[#e63946] dark:text-[#ff6b6b] focus:outline-none"
+        >
+          ☰
+        </button>
+      </div>
+
+      <!-- 🌍 Navigation -->
+      <nav
+        id="nav-links"
+        class="hidden sm:flex flex-col sm:flex-row items-center gap-4 sm:gap-6 text-[15px] font-medium absolute sm:static top-16 left-0 w-full sm:w-auto bg-white dark:bg-[#1e1e1e] sm:bg-transparent sm:dark:bg-transparent border-t sm:border-0 border-gray-200 dark:border-gray-700 shadow-lg sm:shadow-none p-6 sm:p-0 rounded-b-2xl sm:rounded-none transition-all duration-300"
+      >
         <a
           href="./index.html"
-          class="hover:text-[#e63946] dark:hover:text-[#ff6b6b]"
+          class="block w-full text-center sm:w-auto py-2 hover:text-[#e63946] dark:hover:text-[#ff6b6b] transition"
           >Home</a
         >
         <a
           href="./all-recipes.html"
-          class="hover:text-[#e63946] dark:hover:text-[#ff6b6b]"
+          class="block w-full text-center sm:w-auto py-2 hover:text-[#e63946] dark:hover:text-[#ff6b6b] transition"
           >Recipes</a
         >
         <a
           href="./doubt.html"
-          class="text-[#e63946] dark:text-[#ff6b6b] font-semibold"
+          class="block w-full text-center sm:w-auto py-2 text-[#e63946] dark:text-[#ff6b6b] font-semibold"
           >Doubts</a
         >
         <a
           href="./feedback.html"
-          class="hover:text-[#e63946] dark:hover:text-[#ff6b6b]"
+          class="block w-full text-center sm:w-auto py-2 hover:text-[#e63946] dark:hover:text-[#ff6b6b]"
           >Feedback</a
         >
 
-        <!-- 🌙 Dark Mode Toggle -->
+        <a
+          href="./all-recipes.html"
+          class="sm:hidden bg-[#e63946] dark:bg-[#ff6b6b] text-white px-6 py-2 rounded-full text-sm font-semibold shadow-md hover:bg-[#d62839] dark:hover:bg-[#ff3b3b] transition mt-3 text-center w-full"
+        >
+          Explore Recipes
+        </a>
         <button
           id="theme-toggle"
-          class="ml-4 w-9 h-9 rounded-full flex items-center justify-center text-[#e63946] dark:text-yellow-300 hover:bg-gray-100 dark:hover:bg-gray-800 transition"
+          class="hidden sm:flex w-9 h-9 ml-2 rounded-full items-center justify-center text-[#e63946] dark:text-yellow-300 hover:bg-gray-100 dark:hover:bg-gray-800 transition"
           title="Toggle dark mode"
         >
           ☀️
@@ -75,14 +102,20 @@
     </header>
 
     <!-- 🧠 Doubt Section -->
-    <main class="px-5 sm:px-16 py-10 space-y-10">
+    <main class="px-5 sm:px-10 lg:px-16 py-10 space-y-10 transition-colors">
       <!-- Post Doubt -->
       <section
-        class="max-w-3xl mx-auto bg-white dark:bg-[#2a2a2a] rounded-2xl shadow p-6 ask-section"
+        class="max-w-3xl mx-auto bg-white dark:bg-[#2a2a2a] rounded-2xl shadow p-5 sm:p-6 ask-section"
       >
-        <h2 class="text-2xl font-bold mb-4">Ask a Doubt</h2>
+        <h2 class="text-2xl font-bold mb-4 text-center sm:text-left">
+          Ask a Doubt
+        </h2>
         <form id="doubtForm" class="space-y-3">
-          <select id="recipeSelect" name="recipeId" class="input-field border border-[#e3d4d4] dark:border-gray-700 bg-[#fffafc] dark:bg-[#1e1e1e] dark:text-white focus:ring-2 focus:ring-[#e8b5b7] focus:outline-none">
+          <select
+            id="recipeSelect"
+            name="recipeId"
+            class="w-full rounded-xl border border-[#e3d4d4] dark:border-gray-700 bg-[#fffafc] dark:bg-[#1e1e1e] dark:text-white focus:ring-2 focus:ring-[#e8b5b7] focus:outline-none px-4 py-2 text-sm"
+          >
             <option value="">🧂 Select a recipe (optional)</option>
           </select>
 
@@ -90,29 +123,36 @@
             name="name"
             type="text"
             placeholder="Enter your name (optional)"
-            class="input-field border border-[#e3d4d4] dark:border-gray-700 bg-[#fffafc] dark:bg-[#1e1e1e] dark:text-white focus:ring-2 focus:ring-[#e8b5b7] focus:outline-none dark:text:white"
+            class="w-full rounded-xl border border-[#e3d4d4] dark:border-gray-700 bg-[#fffafc] dark:bg-[#1e1e1e] dark:text-white px-4 py-2 text-sm focus:ring-2 focus:ring-[#e8b5b7] focus:outline-none"
           />
           <input
             name="title"
             type="text"
             placeholder="Enter your doubt title..."
-            class="input-field border border-[#e3d4d4] dark:border-gray-700 bg-[#fffafc] dark:bg-[#1e1e1e] dark:text-white focus:ring-2 focus:ring-[#e8b5b7] focus:outline-none"
+            class="w-full rounded-xl border border-[#e3d4d4] dark:border-gray-700 bg-[#fffafc] dark:bg-[#1e1e1e] dark:text-white px-4 py-2 text-sm focus:ring-2 focus:ring-[#e8b5b7] focus:outline-none"
             required
           />
           <textarea
             name="description"
             placeholder="Describe your question..."
             rows="3"
-            class="input-field border border-[#e3d4d4] dark:border-gray-700 bg-[#fffafc] dark:bg-[#1e1e1e] dark:text-white focus:ring-2 focus:ring-[#e8b5b7] focus:outline-none"
+            class="w-full rounded-xl border border-[#e3d4d4] dark:border-gray-700 bg-[#fffafc] dark:bg-[#1e1e1e] dark:text-white px-4 py-3 text-sm focus:ring-2 focus:ring-[#e8b5b7] focus:outline-none resize-none"
             required
           ></textarea>
-          <button type="submit" class="btn-primary">Post Doubt</button>
+          <button
+            type="submit"
+            class="w-full sm:w-auto bg-[#e63946] hover:bg-[#d62839] text-white font-semibold px-6 py-2 rounded-xl shadow transition active:scale-95"
+          >
+            Post Doubt
+          </button>
         </form>
       </section>
 
       <!-- All Doubts -->
       <section class="max-w-3xl mx-auto">
-        <h2 class="text-xl font-bold mb-4">All Doubts</h2>
+        <h2 class="text-xl sm:text-2xl font-bold mb-4 text-center sm:text-left">
+          All Doubts
+        </h2>
         <div id="doubtList" class="space-y-6">
           <p class="text-gray-400 text-center animate-pulse">
             Loading doubts...
@@ -121,7 +161,7 @@
       </section>
     </main>
 
-    <!-- Footer -->
+    <!-- 🦶 Footer -->
     <footer
       class="bg-[#1b0e0e] dark:bg-[#0f0f0f] text-white mt-16 py-8 px-5 sm:px-10 text-sm text-center rounded-t-[2rem] border-t border-gray-800 dark:border-gray-700"
     >
@@ -136,28 +176,66 @@
     <!-- JS -->
     <script src="./js/doubt.js"></script>
     <script>
-      const toggleBtn = document.getElementById("theme-toggle");
+      const themeBtnDesktop = document.getElementById("theme-toggle");
+      const themeBtnMobile = document.getElementById("theme-toggle-mobile");
+      const menuToggle = document.getElementById("menu-toggle");
+      const navLinks = document.getElementById("nav-links");
       const root = document.documentElement;
 
+      // 🌙 Theme toggle
       function setTheme(theme) {
         if (theme === "dark") {
           root.classList.add("dark");
-          toggleBtn.textContent = "🌙";
+          themeBtnDesktop.textContent = themeBtnMobile.textContent = "🌙";
         } else {
           root.classList.remove("dark");
-          toggleBtn.textContent = "☀️";
+          themeBtnDesktop.textContent = themeBtnMobile.textContent = "☀️";
         }
         localStorage.setItem("theme", theme);
       }
 
-      toggleBtn.addEventListener("click", () => {
-        const isDark = root.classList.contains("dark");
-        setTheme(isDark ? "light" : "dark");
+      [themeBtnDesktop, themeBtnMobile].forEach((btn) => {
+        if (btn)
+          btn.addEventListener("click", () => {
+            const isDark = root.classList.contains("dark");
+            setTheme(isDark ? "light" : "dark");
+          });
       });
 
-      // Initialize icon on page load
-      if (root.classList.contains("dark")) toggleBtn.textContent = "🌙";
-      else toggleBtn.textContent = "☀️";
+      // ☰ Hamburger Menu
+      menuToggle.addEventListener("click", () => {
+        navLinks.classList.toggle("hidden");
+        navLinks.classList.toggle("animate-slideDown");
+      });
+
+      // Close menu when a link is clicked (mobile)
+      document.querySelectorAll("#nav-links a").forEach((link) => {
+        link.addEventListener("click", () => {
+          if (window.innerWidth < 640) navLinks.classList.add("hidden");
+        });
+      });
+
+      // Initialize theme button icon
+      if (root.classList.contains("dark"))
+        themeBtnDesktop.textContent = themeBtnMobile.textContent = "🌙";
+      else themeBtnDesktop.textContent = themeBtnMobile.textContent = "☀️";
     </script>
+
+    <!-- 🌀 Animation -->
+    <style>
+      @keyframes slideDown {
+        0% {
+          opacity: 0;
+          transform: translateY(-10px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .animate-slideDown {
+        animation: slideDown 0.25s ease forwards;
+      }
+    </style>
   </body>
 </html>
