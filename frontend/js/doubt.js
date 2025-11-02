@@ -21,7 +21,7 @@ const modeLabel = recipeId ? "Recipe-specific" : "Global";
 
 async function loadRecipes() {
   try {
-    const res = await fetch("http://localhost:3001/api/recipes");
+    const res = await fetch(`${BASE_URL}/api/recipes`);
     const result = await res.json();
 
     // check if API returns paginated structure
