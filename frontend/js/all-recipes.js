@@ -16,7 +16,7 @@ let page = 1;
 const BASE_URL =
   window.location.hostname === "localhost"
     ? "http://localhost:3001"
-    : "https://recipes-containerrecipe-finder-2d56.onrender.com";
+    : "https://recipe-finder-2d56.onrender.com"
 
 // 🍳 Fetch recipes with pagination
 async function fetchRecipes(loadMore = false) {
