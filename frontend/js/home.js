@@ -35,11 +35,11 @@ async function loadPopularRecipes(searchTerm = "", cuisine = "", maxTime = "") {
 
   const container = document.getElementById("popular-container");
   container.innerHTML = recipes.map(r => `
-    <div class="bg-white rounded-xl shadow-md hover:shadow-lg p-4 transition-all cursor-pointer"
+    <div class="bg-white rounded-xl shadow-md hover:shadow-lg p-4 transition-all cursor-pointer dark:bg-[#2a2a2a]/70"
       onclick='openQuickView(${JSON.stringify(r).replace(/"/g, "&quot;")})'>
       <img src="${r.image}" class="w-full aspect-video rounded-lg object-cover mb-2"/>
       <p class="font-semibold">${r.name}</p>
-      <p class="text-sm text-gray-600 line-clamp-2">${r.description}</p>
+      <p class="text-sm text-gray-600 line-clamp-2 dark:text-[#ffff]">${r.description}</p>
       <div class="flex justify-between mt-2 text-xs text-gray-500">
         <span>❤️ ${r.likes || 0}</span>
         <span>⭐ ${r.averageRating || 4.5}</span>

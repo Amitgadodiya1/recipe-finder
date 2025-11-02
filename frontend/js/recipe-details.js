@@ -30,7 +30,10 @@ async function fetchRecipeDetails() {
             <span>📂 Category: ${recipe.category}</span>
             <span>⏱️ ${recipe.time?.total_minutes || 0} mins</span>
           </div>
-
+          <h3 class="font-semibold text-pink-600 dark:text-[#ff6b6b] mb-2 text-lg">Ingredients:</h3>
+          <ul class="list-disc pl-6 text-gray-700 dark:text-gray-300 space-y-2">
+            ${recipe.ingredients.map(step => `<li>${step}</li>`).join("")}
+          </ul>
           <h3 class="font-semibold text-pink-600 dark:text-[#ff6b6b] mb-2 text-lg">Procedure:</h3>
           <ul class="list-disc pl-6 text-gray-700 dark:text-gray-300 space-y-2">
             ${recipe.procedure.map(step => `<li>${step}</li>`).join("")}
